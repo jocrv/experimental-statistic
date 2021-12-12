@@ -2,4 +2,85 @@
 #### Part 5
 Using the R on specifiction and estion of sample plan by simple random sampling, sistematic, stratification and to cluster. Propose: Present the statistic software R and sample select the estimation of differents sample plans, and how the simple random sampling, stratification sampling, cluster sampling and sistematic sampling. Preparation install R. Module1: Describe general concepts about statistic software R and package sampling on estimations by simples random sampling. Module2: Describe the package survey to estimation by the stratification sampling. Modulo3: Select samples by sistematic sampling and conglomerates with estimation to this plans on R. 
 Modulo 1: Describe general concept about statistic software R and package sampling on estimation by simple random sampling.  Intro: when construct a search and drawing a complex sample, the data analysis on papel could be unavailable. Besides that, programming all the time th same formulas wastes so much time, when have to be apply in another part of process. Because of that, learn how to select sample and estimation for any sample plans by statistic software. In case we learn how to use R program inside the sample theory. In this module we know install R software and the principa characteristic which make it the best programming and the most versatile and widespread inside the academyc field and profissional fields. Using the library series inside the software to select simple random sample we do this estimation by sample plan. 
-About software R: The R software is statistic and act as alternative by traditional statistic programming, as SPSS, SAS and Stata with open code language extensible. It means the software is open and can be used by users. And it's a extremely robust, simple to use, advanced and free. It's not exist demo version after this another version comletely are for pay, but it's all for free. E each person could just contribute with your own programming projects. That's really interesting because somebody on the other side could add somenthing inside the programming and you just using this code too. How interesting using R comed increase last years, and it's probabily you have to do something there or just implements by other person who available free using. Besides that, this environment is available on Windows, mac unix and linux. Do you know this software are always refresh and the userd could just download the last version. In the old days exists just classic R, original with a plataform more oldier, but nowadays you can use a interface more friendly and simple just to use it. In the real time, install class R and after that install a interface with better framworks. The operation of R is done in packages, named library. When you install R a lot of packages comes in the memory, and it's allow to use more than one interesting functions. It's done to R save space in memory and don't be to harvy. Other softwares, when you click to open all, everything is loading automatically, it's so harvy because the environment is hard to open with a lot slow time. The R works as a different, because you just install and download everything you gonna use. 
+About software R: The R software is statistic and act as alternative by traditional statistic programming, as SPSS, SAS and Stata with open code language extensible. It means the software is open and can be used by users. And it's a extremely robust, simple to use, advanced and free. It's not exist demo version after this another version comletely are for pay, but it's all for free. E each person could just contribute with your own programming projects. That's really interesting because somebody on the other side could add somenthing inside the programming and you just using this code too. How interesting using R comed increase last years, and it's probabily you have to do something there or just implements by other person who available free using. Besides that, this environment is available on Windows, mac unix and linux. Do you know this software are always refresh and the userd could just download the last version. In the old days exists just classic R, original with a plataform more oldier, but nowadays you can use a interface more friendly and simple just to use it. In the real time, install class R and after that install a interface with better framworks. The operation of R is done in packages, named library. When you install R a lot of packages comes in the memory, and it's allow to use more than one interesting functions. It's done to R save space in memory and don't be to harvy. Other softwares, when you click to open all, everything is loading automatically, it's so harvy because the environment is hard to open with a lot slow time. The R works as a different, because you just install and download everything you gonna use. The number add just to figure indentify if it's the only space where you add something on programming. There you can click add the result appears. Figure 2 we have the inicial interface from RStudio. Note how we have more option than fig1. In this case, we have the 1 on local host where you do your programming, and the local will be use for backup. In case this program stops or the computer turn off, you'll lost everything if you were use R class, but RStudio is ok to save. That's a huge advantage. In 2 we can see easily how this data base and variables are using at this moment. Just click in some base and fast you see how much variables she had and what is the type of each variable.  Automatically , when created or read a file of data he'll add still add in that window. On 3 we got this window for execute commandas. That means this window is equal classic R. We can say the RStudio guarantee the R programming and more 3 window. All you need to execute will be done in this part of window. Finally we got the 4 on parts of exit with graphics results, help menu, intall and library charge and another things. Means, if you need some help to install one package you can go to 4 click on packages and intall how many packages you want. Just remember to install a package isn't sufficient to works, you need to loading. Al, the time you open and close the R it's mainting packages default (basics one). All them need to charged all the time. 
+First access: when you open RStudio you can read a file of data, construct your base, install packages or just programming. You cans use a table, a simple graphic, one three dimensional, one scheme and infinit of options. Just using RStudio to do this analyses. To execute the programming sofatware, you can use a infinite options. We can uset the RStudio to do analyses. To execute the programming software you can just type it on window corresponde to the number of figure 2 after this type RUN in this window. Or you can just type directly the 3 and click enter. Let's see some examples for graphics of R could offer. Bacuse of that we can use a package instaal and loading R. That's a package graphics. Now, using the command you can type on software a italic to make different text and content. Let's start see demonstration of graphic package in 2 dimensions with the command demo. You can just copy and paste directly on programming or using: demo(graphics) After this type command below, press commanda enter repetition times. That's gonna show a lot of graphics of R could do it. /// This package are preview install and loading on R, so we don't need type your code. A lot of library need to been install and charged, as we seen in topics below. At this moment of install, depends of version R, could been showing the list of locals where you download packages. You can choose any local of list, but it's always indicate download in our city. As showing befora, inside R has a infinitive of packages where you can just using. To realixxe that sampling, we use the functions pre loading with R basically in two packages: Sampling and Survey. 
+1. Sample Function: one of samples using is to select samples on R among sample(). This function is pre loading in memory R, so thats we don't need to install any package for this execute. To do this just using sample() who receive this vector as input and you say how many samples have to delete from this list. Let's say you are simulating plays and want to obtain from a common data 6 faces and desire obtain 10 results. As a result to play one time this common data is a number from 1 to 6, in this code is: sample(1:6, 10 replace=TRUE) It means, we are using th function sample() with three parameters.  It means we are using the function sample with three parameters. The first one refeers to the interval using the variance of 1 to 6, second one is the measure of sample which desires in this case of repetition and the replace said that retire is with or without replacement. At this way, we said the function sample is return 10 values, but all them inside had 1 to 6. So, we do this select by simple sample random method with replacement. You can use sample () to do the simple random sample withour replacement too. In this case, just substitue the TREU for FALSE on replace or just leave blank this part because the default of function is without replacement. Imagine you have done a buy from one store and receive one numbered coupon. the store wille one prixxe draw. probabily it'll do without replacement to the same person who won't gain two times. Knowing this the coupon prixxe using just insert sample() and obtain the result. The survey of this store analyse it available 9780 coupon. Just we can do it: sample(1:9780, 2, replace=FALSE) or just  sample(1:9780, 2) If rou rounded two way below, you have seen the result obtain different. How the value in return of function sample() is a number randomixxed, if you rounded this code a lot of times you'll obtain differents results each time. This behavior is correct for all cases, but, sometime you can desire obtain results repetition always when you execute this function. // Normally this happens just when you desire developer and test your code, or if you want the another person try reply yout results and obtain the same result. In this cases, it's commom specify the right value of input reference named seed.  if you offer a value for a seed, the sequence of random numbers will be definied for a knowing state. This happen because the R doesn't create numbers for truely randomic, but just numbers pseudorandom. A sequence pseudorandom is a set of numbers to, all pratichal effects appears random, because they are created by a algorithm. When you defined the input seed for a process pseudorandom, in R always return the same sequence pseudorandom. In R you use the function set.seed() to especific the input value for a seed. This argument for a set.seed() is for any integer value. let's use the equal seed, we can result the same result. 
+
+set.seed(5)
+sample(1:9780, 2, replace=FALSE)
+
+## or just using:
+set.seed(5)
+sample(1:9780, 2)
+
+the result of this programming had been offer the winners of both television from a coupon number 2255 and 6859, right? Remember what we are  seen using the RStudio, if you play R classic version, the result could be different. 
+
+2. Sampling package: this package is another way to select samples, mainlywe used the sample plan more complex. It contains more functions and more internal option, but the most one goals is select sample using probabilistic sample. Obtain samples from R is easier, because the software treat this select just like a net subset form data. let's install this package and loading by:
+
+install.packages("sampling")
+library(sampling)
+
+In this methos with replacement we need to used the function srswr(n,N). Just definied the sixxe of sample n and the populational sixx N. The function return with the vector with number times of unit decrease from this sample. First of all, we loading the package sample, after using these function. As example, we select a sample with sixxe 20 of population of sixxe 100. We always use the seed to ouor results aligned. We have:
+
+set.seed(9)
+s=srswr(20,100)
+s
+
+after run this commands, we have the result:
+
+[1] 0 0 0 0 0 0 0 0 0 2 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 1 0 1 0 1 0 1 0 1 0 0 1 0
+[43] 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0
+[85] 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0
+
+This result had done by the seed equal for all, said the unit of population from 1 to 100 been select. This value is equal to 1 had done as select elements by just one time, how is with the replacement, the equal values is 2, means that unit are select by two times. To see this unit, we can just do it:
+
+
+(1:100)[s!=0]
+
+The select units is: 
+
+[1] 10 13 18 21 26 29 30 32 34 36 38 41 50 51 78 89 94
+
+We see who is select two times, we can use the follow command:
+
+(1:100)[s==2]
+
+We've three units select more one time:
+
+
+[1] 10 51 78
+
+For this simple random sample without replacemente we will use srswor(n,N). It's a abreviation for sample random sampling without replacement. We will do the same at the anterior case:
+
+set.seed(10)
+s=srswor(20,100)
+(1:100) [s!=0]
+
+the result we are found:
+[1] 7 8 9 13 15 24 27 34 39 42 54 55 71 72 74 76 83 88 91 99
+
+Estimation for simple random sample: we are using software R for estiomation for data applyes a simple random sample. It's important to do a review of expressions using the average estimation, total and variance for SRS. The R had a series of based for internally data loading in your memory. Other bases are adding at moment to loading one package. Let's insert this command to see all available bases:
+
+data()
+
+Using this base for the package sampling named MU284. This database is a real base since 1992. This data abouy 284 cities from Sweden. A lot of informations are raised , but let's see the information P85. This variable from a quantity of population ( a thousand units) for each 284 cities. To run this base and other variables we do this:
+
+data(MU284)
+fix(MU284)
+
+Observe the command fix open another window to seen the base. But remember to close the window opened before proceed. If you don't close, R command will run next commands. In this population are composed by N=284 cities, you can observe this and view the quantity of lines for each row with:
+
+N= nrow(MU284)
+N
+
+Let's select SRS without replacement composed by 80 cities with the sample function. We'll use this seed to obtain the same results:
+
+n = 80
+set.seed(8)
+selec = sample(1:N, n)
+sample = MU284[selec,]
+sample
+
+Let's do this total estimation for average, variances for this SRS. We'll do the "hand" of programming for each estimation below:
+
+3. Estimation of population variables: 
