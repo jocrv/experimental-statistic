@@ -84,3 +84,102 @@ sample
 Let's do this total estimation for average, variances for this SRS. We'll do the "hand" of programming for each estimation below:
 
 3. Estimation of population variables: 
+3.1 Estimation of populacional average:
+
+sum(sample$P85)/n
+
+By this sample with 80 cities, we fot the estimation of populacional average for all cieties for almost 28688 people (remember of data are thousands) 
+
+3.2 Estimation of variance from estimation for populacional average
+
+(1-n/N)*var(sample$085)/n
+
+The estimation of variance from estimation is average 6.26 peoples**2
+
+3.3 Standard error from estimation from average populacional:
+
+sqrt((1-n/N)*var(sample$P85)/n)
+
+After take the square root with the function sqrt, we got the standard error with estimation average 2503 people. So, the error of average estimation was almost 2503 people (remember always the unit of thousando is given ate final result)
+
+3.4 Estimation of populacional total:
+
+N*sum(sample$P85)/n
+
+The estimation of variance from this total populacional estimation is 505685,8 people**2.
+
+3.5 Standard error from estimation from a populational Total
+
+sqrt(Nˆ2*(1/n-1/N)*var(sample$P85))
+
+After do this square root, we got the standard error from a total about 7111159 people. So, this estimation error is the total of 711115 people( remember always the unit of thousand of the final result). You can ask if all the time you need estimate something you have do programming a code. That's a question. The answer is depends. If you need to use something too specific, could be that answer is yes. Or need to search something on the internet about some package in R. But we say it doesn't exist something in this programming you didn't find it. For our luck exists one package named survey, for all this estimations without we need to remember this formulas fro a average or variance for example. We need to specify the parameter for a sample plan and we need some estimations. For this example we did:
+
+install.packages("survey")
+library(survey)
+samples$N = N
+SRS = svydesign(id = ˜ 0, data = sample, fpc = ~N)
+SRS
+
+The parameter id serves to say if have some cluster in data, how we don't leave, we did with 0 or 1, after this input with the sample and fpc factor.This factor named the factor for correction for finit population. nothing more than the total of population, in this case SRS. For that, before doing the svydesign, we add the new column for the total population. So, to do this estimation using the package survey, we do:
+
+3.5.1 Estimation of populacional average (svymean)
+svymean(˜P85, SRS)
+
+3.5.2 Estimation of populacional total (svytotal)
+
+svytotal(˜P85, SRS)
+
+Compare this result obtain by the survey with the results where we have done the programming. Look hoje we can obtain the same result. In this way, we don't need none of type for programming, just input the data base, we said the sample plan we like to adopt this package if load all the stuff.
+
+examples1: On bingo of 5 international travel will be done for all buyers of determine store in shopping mall. After one year of this they will be add in some place, the last coupon distributed were 45965. Suposed all this papers in the place were be select by RSR without replacement, so select the winners coupons if you are using the function sample or the package sampling(using this seed with tha value 7 for both cases.) 
+Sample ={26067 457230088151716312 }  
+sampling = { 457263121517126067 30088}
+
+first thing to do is be cafreful with the seed equal 7 in rstudio. to do this select by SRS without replacemente with the function sample() just in case:
+set.seed(7)
+sample(45965,5)
+
+or just
+
+set.seed(7)
+sample(45965,5, rep=F)
+
+The result found will be the sample in values 26067 4572 30088 15171 6312
+
+With this using with sampling package we will use the function srswor (sample random sampling without replacement)  with this run commands:
+
+library(sampling)
+set.seed(7)
+s=srswor(5,45965)
+(1:45965) [s!=0]
+
+With this sample 4571 6312 15171 26067 30088
+
+example2:
+The r software presents a series of data bases intern in your memori. Other bases are adding at the moment it'll charge some packages. Read this lecture base named belgianmunicipalities. She is contains a series of informations of diverses cities from Belgium. One of this variables is salary for on person, this base named averageincome. Which is the estimative from average from this variable from you standard error to this sample sixxe 200? (use seed with the value 2): This estimative is the average income populacional is almost 24888 euros and the standard error is almost 211 euros. To load this package sampling we do this lecture base on data base and be clear about the sixxe of this populations N and the sixxe of this sample. So:
+library(sampling)
+data(belgianmunicipalities)
+fix(belgianmunicipalities)
+N=nrow(belgianmunicipalities)
+n=200
+
+Done this we need to select the sample sixxe 200 with the seed with the value 2:
+
+set.seed(2)
+selec = sample(1:N,n)
+sample = belgianmunicipalities[selec,]
+
+With this sample select, we will use the package survey to do this data estimation:
+
+library(survey)
+sample$N = N
+SRS = svydesign(id=~ 1, data = sample, fpc = ~ N)
+SRS
+
+After estimate thie average, and the standard error:
+
+svymean( ~ averageincome, SRS)
+
+The result found was 24888 to the average almost 211 to the Standard error. 
+
+Module 2:
