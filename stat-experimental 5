@@ -374,4 +374,5 @@ standard error of total (thousand)            3611                         432.7
 
 Observe the interested on result at table 1, because to compare the same sample plan with the same sample using the fpc, can be possible to decrease the estimation error. We always need to find the same estimation for less error possibles. To comparin the estimation from the average or the total, the result are the same from another, but the standard error are the measure from fpc which decrease. So, always if you have this information, you can use this specifications for the sample plan.
 
-## Estimation for each strata: 
+## Estimation for each strata:  
+648 line
