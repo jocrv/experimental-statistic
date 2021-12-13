@@ -183,3 +183,195 @@ svymean( ~ averageincome, SRS)
 The result found was 24888 to the average almost 211 to the Standard error. 
 
 Module 2:
+
+Describe the package survey to estimation from stratification sampling: On module before we saw the principal related with the sampling. We say the software constructed by packages, which one the person could created your own sand share with the users in comunity. Now, let's explore this about survey package to estimation data. So, we saw the stratification sampling with software R and how to do correctly some type of allocation with samples exists. Survey package: before we saw the using of survey package to do this estimation for all variables. The survey was created in 2004 by Thomas lumley in Auckland University in Newxxeland. It contains a series of function with interns parameters availables with the analyse data by sampling complex. To use this package step by step: The first step is select the sample to use how we can be done the package sample. Step two  In this part is necessary specify the sample plan used among by function svydesign() Step three: with the industrial drwan constructed, we can use the functions survey to do this estimation consider with this plan. All this special functions starts with svy, for example, the svymean() and svytotal()
+In case of stratification sampling SS the first thing to do is verified if have some base refeer to this strata. Remenber how is in SS all strata have to be select samples. To do this select we gonna use again the package sample. The ideia is just use the fuction library sampling to select all samples and the library survey to do this estimation. For this function we gonna use the parameter:
+
+svydesign(id= ~, strata=~, data=, weights=, fpc=, method=) 
+
+Let'se see this parameter to the function svydesign to package survey: 
+ID indicated the unit of sampling to groupin in a cluster. As a sampling for conglomerates not use here, we just have to put ~1 or ~0 with the hightlighter on position 
+strata:  argument to say the variable using to do this stratification
+data: parameter refeer to the named data base of sample
+weights: indicate the weight sampling for this unit. In this case, it'll influencer by the factor of strata sampleh and by the population sixxe (wh= nh/Nh) If it won't want using the weight, it can use the weight of probability from selection too, because the weight and the probability of selection will be inverse quantities. 
+Think about this example: If you select 4 companies in total of 1000 for analysis. What is the probability fro select one of this companies? Honestly we do P=4/1000= 0,004 For each one of this companies the chance is 0,4% to be select. Now, think about on this question: how many companies for each one of these four companies have to be represents?
+step by step: step one to select four of 1000, this 4 companies select have to reply for it or another company were not been select. That's a idea for weight, be more representative for whom aren't select just for all them who will. Step2: just dot it w=1000/4=250 it means, the iformation for each company will be weight from 250 because she need represent other it won't be selecting. In this example, the sampling weight for one of theses unit is 250. If you repair, it's related among 0,004 from probability of selection and the value 250 of weight. Step three: it's a universe from another. If we multiple 250*0,004 the result will be equal for 1. So, we got the probability from selection, just 1 divide for itself and we found the weight. Obtain these two magnitude you automatically can weight another. 
+For function svydesign, you need option for informe how the probability for than weight. In case, just be blank, and the software will understand it had been do a stratification selection with weighting equals among the strata. 
+fpc - argument using to do this correct because of the population have to be finit (finite population correction). It's a vector added base one sample which one register will add the total of population. If we are doing the stratification sample, the fpc will be the total of populational for each one of theses stratas. The important part of these using is, knowing the total value of population, it's possible reduce the variance when the substantial fraction from total population be sampling by sampling of data. After this the object in sample plan, we can just using svymean and svytotal to do the estimation fro the average and the total of these respective weight for standard error. 
+Data base MU284: To construct this in the stratification sample plan after this do this estimation from this sample, used again the base MU284. How this plan is more complex, because involves the stratification let's check details for this data. On base contain all of 11 differents bases describe to 284 cities on Sweden. So the variable is: ID the identifier for each city with tha values among 1 and 284. P85 population from 1985 (in thousand conversion) P75 Population from 1975 (in thousands) RMT85 Tax revenue for town in 1985 (in thousand from swedish crowns) CS82 Numbers of politicians conservatives in town council  SS82 Numbers of politicians social democrats from the town council  S82 Number of total politicians in town council ME84 Number from employees in town in 1984 REV84 Values from real estate according to the assessment from 1984 (in millions from swedish crowns) REG Indicator from geographic region CL Indicator from a cluster (one cluster consits in group for town neighbohood)
+To do this stratification sampling based on in that base, we gonna used the variable REG, it's a indicator from geographic region with the variable from stratification
+
+Sampling stratification with R:
+We are selecting the simple stratification sample without replacement of sixxe 80 with proportional alocation on sixxe of stratas. Let's understand the parts for each one of this sample plan. First, we will investigate on population how many strata exists. Well done this, we will do a proportional way of this sixxe for each strata for a allocation in sample, so this stratas will receive more sample than others stratas, it will receive small sample. In this way, we indicated the quantity of units will be select on for each strata by the methos SRS without replacement. For all, we do the stratification been realixxed, we can created our object from sample plan and do our estimations. First of all, to do this  SS to verified the quantity for strata we got in this register, it means our population. Remember, it need to do the register will be review to search some mistakes and possibles inconsistencies, and besides that, be constantly refresh. First, read all our data and discovery how many regions we have on this base, it means how much strata we need to created. To do this using againa the base MU287 from this way:
+library(sampling)
+data(MU284)
+table(MU284$REG)
+
+The result found after run this code below is:
+table(MU284$REG)
+1 
+25
+2 
+48
+3 
+32
+4 
+38
+5 
+56
+6 
+41
+7 
+15
+8 
+29
+
+Based on this result obtain in table 3, we have 8 regions possibles to do this stratification. And, we have the total for each region, for example 25 town of region, 1,28 town on region 2 , and successively. To find this weighting factor on strata Wh, we do Wh = Nh/N it means the proportion for each region is in relation for the total. Besides the R, we got:
+
+prop.table(table(MU284$REG))
+
+SO WE HAVE THIS WEIGHT IN RELATED WITH THE STRATA OF Total
+
+prop.table(table(MU284$REG))
+1 
+0.08802817
+2 
+0.16901408
+3 
+0.11267606
+4 
+0.13380282
+5 
+0.19718310
+6 
+0.14436620
+7 
+0.05281690
+8 
+0.10211268
+
+If you added all this values, you can find the value 1, because the total have to result 100%. How we can used this proportional allocation, this distribution maintains the fraction of sampling for each strata h equals the fraction populacional. It means, in this type of allocation, the preview sample is defied of sixxe n and distributed proportional for sixxe of strata. This allocation is given by nh= n Nh/N in R, just:
+
+80*prop.table(table(MU284$REG))
+1 
+7.042254
+2
+13.521127
+3
+9.014085
+4
+10.704225
+5
+15.774648
+6
+11.549296
+7
+4.225352
+8
+8.169014
+
+Based on this information we can calculted the sixxe of sample for each strata. It's important to rounded every sixxe from sample for integer superior more closer. // Be careful: in that way, you can obtain the minimum required for strata. It could happen because the sample sixxe in the end will be bigger than the planning previewer. Based on this the sixxe of sample for each strata will be 8, 14, 10, 11, 16, 12, 5 and 9 and the sixxe pass from 80 to 85 units. // To select this stratification sample, we used the function strata, it'll be a part of sampling package, in that way: 
+
+set.seed(3) 
+selec = strata(MU284, stratanames = "REG", sixe = 
+c(8,14,10,11,16,12,5,9), method = "srswor")
+selec
+
+With this using seed, we find the same unit for select one. Just rounded selec, you can see the print in screen on select sample. Let's use the command to se the first 10 units from a sample. You can substitue the 10 below for each value:
+
+head(selec,10)
+
+Te result found is:
+
+head(selec, 10)
+REG ID_unit             Prob Stratum
+1             4  0.3200000   1
+1             5  0.3200000   1
+1             7  0.3200000   1
+1             8  0.3200000   1
+1             10 0.3200000   1
+1             11 0.3200000   1
+1             12 0.3200000   1
+1             21 0.3200000   1
+2             27 0.2916667   2
+2             30 0.2916667   2
+
+Note the table above we got 4 columns, and the region REG; the Id_unit which identify the select; variable Prob the probability from selection; the stratum, equal a REG created by the same fucntion. Let's try understand how to obtain the probability to select to two stratas. The first on we got 25 companies on strata and how we want select just 8, just fo P1= 8/25 = 0,32. To the strata 2 we got P2= 14/48 = 0,2916667 and successively for others.To filter just one vraiable from one file, we use the symbol $ separate the name base from the name of variable. We, obtain just the probability from select on this way:
+
+selec$Prob
+
+We have the select unit, we need to use the data base original to create the new object with all variables for this sample unit. So, we do this:
+
+ sample = getdata(MU284, selec)
+ head(sample, 8)
+
+The functiogetdata can complete the sample data with all information for this population MU284. The base named sample will contain all information possible just to select units. With this sample well stablished, we can construct the sample plan after realixxe the estiomation from data. To create the vector fpc with the population total. For example, the 8 first register are strata 1 which got 25 unit for population, we have to repet all the 25 on 8 row, and successively for all strata. In our vector will be done with the command repetition rep below:
+
+fpc=rep(c(25,48,32,38,56,41,15,29),c(8,14,10,11,16,12,5,9))
+fpc
+
+
+To specify the sample plan we use the command svydesign, to put the variable from stratification, the probability for select and the fpc. So, we got:
+
+library(survey)
+plan_est = svydesign(id = ~1, strata = ~Stratum, probs = ~selec¢Prob, 
+data = sample, fpc = ~fpc)
+
+With the sample plan specify, we can use the function svymean to do this estimation, like this:
+
+## Estimation average and the standard error for the variable P85 consider the sample plan stratified:
+
+svymean(~P85, plan_est)
+
+with this result above our estimation from average populational is 20.068 people and the standard error is almost 1272 people( remember this data are in thousand measure)
+
+## Estimation from total and the standard error from a variable P85 consider the stratification sample plan:
+
+svytotal(~P85, plan_est)
+
+For this estimation from populacional total, we obtain 5700000 people with the standard error about 361100 people. In this way we can obtain estimation for the average in populacional total from our variable P85. You can repet all this process to another variable from this bank and compare the results. 
+
+## Another way to obtain the same results: We need to do the estimation from the quantity from interested using the sample plan create by the function svydesign. One of this parameter informed were the probability to select. We can obtain the same result have been indicate on function which the sample weight instead the probabilty from selection. As we see the probability ad the weight are inverse quantitie, we can use this software and indicate the vector from weight at these moment to create the sample drawn. To do this, we can added the column on this base for sample the values of weight to this way:
+
+sample$WEIGHT = 1/sample$Prob
+
+What we're doing is acess the sample base and add the column named weight with the values 1 divide for respective probabilities from select for each row. Now, we can do this specifications from sample plan again. Let's named plan_est2 and after this we can estimate again our average and variances:
+
+plan_est2 = svydesign(id = ~1, strata = ~Stratum, weights = ~WEIGHT,
+data = sample, fpc= ~fpc)
+
+Repair in this code below with the parameter of probabilities from selection was substitue the parameter weight. We do this estimation for the second plan, we got:
+
+svymean(~P85, plan_est2)
+svytotal(~P85, plan_est2)
+
+Comparing the results and notic we found the same values. So, we can indicated the function for how much possibilities in this selection how the sample weight. In case we indicated nothing, we can assume the strata are the same sixxe.
+
+##Result without FPC:
+
+Let's do this estimation ignores the factor from correction in finit population. This factor is important, because indicated the sixxe of population in each strata. So, this software doesn't neet assumes the population is infinit, and the estimation error decrease.  In this case, just eliminate the parameter and do this again with this estimation, let's name this drwan with plan_est3. So we have:
+
+plan_est3= svydesign(id = ~1, strata = ~Stratum, probs = ~selec$Prob, 
+data = sample)
+
+we can using this weight instead the probability for selection:
+
+plan_est3 = svydesign(id = ~1, strata = ~Stratum, weights = ~WEIGHT,
+data = sample)
+
+The estimation done by:
+
+svymean(~P85, plan_est3)
+svytotal(~P85, plan_est3)
+
+This table above with comparision among the estimation on plan 1 or 2 with the facto fpc and the plan 3 without factor:
+
+Estimation/ Sample plan                      Plan 1 or 2 (with FPC)        Plan 3 (without FPC)
+average (thousand)                            20068                          20.068
+standard error of average (thousand)            12715                       15237
+total(thousand)                                  56994                     5699.4
+standard error of total (thousand)            3611                         432.73
+
+Observe the interested on result at table 1, because to compare the same sample plan with the same sample using the fpc, can be possible to decrease the estimation error. We always need to find the same estimation for less error possibles. To comparin the estimation from the average or the total, the result are the same from another, but the standard error are the measure from fpc which decrease. So, always if you have this information, you can use this specifications for the sample plan.
+
+## Estimation for each strata: 
