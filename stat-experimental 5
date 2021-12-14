@@ -375,4 +375,325 @@ standard error of total (thousand)            3611                         432.7
 Observe the interested on result at table 1, because to compare the same sample plan with the same sample using the fpc, can be possible to decrease the estimation error. We always need to find the same estimation for less error possibles. To comparin the estimation from the average or the total, the result are the same from another, but the standard error are the measure from fpc which decrease. So, always if you have this information, you can use this specifications for the sample plan.
 
 ## Estimation for each strata:  
-648 line
+## Estimation for each strata: 
+The big advantage to use this SS is the possibility to do general estimation and particular for each strata. In this wat, we can follow the average and a specific total for any region, how it's the case from this example. For all this, we can use svyby and specify inside the parameter FUN the svymena, to estimate the average or the svytotal for estimate the total. We can use the follow commands:
+
+svyby(~P85, by = ~Stratum, design = plan_est, FUN = svymean)
+
+And the result presents by R for average is:
+
+svyby( ~P85, by = ~stratum, design = plan_est, FUN = svymean)
+Stratum  P85       se
+1  1  4512500    5. 965668
+2  2  19.57143   3.393806
+3  3  1890000    1.963893
+4  4  17.45455   1.751120
+5  5  17.81250   3.007153
+6  6  13.08333   1.409803
+7  7  27.40000   6.343501
+8  8  14.44444   6.214726
+
+svyby(~P85, by = ~Stratum, design = plan_est, FUN = svytotal)
+
+And the result presented by R were the total of:
+svyby(~P85, by = ~Stratum, design = plan_est, FUN = svytotal)
+Stratum  P85        se
+1   1  1128.1250  149.14170
+2   2  939.4286   162.90271
+3   3  604.8000   62.84457
+4   4  663.2727   66.54255
+5   5  997.5000   168.40056
+6   6  536.4167   57.80190
+7   7  411.0000   95.15251
+8   8  418.8889   180.227705
+
+And the result presented by R is the total of:
+
+svyby(~P85, by = ~Stratum, design = design = plan_est, FUN = svytotal)
+Stratum  P85 se
+1  1   1128.1250  149.14170
+2 2 939.4286  162.90271
+3 3 6048000 62.84457
+4 4 6632727 6654255
+5 5 9975000 168.40056
+6 6 5364167  57.80190
+7 7 4110000 95.15251
+8 8 418.8889  180.22705
+
+It's interested with this estimation by strata, because we can see the strata 1 of total estimation from total and the average of populacional are bigger than others. And it's possible about estimation of average and total we find the value from general values. To this total, just add for example, for each strata, we have, Y AE= 1.128,1250+939,4286 + 604,8000+663,2727+997,5000+ 536,4167 +411,0000+418,8889 = 5699,4   And this is the value exactly we found when we did the estimation from general total. 
+
+Example1: About the base MU284, do the average from estimation and the standard error to the variable RMT85 - Municipal Tax Revenue in 1985 ( in thousand of sweden crowns) to stratification plan with the proportional allocation by sixxe of strata. Using the package sampling to select the sample and the package survey to do the estimations. Besides that, using the seed equal 3 and one sample by sixxe 50 on RStudio. In this way, which is correct: The estimation of average populacional is almost 175040 people, with the standard error of fence 21509. To load the package sampling, do this lecture of data base and be clear the sixxe of population N the sixxe of sample n, so the code:
+
+library(sampling)
+data(MU284)
+N= nrow(MU284)
+n=50
+
+We've to do the proportional allocation with the sixxe for sample n=50, so:
+
+table(MU284$REG)
+50*prop.table(table(MU284$REG))
+
+With this quantity obtain (remember to always rounded to upper) for each strata, we can select the stratification sample:
+
+set.seed(3)
+selec = strata(MU284, stratanames = "REG", sixxe = 
+c(5,9,6,7,10,8,3,6), method = "srswor")
+sample = getdata(MU284, selec)
+
+We can indicated the parameter fpc with populacional total for each row base on the sample:
+fpc=rep(c(25,48,32,38,56,41,15,29), c(5,9,6,7,10,8,3,6))
+
+Now we can specify the sample plan:
+
+library(survey)
+plan_est = svydesign(id= ~1, strata = ~Stratum, probs = 
+~selec$Prob, data = sample, fpc =~fpc)
+
+Finally, we can estimate the average and the standard error:
+
+svymean(~RMT85, plan_est)
+
+The results found were 175.040 people for the average and the 21509 for the standard error. 
+
+example2: By sampling package we can work with the database from towns in Belgium. The lecture from this base named belgianmunicipalities. She contains the series of informations of a lot town in Belgium. One of this variables is per capita income based on named averageincome. Which is the estimation from standard error average for the sample sixxe 300 for the region 1? Do this estimations and find the fpc and without fpc// the standard error average with the FPC is the 282.973 euror and without fpc is 406026 euros. First load the sampling package, do this read from data base and be clear with the sixxe of population N and the sixxe of sample n:
+
+library(sampling)
+data(belgianmunicipalities)
+N= nrow(belgianmunicipalities)
+n=300
+
+We can do the proportional allocation of sixxe from sample n=300, so:
+
+table(belgianmunicipalities$Province)
+300*prop.table(table(belgianmunicipalities$Province))
+
+With the quantity obtain ( remember to rounded for up) for each strata, we can select the stratification sample:
+
+set.seed(5)
+selec - strata(belgianmunicipalities, stratanames = 
+"Province", sixxe = c(36,57,33,34,36,43,23,23,20), method
+= "srswor")
+sample = getdata(belgianmunicipalities, selec)
+
+We can indicated this too with the parameter fpc with the populacional total for each line base on sample:
+
+fpd=rep(c(70,111,64,69,84,44,44,38), c(36,57,33,34,36,43,23,23,20))
+
+Now, we can specific the sample plan:
+
+library(survey)
+plan_est = svydesign(id = ~1, strata = ~Province, probs = ~selec$Prob, data = sample, fpc= ~fpc)
+
+We can estimation the average for the Standard error for each strata:
+
+svyby(~averageincome, by = ~Province, design = plan_est, FUN = svymean)
+
+We want to find the strata 1, obtain the error 282 973. The result without fpc are fiven by:
+
+plan_est2 = svydesign (id = ~1, strata = ~Province, probs 
+= ~selec$Prob, data= sample)
+svyby(~averageincome, by = ~Province, design = 
+plan_est2, FUN = svymean)
+
+The result for the strata 1 without fpc is 406026. We notes the standard error is bigger if it not informe the total of populacional among the parameters fpc.
+
+## Module 3
+Select the sample based on the sistematic sampling and conglomerates with the estimation for this plans in software R. Before this we saw the principal characteristic for survey package to do this specifications and the estimation of stratification sampling on software R. Now, let's explore the survey package now with the sampling conglomerates. Let's see the difference between the function because of using the sample divide from cluster. Besides thta, we need to do some comparision among sample plan and see the sistematic sampling to do this sample select. 
+
+Sampling the conglomerates on R:
+Another method using at moment of prepare the sample plan and the cluster sampling CS. The advantage of this plan said about the operational part, in sens of decrease the cost of this operation. Select the conglomerates and investigate the population inside, is in general, more cheap than other methods of sampling. The SC could be done for a lot stages, but we need to discuss the population been totally distributed inside some cluster. Remember the SC on stage 1 first to select the conglomerates and after this investigate all unit inside. Come back to the data base MU284, with the 284 town from Sweden. Diffently from cases befores, we gonna use the "CL" which delimits the cluster for each register from base. Let's select the sample for sample cluster without replacement in one stage, where the cluster are defined with the variables CL in our population in town. To do this comparision with the plans befores (stratification, for example), we gonna use the sample sixxe of sample n=80 towns. To do this explore table to search how much cluster in our population are divide:
+library(sampling)
+data(MU284)
+data=MU284table(MU284$CL)
+
+table(MU284$CL)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 
+5 5 5 5 5 5 8 5 8 5 6 8 5 7 6 5 8 5 5 5 5 6 5 5 5 5 
+27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+5 8 5 5 7 5 5 6 5 6 5 6 5 5 5 5 5 7 8 5 5 5 5 9
+
+Note the figure with the population on town are divide in 50 cluster with the distributed so similar among they. To find the average general of towns inside the cluster just calculate:
+M0= 284/50 = 5,68
+
+So, the conglomerate got the average of 5,68 towns and if we want in this sampling had to be the sixxe of sample of fence 80 towns, we have to select almost 14 cluster because this happen 14*5,68=79,52 // We can use the sampling package with the function cluster to construct our sample. The function cluster produce the object with contain the select conglomerate, the identifier on towns belongings for one this cluster and the probabilities to select the same. Using the see with the value equals 5 we do on R:
+
+set.seed(5)
+ACS=cluster(MU284, clustername=c("CL"), sixxe=14, method=c("srswor"))
+
+Note how we just get in the name on base, and the name of variable which define the cluster, the sixxe of conglomerate what we want select, the method to select this units, in case the simple random sample without replacemente (srswor). To see how this cluster seelcting, we can use again the command head() how:
+head(ACS,10)
+
+head(ACS,10)
+CL  ID_unit Prob
+2        9   0.28
+2        10  0.28
+2        7   0.28
+2        8   0.28
+2        6   0.28
+3        13  0.28
+3        12  0.28
+3        14  0.28
+3        11  0.28
+3        15  0.28
+
+The first 10 units select and the respective clusters. To this figure we got these respective identifications of units and the clusters. Repair the probabilities of selection is the same for all element, independent the cluster he is. Remember how we do this sample plan cluster on first stage, so, data the cluste had been select all the unit are been inestigatin. So, the important is select the cluster, and not the units inside there. So, the probabilitie is fix and given by unit from cluster which we are selecting divide in total exists, like this:
+
+P(s)=14/50=0.28
+
+Now, we have the cluster select we will cross this information with the original bank and obtain other variables refeer for this respectives units samples. Using again the function getdata:
+ACSs= getdata(MU284,ACS)
+
+To visualixxe this information for each units for cluster select, we can do this:
+fix(ACSs)
+
+Remember to close the window before continue. Another point is construct the fpc factor. In this way, we adding the vector with the total sixxe from cluster, in this case the value 50. So, we replicate 50 according to dimension object SCSs.
+
+fpc2=rep(50,dim(ACSs)[1])
+fpc2
+
+Now we have to do this specifiction from our sample plan about the survey package and the function svydesign
+library(survey)
+PlanC=svydesign(id=~CL, data=SCSs, probs=~SCS$Prob, fpc=~fpc2)
+
+Diffently of specifications before, now the id is not the value 0 or 1, it can receive exactly the variable cluster, base represents by CL. We can verified the definition of sample plan conglomerate construct by R, simply run run this code: 
+PlanC
+
+The result is given by:
+PlanC1- level cluster Sampling design
+with (14) Cluster
+svydesign(id=~CL, data = SCSs, probs = ~SCS$Prob, fpc = ~fpc2)
+
+Note how R describe perfectly the plan wich was constructed. We have the cluster plan in 1 stage for select the 14 cluster. Finally, the last step is to do the estimations to our variable from interested P85, So we got:
+
+## Estimation of average and the standard error for the variable P85 consider the sample plan conglomerate in one stage:
+svymean(~P85, PlanC)
+
+With this result, our estimation average populacional is 28354 people and the standard error is fence 2500 people ( remember the data are thousand)
+
+## Estimation from total and the standard error to the variable P85 consideer the sample plan conglomerate in 1 stage
+svytotal(~P85, PlanC)
+
+To this estimation from total populacional we obtain fence 8800000 people in standard error of fence 791400 people. In this way, we can obtain estimation from a average and the populacional total from our variable P85. You can repete all the process for other variable from bank and compare the result. 
+
+## Other way to obtain the same result: The same way we do this SS we can obtain the same result change the variable from probabilities from this selection by weight variable. How the weight and the probabilities from select are inverses magnitude we can just given:
+weight=1/SCS$Prob
+SCS$Prob
+weight
+
+With this we construct this vector of weights and can use inside the function svydesign to do this specifiction from sample plan. So we got:
+
+PlanC2=svydesign(id=~CL, data = SCSs, weights = weight, fpc=~fpc2)
+svymean(~P85, PlanC2)
+svytotal(~P85, PlanC2)
+
+Compare the result, and loook how we have the same, to the average estimation for the total too
+
+##Results without the FPC
+Now, we can see the estimation ignores the factor of correction of population finit. In this case just eliminate the parameter and do this again with estimations. Let's named this like drawn planC_without_fpc So we got:
+
+planC_without_fpc = svydesign(id= ~CL, data=ACSs, probs=~ACES$Prob)
+
+We use this weight instead the probabilities for selection:
+
+planC_without_fpc = svydesign(id=~CL, data=SCSs, weights = weight)
+
+The estimation are done by:
+
+svymean(˜P85, planC_without_fpc)
+svytotal(~P85, planC_without_fpc)
+
+This table above make the comparision between the estimation of plan 1 or 2 with the factor fpc of plan 3 without factor:
+Estimation/sample plan   plan 1 or 2 (with FPC)    Plan 3(without FPC)
+average (thousand)    28.354   28354
+standard error average (thousand)   25005   294668
+total (thousand)   8000  8000
+standard error of total (thousand)  791.4   932.68
+
+Observe the conclusion done by the result on table 2 are exactly equals the result in table 1, because if you compare the same sample plan you have the sample sample, the using of fpc make it could be possible increase the standard of estimation. If you compare this estimations of average or the total, the results coul be exaclty the same, but the standard error of measures the fpc increase. So, always when tou have this information using the especification in sample plan.
+
+## Compare the estimation from sample plan: After obtain the results in estimation average, total and the respective standard error to this sample of sixxe of fence equals by sample plan differents we can reunited the obtain in table 3 above:
+
+Estimation/sample plan SRS(with FPC)  SSS(with FPC)  SCS(with FPC)
+average (thousand)    266888           20068          28354
+standard error average (thousand)  25039 12715       25005
+total(thousand)       81472                  56994        8000
+standard error of total (thousand)  71112  361.1          791.4
+
+Note the value of standard wrror of sampling stratification is inferir to other two methods. It's suggests the SS got the efficiency superior the SRS and the SCS. It's interessed this result by point of view of sample sixxe, because the stratifications can obtain more result more efficient with the sixxe of sample less than than SRS for example. And the SCS is a method, in general, less efficience to others, because the coust to do this sampling is more cheaper than other cases.
+
+## Sampling sistematic on R:
+In this type of sampling we select the point of start the population and we collect our elements about the interval of retire k. The elements have been availables on theae for example, one line or list, and it have be done randomic way. If we have to do this survey with data on a factory of lamps, we can take one lamp for a test for each 100 parts producted. We can define the sample by percentegae P% from population could be done in this part of sample. So, we can find the value k by:
+
+k=1/P *100
+
+After this draw the number r integer among 1 and k and the sample are composed by element in order r;r+k;r+2k;r+3k and successively. Let's check how we can do this selection on softwareR. One restaurant desire meet the best profile for his customers and have conditions to interview a fence 20% of the same. In average 30 customers enter the restaurant along for a day in a process one line surely ordened. How we can do this samples: step by step step1: to using this selection in R we used the function simple. just first we find the K:
+set.seed(10)
+(k <- round((1/20)*100))
+
+step 2: With our interval established, we will draw the input r:
+(r<- sample(seq(1,k,1),1))
+
+step3: with the interval of selection and the input, we can indicated which will be the sample to be select in this case. It's possible to create function more complex which gonna do this automatically or just added r+nk in function below:
+c(r,r+k, r+2*k, r+3*k, r+4*k, r+5*k)
+
+In this case the unit will be a part of the sample: 3 8 13 18 23 28 
+
+So, a real problem on SS occurs on estimation of measure on precision. According to Bolfarine (2005), in case of population to been in order random, doesn't exists more problems to estimates the variance by SS with the expressions of estimations on SRS. So, you can just use the same expressios or functions for estimation the R using for SRS.
+
+Example1:
+one search were ordered by a company show will be realixxed by the way sampling sistematic. By estimation of tickets sale 7900 people (numered by 1 to 7900 will be pass the line on show. One sample sistematic will be done with 10% of this total. Which is the numered for the 3 firsts one and the last 3 people interviewer, using the seed equal 5):  The three first is: 2, 12, 22. the last three is 7872, 7882, 7892. First we need to find the sixxe of sample will be select. By the question we got 10% of 7900 so 790 interview. So we find the interval by taken k like: 
+set.seed(5)
+(k<- round((1/10)*100))
+
+The value of k is equal 10. Selecting randomixxed this input we have the value equal 2 from the command line:
+
+(r<- sample(seq(1,k,1),1))
+
+The last step is to fing the unit will be select so we do this:
+c(r,r+k, r+2*k, r+787*k, r+788*k, r+787*k)
+Remenver how the sequence input r, the last value is the sixxe of sample less 1, it means (n-1). So the value obtain is 2,12, 22, 7872, 7882, 7892 
+
+exmaple 2:
+Just do the lecture again from base belgianmunicipalities about the package sampling with the information contains from another town from Belgium. Let's continue working with the variable per capita income, on base named averageincome. Which is the estimation from average from the standard error for a sample for cluster with the sixxe 200? Do all estimation using the fpc (use the seed with the value 10) The average is 26794 euros and the standard error ir the average of 1146,4 euros. So, first we need to load the sampling package, and do the lecture of the data base and see how cluster exists in the population. so:
+library(sampling)
+data(belgianmunicipalities)
+N=nrow(belgianmunicipalities)
+N
+table(belgianmunicipalities$Province)
+
+We note the 9 clusters in this population, so divide the total N=589 by 9 we got the average 65,4 units for cluster. So, we need the sample sixxe 200 so we need to select 3 clusters. So we got:
+set.seed(10)
+SCS=cluster(belgianmunicipalities,clustername=c("Province"),size=3,method=c("srswor"))
+SCSs=getdata(belgianmunicipalities,SCS)
+
+We need to indicate our parameter fpc with the total of population for each line base on a sample:
+
+fpc2=rep(9,dim(SCSs)[1])
+
+So, we can specify the sample plan: 
+
+library(survey)
+Plano_SCS=svydesign(id=~Province,data=SCSs,probs=~SCS$Prob,fpc=~fpc2)
+
+Now we can estimate the average and the standard error:
+svymean(~averageincome,Plano_SCS)
+
+The result obtain on R we got the estimation from 26974 for a average 1146,4 and the standard error of average suposed ona sampling cluster simple
+
+For all this module we can understand the importance of using software R on sampling in analysis data base on sample. On software could be free and be feed by other library for around the worls, it'll increase all the time for a lot of users. First discuss some aspect about the programming how to do this installing from RStudio and other statistic packages to intro the statistic. We saw the using of package sampling and how to do this selection and estimations by the way of simple random sampling. In the second parte we understand the characteristic more specific about the library survey, commoly using for estimations on differente sample plans. Learning about how to do this stratification sampling on R ans how to use survey to do this estimations. Comparin some differentes ways to obtain this data we learn how to do this estimations specific by stratification. Finnaly we investigate the sampling conglomerate and sistematic on R. We did some comparison with other of estimations obtain by random simple, stratification and conglomerate. Be clear the efficience of stratification to be substantial on calculus of this measure precision. So we have som surely, at the end of this theme, how to learn about software R on Statistic and Data Science.
+
+references:
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W. G. Sampling Techniques. 3rd. edition. New York: John Wiley & Sons, 1977.
+
+LOHR, S. Sampling: Design and Analysis. 2nd. edition. USA: Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. de O. Estatística Básica: Probabilidade e Inferência, Volume Único. São Paulo: Pearson Prentice Hall, 2010.
+
+R-PROJECT. R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing, 2019, Vienna, Austria. Consultado em meio eletrônico em: 28 out. 2020.
+
+SÄRNDAL, C. E.; SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. New York: Springer-Verlag, 1992.
+
+
