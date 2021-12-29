@@ -1,1 +1,819 @@
+DESCRIPTION
+The use of Simple Random Sampling with and without replacement to estimate the quantities of interest, the estimation of means, totals and proportions, the sample size necessary for these calculations.
 
+PURPOSE
+Conceptualize the Simple Random Sampling technique with and without replacement to estimate the quantities of interest in a research. Present the expressions used to perform this estimation and to define the sample size according to the intended sampling error. Present the concept of proportion and estimates based on this type of sampling design.
+
+PREPARATION
+Before starting the content on this topic, make sure you have paper and pencil around to follow up on the examples and demonstrations. Furthermore, the normal distribution table is important when studying sample sizes.
+
+GOALS
+Module 1
+Identify the two types of selection by Simple Random Sampling, notations used and selection probabilities
+
+Module 2
+Recognize some notations used in sampling theory, the sampling distribution and the expressions for estimating totals, means and variances in Simple Random Sampling
+
+Module 3
+Identify the important aspects about the sample size, expressions for its calculation and estimation of proportion variables
+
+MODULE 1
+Identify the two types of selection by Simple Random Sampling, notations used and selection probabilities
+
+INTRODUCTION
+The most basic, famous and used form of sample selection is the Simple Random Sampling method. This module will analyze the two existing Simple Random Sampling selection types:
+
+With replacement
+
+When sampling units can be selected more than once
+
+no replacement
+
+When sampling units are selected only once
+
+The methods have their particularities that will be investigated when estimating the data. In addition, sample size calculations will be presented under various situations. You will find that you have performed Simple Random Sampling many times in your life without even realizing it.
+CONCEPTS ABOUT SIMPLE RANDOM SAMPLING (AAS)
+Simple Random Sampling (AAS) is a sampling technique in which the selection is random and each element has an equal probability of being drawn to the sample. Furthermore, it is selected independently of any others. Thus, the probability of all possible sample combinations is known.
+
+summing up
+Using a random procedure, an element of the population is drawn with equal probability.
+
+AAS is the most basic form of selection, but it is the most important form of sampling. It is the basis for more complex sampling plans. Everyone has made or seen a selection by this method. Want to see an example?
+Example
+When you participate in a draw and they select a coupon inside an urn, what you do there is a simple random selection. Someone organizes an urn, people add papers inside, and on the day of the draw, a person mixes everything up and selects a coupon.
+
+Note, in this case, that all coupons have the same probability of being selected. Neither paper should stand out from the other, nor can it have any markings that allow it to stand out from the others (a thicker, harder, rougher, different color, heavier or lighter paper, etc.). Everyone must be absurdly the same.
+
+Furthermore, there are two ways to use the AAS method, they can be with and without replacement.
+
+AAS with replacement
+
+When sample units can be selected more than once for the same sample, the selection is said to be with replacement. If in a two-car draw, the winner of the first car has their coupon put back in the urn, then we say we have Simple Random Sampling with replacement.
+
+AAS without replacement
+
+When sample units cannot be selected more than once for the same sample, the sample is said to be non-replaceable. If in the two car draw, the first winner's coupon is discarded for the second prize, then we say that a simple random sample was taken without replacement.
+PRACTICAL DIFFERENCES IN SELECTIONS WITH AND WITHOUT REPLACEMENT
+The choice of which of the two methods to use depends on the nature of the study, but the most common in practice is the use without replacement. Allowing the same person to be selected twice ends up having a practical negative effect. If the same person wins twice in a row with the same ticket at a prize, they will surely think it's marmalade. However, this could perfectly well happen, since once again in the urn, its probability is again greater than zero (which is the same as any other coupon in the box).
+
+See examples of AAS without replacement below:
+Mega-Sena
+In this method, there are 6 dozen number options available (1 to 60). Thus, the balls are selected and the presenter returns to the audience with the 6 selected numbers. Many studies are carried out to ensure the fairness of the draw, as the balls cannot have a difference in weight or size, for example. They must all be the same for the selection to be completely random. Furthermore, they must be independent. That is, when removing a ball from the urn and noting its value, the selection of the next ball must not have any influence on the previous one. Whether the previous one was odd or even, whether it was a large or small number, nothing concerns the next selection. What if the Mega-Sena was with replacement? This means that the same number could appear more than once, which would make it even more difficult (if possible) to win at Mega-Sena.
+
+
+Bingo
+Another widely used example of AAS without replacement is the famous bingo. In the game, several stones are removed from a reservoir, and this is done without replacement, that is, once that number has been selected, it doesn't go back to the urn. It would make no sense to return it to the sample selection site. That would just get in the way. Therefore, one method or another must always be thought of regarding the type of study carried out.
+We will see below how the replacement plan ends up being less used in practice.
+
+Comment
+We have to get used to a first statistical notation. It is a simple notation, but widely used in sampling. We use N to refer to the size, quantity of the population and n to refer to the size, quantity of the sample. When you see a survey with N = 10000 and n = 350, it means that 350 individuals were selected from a population of 10000. And this notation is independent of the selection plan adopted. Pay attention every time you come across this terminology so as not to confuse the two quantities.
+
+Let's look at a practical example to better understand Simple Random Sampling. Suppose a company has 12 employees whose salary distribution is as follows:
+
+ 
+PEOPLE
+
+ INCOME (BRL)
+
+THE ...........
+
+ 1300
+
+B ...........
+
+ 6 300
+
+Ç ...........
+
+ 3 100
+
+D............
+
+ 2 000
+
+AND ...........
+
+ 3 600
+
+F............
+
+ 2 200
+
+G............
+
+ 1800
+
+H ...........
+
+ 2 700
+
+I............
+
+ 1500
+
+J............
+
+ 900
+
+L ..........
+
+ 4 800
+
+M..........
+
+ 1900
+
+S (Sum) .........
+
+ 32 100
+
+μ (Average) .........
+
+ 2 675
+
+ Table 1 - Salary distribution of 12 people in a company | Source: author
+
+Our interest here would be to know the average income of this population consisting of N = 12 units, that is, 12 people, and for that, we will use the selection by AAS. Of course, for such a small population, a census could be carried out, but for didactic purposes, let's assume that a sample selection by Simple Random Sampling is carried out.
+UNIT SELECTION METHOD
+There are numerous ways to select from the population of size N the units that should participate in the sample. As we have 12 stocks, we could select a sample from size 1 (minimum value) to size 11 (maximum value), as, above that value, we would have the use of all elements, ceasing to be a sample and becoming a census.
+
+summing up
+We can say that in every population we have 1 ≤ n ≤ (N - 1) sample units that can be selected.
+
+In this example, the sample can take the following sizes: n = 1, n = 2, up to n = 11, ie 1≤n ≤ 11. But this in small populations is simple, because we can list all possible cases.
+
+At the moment, we will work with small samples and, later, after consolidating the acquired concepts, we will start to take larger flights. Suppose that from Table 1, we will select a sample of size n = 2 consisting of 2 people. We would have many combinations to choose from and some of the possible samples are AB, AC, ..., LM, AA, DD, .... In some cases there are samples made up of two different units and in others the units are repeated (AA , DD, ...). If we allow the study to be AAS with replacement, we can have the same person chosen twice, if we choose without replacement, it could appear only once.
+
+It is very important that the selection is not influenced by subjective factors (operator preferences), that is to say that the selection must really be "random" or "random". For AAS to be really effective, there must be no manipulation or influence in the selection of units.
+
+
+The AAS method is very simple, but it requires access to some kind of register or list to make the selection of units. It is necessary to have such registration or a repository with all the options in order to make a selection.
+
+Comment
+Although simple, it is not always feasible to carry out AAS in practice. Electoral polls, for example, should not be done that way. Imagine a survey of this size throughout Brazil. It would be necessary to have a list with all the voting people, and as Brazil has around 150 million voters, it would be necessary to enumerate from 1 to 150 million individuals and, based on that, draw some. Individuals could appear from anywhere in the country, making it a very costly method. For small populations it works well, but when the population is large and spread out it can be more difficult.
+
+Returning to our example, let's assign each person a number from 1 to 12 by matching 12 tokens numbered 1 to 12, placed in a bag. After mixing them, we start the selection. We pull out the first sheet, note their number to find out which person is selected, and then we pull out the second sheet. If the selection process is with replacement, then the token selected in the first selection is put back in the bag, and in the case of selection process without replacement, it is kept out of the bag after the first selection.
+
+SELECTION PROBABILITY
+The selection probability of each unit of the population of size N to participate in a sample of size n is equal to n/N.
+
+Example
+If you participate in a draw for 1 car (n = 1) among 1000 people (N = 1000), the probability of leaving there motorized is n/N = 1/1000=0,001. Multiplying it by 100 to turn it into a percentage would give you a 0.1% chance of winning.
+
+Let's go back now and analyze the industry example (Table 1), in it we have N = 12 and the possible sample sizes would be n = 1, 2, 3, ..., (N - 1). That is, we can select 1 individual, 2, 3, up to 11 individuals. In this case, fixed N, the probability of each population unit (person) being selected for a sample is a function of the sample size, as it will depend on the value of n to make the calculation. The more people you select, the more likely you are to be selected.
+
+Do you agree that if we select 10 out of 12 people, the probability of being chosen is much greater than if it were a selection of just one individual?
+
+Initially, let's say that we are going to select a sample of size 1. The possible samples of size n = 1 would be (A), (B), (C), ..., (M), in all 12 samples; the selection probability of each person is n/N = 1/12. Likewise, the possible samples of size n = 2, without replacement of the units, would be (AB), (AC), ..., (BC), (BD), .. ., (LM), a total of 66 different samples (we'll see how to find this number below). Now, the selection probability is n/N = 2/12  , that is, each unit of the population has a chance to participate in the sample 2/12 = 1/6.
+
+Heads up
+Notice how the chance of an individual becoming part of the sample doubled by doubling the sample size.
+
+SAMPLE SPACE
+In probability theory, the set of all possible and distinct samples of the same size n that can be formed with the N elements of the population is called the sampling space, conventionally represented by S.
+
+Example
+If the experiment is to flip a coin and check the face that fell face up, the sample space is the set S = {heads, tails}. It's all possibilities.
+
+For an ordinary die roll, the sample space is S = {1,2,3,4,5,6}. It is impossible for a result not to be one of these numbers or for more than one number at the same time. To find how many possible sample combinations we can draw from a population, we will use the concept of combination.
+
+COMBINATION
+We are often interested in getting the number of different samples that we can form from a total population. The expression, which is a function only of n and N, and gives us the total of possible and different sample combinations, is given by:  c n,N = ( N / n ) = N!/(N-n)! n!
+
+Remembering that N is always greater (or if it is a census it is equal) than n, therefore, 𝑁 ≥ 𝑛. Furthermore, (N / n ) it represents the number of different samples with n elements that can be selected from a population of N objects when the order of selection is not considered relevant.
+
+Heads up
+It is important to note that this expression is only valid for sampling without replacement, as there are no equal samples.
+
+Depending on the selection criteria, without or with replacement, the respective sample spaces are:
+
+
+IN CASE OF SELECTION WITHOUT REPLACEMENT
+For AAS without replacement, we will basically use the expression above to find the amount of samples available, ie . This means that a sample differs from another, of the same size, by the nature of its elements, or when at least one of its elements is different (AB is different from AM, but AB and BA are the same things). The order makes no difference in this case, as it makes no difference to select individual A first and then individual M, or first M and then A.
+
+In the case of n = 2, samples (AB) and (AC) constitute two distinct samples. The sample space S for n = 2 and N = 12 will be equal to the number of possible combinations of 12 elements of class 2, that is:
+
+S = C N,n = C 12,2= N!/ (N-n)! n! = 12!/(12-2)! 2! = 12!/10!2! = 66
+
+Thus, we have 66 distinct combinations of selecting a size 2 sample without replacement. You could select (AB), (AC) but never (AA) for example.
+
+IN CASE OF SELECTION WITH REPLACEMENT
+
+In the case of AAS with replacement, the calculation is even simpler, as the samples can be repeated, so for this case, just multiply the population size n times, with n being the sample size. That is, do S=Nn. This means that now one sample can differ from the other only in the order of selection of elements.
+
+In the case of n = 2 we have (AA), (AB), ..., (BB), (BA), ... samples. The respective sample space is given by S=Nn=122=144 possible samples that correspond to the possibilities with repetition of N = 12 (population size) elements of class n = 2 (sample size).
+
+COMPARISON BETWEEN AAS WITHOUT AND WITH REPLACEMENT
+AAS without replacement is much more intuitive, as each unit of the population can appear only once in the sample.
+
+Example
+Imagine that you are thinking about opening a store in the center of a city. Doing research before opening a business or service is essential, as there you discover a lot about the needs of that population. Do you agree with me that researching the same individual more than once is bad? You want different opinions and not the same answer. Thus, in practice, in most cases, the scheme without replacement is used.
+
+It should be noted that AAS with replacement presents simpler mathematical expressions. If you look at the formulas above, used to find the amounts of possible sample combinations, you will see that with replacement it was much simpler. In the next module, we will look at the estimation of quantities of interest and this will become even more evident.
+
+Heads up
+Notice, in the previous example, when we calculated the quantities of possible samples, how the value of possibilities increased, in the case of AAS without replacement, from 66 to 144 samples with replacement. The number of possible samples has more than doubled, so there is a considerable difference in the two cases.
+
+When the population size (N) is large compared to the sample size (n), many of the results obtained with AAS without replacement are similar to those obtained by AAS with replacement. Thus, if the population is infinite (or very large), then withdrawals with and without replacement will be equivalent, that is, putting the element back into the population will not affect the probability of extracting the next element at all. So it makes little difference to adopt one selection method or another.
+
+
+Mega-Sena moves millions every month in Brazil. Thousands of people are betting a lot of money on the prospect of becoming millionaires. Now that you know about Simple Random Sampling, you already know that this Mega-Sena style of drawing is done without replacement. But how many combinations are there in Mega-Sena? (ie you will play 6 numbers between 1 and 60 and you will match exactly the 6 numbers drawn with just a single game).
+49 980 934 combinations
+
+50 760 943 combinations
+
+50 063 860 combinations
+
+51 043 231 combinations
+
+"C" is correct.
+
+
+We will have millions of possible combinations of 6 numbers among the 60 of Mega-Sena, but only a correct combination of 6 numbers in 60 among the existing millions. As the method used is AAS without replacement, we will use the combination formula.
+
+Soon,
+S = C N,n = C 60,6 = N!/(N-n)! n! = 60!/(60-6)! 6! = 60!/54!6! = 50063860
+
+In other words, we have approximately a sample space S = 50 million different possible games in Mega-Sena, which means that we have about 50 million different ways to choose the six numbers from 1 to 60. Here are some possible combinations:
+
+Soon,
+
+01 - 02 - 03 - 04 - 05 - 06
+
+13 - 18 - 22 - 42 - 49 - 54
+
+11 – 19 – 25 – 37 – 39 – 59
+
+
+For you to win at Mega-Sena with a single bet, your game needs to be the winner among the 50 million. That is, your chance to hit by betting just a single card is 1 in 50 million, which gives you a very small probability. Doing the division 1/ 150063860 we get the result of about 0.0000000199 ~ 0.00000199%. Good luck in your next games, you'll need it.
+
+2. For a population of size N, it was given that there are 105 possible combinations of samples of size 2 from a selection made by Simple Random Sampling without replacement. What then is the population size?
+N = 20 individuals
+
+N = 15 individuals
+
+N = 13 individuals
+
+N = 17 individuals
+
+B" is correct.
+
+
+How proud, that was a difficult question! To solve this problem, we need to use the combination concepts. However, in this case, we will do the opposite operation, as the sample size n and the number of samples S were given.
+
+Therefore,
+
+S = C N,n = C N,2 = 105 = N!/ (n-2)! 2! => 105.2! = N!/(N-2)! => 210 = N!/(N-2)!
+
+
+Using the factorial idea, we can make N! = N .(N - 1) .(N - 2)!
+
+Hence, , cutting (N - 2)! of the numerator and the denominator, we are left with 210 = N.(N-1)(N-2)!/(N-2)
+210 = 𝑁.(𝑁−1) => 𝑁² − 𝑁 − 210 = 0.
+
+Applying Bhaskara, we find two roots, N = -14 and N = 15. As the population cannot be less than 0, we discard the negative and get N = 15. Therefore, from a sample of size 2, 105 combinations were made by AAS, given a population of size 15.
+
+Rate this module:
+MODULE 2
+Recognize some notations used in sampling theory, the sampling distribution and the expressions for estimating totals, means and variances in Simple Random Sampling
+
+INTRODUCTION
+In the previous module, we studied the properties of AAS with and without replacement and the number of possible samples in each case. From now on, we will know the sampling distribution and use this selected sample to make various estimates.
+
+Tip
+We use the term estimation because we are working with a sample.
+
+Our goal is always to find values ​​that can reflect our population. However, when taking a sample, we will never be able to find the true population value, but an estimate of it. We want it to be as close as possible, but it still won't be the exact figure.
+
+In this module, we will then analyze the sampling distribution and estimation techniques for a simple random sampling selection with and without replacement.
+
+NOTATION AND COMMON LANGUAGE
+From now on, we need to define some other important notations, as we will start using some formulas with several variables to find the quantities of interest (a total or average, for example). In sampling, the following notation or symbology is usually used:
+
+UNIVERSE OR POPULATION OR SELECTION REGISTRY (N)
+It is the list of units from which the sample is selected.
+SAMPLE (N)
+It is the set of units we selected to observe.
+PARAMETER
+It is a fixed and unknown characteristic of the population which one is interested in studying. The parameters represent numerical quantities that can be interpreted by the researcher, for example: Average, proportion, variation, growth rate, totals, etc.
+ESTIMATOR
+It is a mathematical expression of the estimation calculation process.
+I ESTIMATED
+It is the value calculated from the data obtained by the sample to estimate the unknown value of the parameter.
+
+In addition, we also have:
+
+Greek letters and capital Latin letters represent population parameters.
+Lowercase Latin letters to represent characteristics in the sample.
+Example
+It's
+
+It's
+
+Note the differences in the formulas above:
+
+Greek letters or capital Latin letters
+
+We will use it when referring to a population parameter.
+
+lowercase latin letters
+
+We will use it when we are interested in the sample.
+
+In the population, we use Y and N (uppercase) and in the sample we have y and n (lowercase). Another examples:
+
+Population: Mean = 𝜇 Variance = 𝜎² Total = T
+
+Sample: Mean = 𝑥̅ Variance = s² Total = t
+
+SAMPLE DISTRIBUTION
+Let xi be the generic representation of an element of order i in the sample in relation to some variable x. Naturally, the sample of n elements is formed by the subset x1, x2, ..., xn.
+
+Tip
+With these values ​​of x, which correspond to the value of each unit selected for the sample, it is possible to obtain a frequency distribution and, from this, calculate the statistics.
+
+The sampling distribution is defined as the frequency distribution that can be formulated with the n x values ​​corresponding to the respective elements.
+
+summing up
+Such distribution is nothing more than creating a table with all the answer options referring to those selected samples.
+
+In our example in Table 1, when n = 3 we can form S = 220 samples. We'll only display 3 of the 220 combinations in Table 2, some of which are:
+
+SAMPLES        xi VALUES (Rents)         TOTAL (t)           AVERAGE
+
+(ABC)         (1300, 6300, 3100)          10 700                   3 567
+
+(ABD)           (1300, 6300,2000)                 9 600                    3 200
+
+(JLM)             (900, 4800, 1900)                7 600              2,533
+
+.....
+
+.................................
+
+....
+
+....
+
+ Table 2: Example of totals and averages from selected samples. | Source: author
+
+
+It is observed that each sample has its own frequency distribution formed by the elements that constitute it, generating different statistics. So each sample you select will have a different total, a different mean, a different variance. This is usually only a problem when the sample is very small, as as the size increases, the results become more accurate.
+
+Each sample of size n has its own sample distribution. As the sample space contains S samples, hence S frequency distributions, then all of the S frequency distributions generate a single distribution, which is defined by the sampling distribution. We will study the mean sampling distribution below.
+
+AVERAGE SAMPLE DISTRIBUTION
+Each sample has its average, therefore, the set of several samples generate a frequency distribution of the averages. We call this frequency distribution the sampling mean distribution, whose sampling mean is identical to the population mean.
+
+We saw in the industry example that numerous samples of size n can be formed with N = 12 people. In table 3, we have the average income distributions corresponding to the different sample spaces formed by samples of size n = 1, n = 2, n = 3, ..., n = 7.
+
+AVERAGE INCOME CLASSES, ESTIMATED THROUGH THE SAMPLE (R$1.00) DISTRIBUTION OF SAMPLE SPACES OF SIZE n
+n=1                 n=2          n=3                n=4                n=5          n=6                n=7
+800 |----------- 1200 ....	1	1	-	-	-	-	-
+1200 |----------- 1400 ....	1	2	3	1	-	-	-
+1400 |----------- 1600 ....	1	5	10  11	7	1	-
+1600 |----------- 1800 ....	-	6	15	25	25	16	6
+1800 |----------- 2000 ....	2	5	20	42	55	50	27
+2000 |----------- 2200 ....	1	6	22	50	78	84	61
+2200 |----------- 2400 ....	1	6   22	52	90	109	98
+2400 |----------- 2600 ....	-	6	19	52	101	139	136
+2600 |----------- 2800 ....	1	3	17	49	108	151	150
+2800 |----------- 3000 ....	-	4	16	57	101	133	130
+3000 |----------- 3200 ....	1	3	16	46	81	107	108
+3200 |----------- 3400 ....	-	3	16	38	61	79	62
+3400 |----------- 3600 ....	-	2	13	26	46	43	14
+3600 |----------- 3800 .... 1	2	10	21	27	12	-
+3800 |----------- 4000 ....	-	3	7	11	10	-	-
+4000 |----------- 4200 ....	-	3	4	10	2	-	-
+4200 |----------- 4400 ....	-	2	6	3	-	-	-
+4400 |----------- 4600 ....	-	1	1	1	-	-	-
+4600 |----------- 4800 ....	-	1	2	-	-	-	-
+4800 |----------- 6400 ....	2	2	1	-	-	-	-
+Number of possible samples	12	66	220	495	792	924	792
+Average of all samples 2675	2 675	2 675	2 675	2 675	2 675	2 675
+
+Table 3: All possible estimates of average income from non-replacement samples of the 12-person population. | Source: author
+
+
+Each sample allows an estimate of the average income, and for each sample size, the average of the average incomes are indicated in the last line of the table, which are all necessarily equal to the average income of the population under study.
+
+Example
+If you calculate the average income of the population (add the 12 values ​​of individuals and divide by 12) you will find R$2675.00. Note that all samples used have the averages of their samples also equal to R$2675.00. This shows how the sample mean can be used to estimate the population mean.
+
+Other important results from table 3
+The frequency distribution of the sample means has a lower limit of R$800.00, while the upper limit is R$6,400.00 with a total range of R$5,600.00 (6400 - 800).
+
+Example
+The sample of size n = 2 formed by people D and E has an estimated average income equal to 2000+3600/2 = 2800,00. This average income is close to the class (2600 - 2800) that contains the average income of the population.
+
+Likewise, the sample formed by people B, C, E, L estimates the average income in 6 300+3100+3600+4800/4 = 4450,00
+
+being the only one of the samples of size n = 4 among the 495 possible samples whose estimate of average income is contained in the class (4400 - 4600).
+
+Comparing the seven average income sampling distributions corresponding to the sample sizes n = 1, 2, ..., 7 the observations stand out:
+
+• As the sample size increases, the greater the tendency of the sample means to be concentrated around the class (2600 - 2800) that contains the true population mean equal to R$2,675. It is inferred that the estimate comes closer to the true value as the sample size increases.
+
+• The larger the sample size, the greater the tendency for the distribution of sample means to approach the normal distribution. Note that the sampling distribution of means for n = 7 is closer to the normal distribution than for n = 4.
+
+BUT WHAT IS NORMAL DISTRIBUTION?
+In statistics, we call distribution every probability function that defines a curve (graph), and the area below this graph shows us the probability of some event related to it happening. Imagine the situation where you are given a series of data to analyze, but since you have not investigated such data, that is still something completely unknown to you.
+
+Wouldn't it be interesting if you knew how that data behaves? And wouldn't it be even better if, knowing how that data behaves, you had some reference already consolidated with well-defined properties and mathematical formulas? That's why we use statistical distributions.
+
+If we manage to fit these distributions in our data, we leave the unknown Universe and start to "step" on better known soils. There are several statistical distributions in the literature, some used only in very specific cases and others used all the time. We will see the case of the best known, which is practically the basis of all the others.
+
+The Normal, or also called Gaussian, distribution is the most used, most famous and most important curve among statistical distributions. The function 𝑓(𝑥), below, which determines whether a random variable follows a normal distribution is a little complicated, but we don't need to worry about calculating these counts, as the values ​​have already been calculated and distributed in a table. These tabulated values ​​will be used, for example, when calculating sample sizes.
+
+ f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}\;\;\mathrm {e} ^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}}{\displaystyle f(x)={\frac {1}{\sigma {\sqrt {2\pi }}}}\;\;\mathrm {e} ^{-{\frac {1}{2}}\left({\frac {x-\mu }{\sigma }}\right)^{2}}}.
+
+                      
+mi ( μ) is the population average
+σ sigma sqrt is the population variance
+x can have any value
+
+The shape of the normal curve resembles a bell (see below) and values ​​around the mean are more likely to occur, and as it moves away from and toward the tails, the number of observations decreases. You know that much used expression: "So and so is a point out of the average"? It means that it is far from the general average, it can be something good or bad, it depends on the variable under study.
+
+Now it's easy to look at table 2 with the sample distributions and see that as the sample size increases, the data get closer to a normal distribution (try to see the table from the side, see how the data is more concentrated in the middle of the table). This is really useful, because we can work our data from a known distribution, with well-defined properties and expressions.
+
+ESTIMATION
+The main purpose of the inference is to provide, through a sample, valid estimates of parameters in the population. Thus, from sample data, we will use various expressions to find estimates about the quantities of interest (means, totals, variances and other statistics) and we will be able to generalize the sample information to the population from which it was taken.
+
+As we do not have access to the true values ​​of population variables, we have to use the sample to estimate those variables. Through the study of the sampling distribution of each statistic, estimators are elaborated.
+
+Tip
+By notation, the caret indicates that this is an estimator, and the asterisk (*) denotes a biased estimator. In addition to estimating that variable of interest, we have to think about estimating its variance as well.
+
+Variance, standard deviation and coefficient of variation
+Variance is a measure of dispersion that measures variability, that is, it shows how far each value is from the central value of the data, that is, from the mean.
+
+Tip
+The smaller the variance value, the closer the data are to the mean.
+
+The variance is a quadratic measure, so it is not so simple to interpret, as it presents its result in the squared unit of measure of the original variable. Population variance is denoted by σ² and estimated with sample data by s². The standard deviation is calculated by the square root of the variance and, therefore, it is expressed in the same measurement unit as the variables.
+
+The more uniform the values, the closer to zero the standard deviation. When all values ​​are equal, the standard deviation is zero. Thus, the sample is perfectly uniform.
+
+The sample variance is estimated by
+²
+ and to find the standard deviation just do .
+
+Example
+In table 1 we estimate the income (in reais) of workers. Let's assume that the calculated variance is equal to 900 reais². What does real² mean? I don't think anyone knows, because real² doesn't make much sense, doesn't have a practical interpretation. However, when removing the root of 900 reais²,
+²
+, we find 30 reais (because we also take root from reais²). Now, yes, we have a practical interpretation of the result, that is, a standard deviation of 30 reais means that the data is far from the average by approximately 30 reais.
+
+The smaller the variance and, consequently, the standard deviation, the more homogeneous the data.
+
+Soon after, we will use it to estimate some variances of our estimators. In this case, when calculating the square root of the variance, we will no longer call it standard deviation, but standard error.
+
+Heads up
+The calculation is the same, however, when working with estimators, we call the root of the variance standard error, instead of standard deviation, thus, for the mean, we will have . In this way, the standard error of the estimate provides better practical interpretations than working with the variance alone.
+
+Another widely used measure is the coefficient of variation (CV). It represents a relative dispersion between the standard deviation (or standard error) and the mean. Thus, we can compare two estimates and see which one is more variable. The population CV of the mean is given by , however, when using the sample, we will make the sample CV of the mean with .
+
+Estimation of the population mean
+From a sample, we may be interested in estimating the population mean of some Y variable. Therefore, we will use the sample mean as an unbiased estimator of the population mean.
+
+remembering
+The population mean is a parameter that we want to estimate and we use Greek and capital letters to represent them. For the sample, we used lowercase letters.
+
+Furthermore, for both cases, without and with replacement, the formulas are the same.
+
+Population average:
+
+
+Population mean estimator under ASA with and without replacement:
+
+Example of population mean estimation:
+Imagine a survey that wants to assess the average employee of 200 commercial companies in a city. In this case, you sample 20 companies by AAS and find the following result:
+
+Number of Companies
+4
+3
+5
+6 
+two
+Number of employees
+3
+4
+two
+1
+7
+Table 4: Number of companies and employees in a trade survey
+
+4 companies said they had 3 employees, 3 companies said they had 4 employees, and so on. Making the sample average of employees with the formula we have
+
+
+Thus, the estimated population average is 2.7 employees per company. The actual result could and probably should be slightly different from this value. This difference found between the estimate and the true population value is what we call sampling error or estimation error. Sampling error is the "price you pay" for taking a sample instead of the census, that is, it is the difference between the sample estimate and the population parameter.
+
+Estimation of the total population
+Another measure that we might be interested in estimating concerns the total population. The total is a variable widely used in practice and the total population T is given by
+
+Still in Table 3, we may be interested now in estimating the total population. If we are going to use the same criterion as the sample mean, it would be enough to do the sample total. The result would be
+
+A total of 17 estimated employees for 200 companies is too little, don't you think? In this case, we call t* a biased (or biased or biased) estimator of the total population. To solve this problem, we need to make an adjustment to this expression. Thus, the unbiased estimator of the total population for ASA, both in the case without replacement and with replacement, is given by:
+
+Estimator of total population under ASA with and without replacement:
+To find the unbiased estimator of the total population, simply multiply the value of the total population by the sample mean. So, in the example we have
+
+
+A much more feasible value, isn't it? Therefore, we will use t and not t* to estimate the total population.
+ESTIMATION OF THE VARIANCE OF THE POPULATION AVERAGE ESTIMATOR
+A very important measure is the estimation of variance. It represents the precision with which the estimator hits the true parameter.
+
+remembering
+We did not find the true variance, but its estimation.
+
+Soon we will have the estimation of the variance for the quantities of interest. And then we can take its square root and find the standard error. First, let's do it for the population mean. However, unlike the previous cases, we will have different expressions if the AAS is with or without replacement. The full name is long and looks strange, but since they are estimates, we have to estimate the variance of something that has been estimated before. Therefore, we call it:
+
+Variance estimator of the population mean estimator for AAS with replacement:
+
+Variance estimator of the population mean estimator for AAS without replacement: In which in both cases we need to find first
+²
+.
+
+Returning to our example, let's estimate the variance of the population mean estimator for an AAS sample without replacement. By expression, we have and we need to find . Soon, we do
+²
+ as follows that
+
+Tip
+You can use software or a calculator to help you with these calculations. Luckily, many software calculate quickly.
+
+Now we can get . So,
+
+The standard error is . Therefore, the average error in estimating the population mean of this sample is about 0.4 employees (more or less).
+
+Estimation of the total population estimator variance
+The same way we did for estimating the variance in the mean, we can do it for the total. Thus, we will have the estimation of variance for the total population estimator. In this case, we will again have different expressions based on the selection of AAS with and without replacement. Therefore:
+
+Total population estimator variance estimator for AAS with replacement:
+²
+
+Total population estimator variance estimator for AAS without replacement:
+²
+ In which in both cases
+²
+
+Again, for table 3 we will do
+²
+. So the standard error is . Therefore, the average estimation error of the total population of this sample is around 77 employees in the companies (more or less).
+CHECKING THE LEARNING
+1. Two samples were selected in different years to assess the weight of the population of a city. The first sample (A) had an average with
+²
+ and the second sample (B) had an average of with
+²
+. Comparing the two samples, which one is more homogeneous?
+Sample B has CV = 0.75 and sample A has CV = 1.01, so sample B is more homogeneous.
+
+Sample B has CV = 0.09 and sample A has CV = 0.11, so sample B is more homogeneous.
+
+Sample B has CV = 0.98 and sample A has CV = 1.32, so sample A is more homogeneous.
+
+Sample B has CV = 8.88 and sample A has CV = 10.62, so sample A is more homogeneous.
+
+Comment
+Congratulations! Alternative "B" is correct.
+
+
+To compare two samples, we need a relative measure, in this case the coefficient of variation. So,
+
+ and
+Therefore, sample B has a lower CV and is more homogeneous.
+
+2. Suppose a population with N = 50 students from a school and that a sample of n = 7 individuals was taken and evaluated for age in years. The results were 15, 16, 15, 14, 16, 15, 14. What is the estimate of the mean age and standard error of this estimate assuming an AAS with replacement?
+"B" is correct.
+
+
+You understand the concept of standard error estimation of the population mean estimate!
+
+In the question, we have that the sample size is n = 7 selected by AAS with replacement and the population size is N = 100. The estimation of the population mean is given by
+
+
+The estimation of the variance of the mean estimate is given by and we need to find . Soon, we do
+
+²
+
+Therefore,
+
+MODULE 3
+Identify the important aspects about the sample size, expressions for its calculation and estimation of proportion variables
+
+INTRODUCTION
+We saw, in the previous module, how to estimate quantities of interest in a survey, such as totals and averages for example. In addition, we look at how to estimate the variance for these estimates.
+
+At this point, we'll cover a very interesting and useful subject in practice: scaling the sample size for selections made using simple random sampling. And, still, how to perform the estimations for variables of the proportion type.
+
+PROPORTION ESTIMATION
+The qualitative variable is another variable of great interest in a research. In a variable of this type, we cannot make the same calculations used in quantitative variables. We will then make your proportion.
+
+Comment
+It is not difficult to observe, in some studies, results informing the proportion of individuals with a certain characteristic, such as, for example, the proportion of companies that stopped their activities during the pandemic period in 2020.
+
+The variable proportion is defined as the number of units in a certain population with a certain characteristic, divided by the total number of units in that population.
+
+Tip
+The denominator is always the number of population units and the result of the proportion is always between 0 and 1, and can be represented as a percentage.
+
+Our interest here is to estimate the proportion of population units that belong to a given category.
+
+Another examples:
+Proportion of female students in a school.
+
+Proportion of smokers in the population.
+
+Percentage of defective parts in a batch.
+
+In proportion variables, yi receives a value of 1 if the units have that characteristic and 0 otherwise:
+
+contrary:
+
+oh
+The
+oh
+With the yi values, we can estimate the population proportion from an AAS without replacement, remembering that, when working with samples, we only use the formulas with ^ above the variable, the others refer to population data:
+
+Population proportion:
+
+
+Population Proportion Estimator (Sample Proportion):
+
+
+Proportion estimator variance:
+
+
+Proportion estimator variance estimator:
+
+
+Standard error of the variance estimator of the proportion estimator:
+
+
+From the expressions above, you can see that the proportion behaves as if it were an average, however, instead of adding the values ​​of the variables, the ones for each individual are added and then divided by the total.
+
+Let's understand how these estimations are made in practice with the following example:
+
+Suppose a population of N = 1000 people where 100 are previously known to be left-handed. Our population proportion P of left-handed people would be: P = 100/1000=0,1 = 10% A new study wants to investigate whether there are differences in learning ability between right-handed and left-handed people.
+
+Therefore, a sample under AAS without replacement of n = 100 people is performed. After data collection, we found that 8 of them were left-handed, our sample proportion of left-handed people would then be: p= 8/100 = 0,08 = 8% . This difference is completely natural, since we selected a sample to investigate some characteristic of the population, so the value will hardly be equal. This difference is what we talked about in the previous module and called the estimation error.
+
+To find the estimate of the variance of the estimator of this proportion, we make
+V(p) = (N-n/N) p(1-p)/ n-1  => V(p) = (1000-100/1000) 0,08 . 0,92/99 = 0,000669
+Finding the standard error of this estimate, we have a small error:
+EP = V(p) = 0.025%
+
+SAMPLE SIZE
+The minimum sample size is a very common question whenever someone wants to select a sample to make an estimation.
+
+Comment
+Popular knowledge says that the larger the population, the larger the sample. This is not exactly wrong, but it is not an absolute truth.
+
+When you are going to taste the flavor of a food, what do you do? You take a spoon, stir the pan and taste it. Does it matter if the pot is small or if it's a cauldron? Do not do. See how population size does not directly influence sample size? But what influences then?
+
+To begin to understand why this happens, we need to be clear about the concept that sample size is not linear. Thus, a larger population does not necessarily mean a larger sample.
+
+summing up
+The homogeneity or heterogeneity of the population is most important. If the objective is to interview consumers on a broad topic, it is possible that there is a lot of variability and the sample is larger. However, if the population is more homogeneous, then its variability will be smaller and the sample size may be smaller.
+
+Figure 3 shows exactly this concept, as a larger population will not necessarily have a larger sample. The graph relating the two quantities is not a function of the 1st degree (a), it is rather like a square root function (b).
+
+The most important thing about a population is not its size, but its variability. If the population is very similar to each other, we do not need to collect such a large sample, as they all have similar characteristics or opinions.
+
+Example
+In a soup, by stirring the pan with a spoon, you homogenize all the seasoning. So, just tasting a spoon, you can tell if it's salty or not. The same happens with the blood test, it is not necessary to remove it completely to perform the analysis, only a small sample is needed, as the population (in this case your blood) is homogeneous. So we need to be much more concerned about whether the population of interest is very or not heterogeneous rather than simply looking at its size.
+
+According to Bolfarine (2005), it is important to use previous research, if any, or a test sample to have some a priori knowledge of population variability (σ²). In many situations, the test sample can provide good information for a population variance estimator. In other cases, previous sample surveys may also provide satisfactory initial estimates about σ².
+Tip - But what should be the minimum sample size?
+Before starting to plan a survey and its sample size, you should check what budget is available. It's no use running all the sample calculations and then finding out there's no money for it.
+
+In the sample calculation, everything must be taken into account in the financial area, as the costs per collected questionnaire can be high. So, in general, in practice we calculate the sample size with different error values ​​and leave it up to the research client to decide.
+
+Recommendation
+In the real world it is not recommended to perform the calculation just for an error value, but rather to offer several scenarios for the contractor to analyze and compare.
+
+To solve this question, we need to establish a minimum sample size according to the level of precision we want, in addition to two variables to make this precision:
+
+E: Maximum tolerable distance between the estimate made and the true value of the parameter (acceptable absolute error).
+
+α: Likelihood that this distance is greater than the value of E. The most common is an α (alpha) of 5%, so in this case we have a research confidence level of 95% (in the case of the normal distribution Z we have a value of Z = 1.96).
+
+
+The best of both worlds is that we always have the resources available to calculate the sample size without budget restrictions. The sample size calculation is the same when you want to estimate the mean or the total of some variable, as well as using the absolute error or the relative error. When the free cost is admitted, the following formulas are used to calculate the sample size:
+
+Sample size to estimate the mean and total population under AAS
+If our goal is to estimate some population total or mean, we will use the following formula to find the sample size:
+
+²
+²
+²
+
+When the population size is very large or we do not have its value, as it is considered infinite, we can simply use
+
+²
+²
+
+In which
+n Sample size.
+z
+Multiple of the standard deviation, found in the Normal distribution table.
+N
+Population size.
+s sqrt
+Variance of the parameter to be searched.
+E 
+Absolute error admitted.
+
+We want to estimate the average monthly consumption of electricity in households in a large city. If we fix the maximum error of 5kWh and the confidence level at 95%, what would be the minimum sample size considered AAS?
+An estimate of the population standard deviation was done previously and the result was s = 70kWh.
+
+In problems of this kind, we may not have the total population, or consider its size to be too large. A 95% confidence level was also given, and the normal table shows us a value of Z95%=1.96. So we can do:
+
+²
+²
+²
+²
+²
+In this case, we always round the sample size up. Therefore, the required sample size would be 753 households.
+
+Sample size to estimate a proportion under AAS
+The sample size of a selection by AAS for a variable of the type of proportion is given by:
+
+²
+If the population is very large or considered infinite, we will do
+
+²
+In which
+
+are
+
+n
+Sample size.
+z
+Multiple of the standard deviation.
+P
+Variable proportion.
+E 
+Desired absolute error.
+
+Sample size to estimate proportions with unknown proportion
+When the proportion P is totally unknown and it is not possible to make any hypothesis about its value, we will always use P = 0.5, as this is a value that maximizes its variance. Look carefully at the part of the expression that involves the proportion, we have P(1-P).
+
+Heads up
+Note that this is a quadratic function, that is, a parabola with negative concavity. Thus, it has a maximum point, as seen in figure 1.
+
+If we solve this equation, we get P = 0.5. So in situations where we don't know P, we'll make it equal to half.
+
+Thus, the maximum AAS sample size to estimate any proportion P with a certain error d and P = 0.5 is given by:
+
+²
+This way of calculating the sample size is called conservative within sampling, as with any other value of P the sample value would be smaller. Thus, we are using the largest possible sample size as we do not know the population ratio.
+
+A survey, still in the planning stage, will assess some variables on the proportion of companies that have joined a new government incentive program. What is the required sample size, assuming 3% accuracy and 95% confidence?
+n = 230
+
+n = 1745
+
+n = 978
+
+n=1067
+
+Comment
+Congratulations! Alternative "B" is correct.
+
+
+As we are interested in estimating the sample size of a proportion and we do not have any information about the population proportion parameter, we will use = 0.5. Thus, we do: ,
+
+²
+²
+²
+
+Thus, rounding up, 1068 companies need to be collected to satisfy the survey conditions.
+
+The municipality of Rio de Janeiro wants to estimate the number of families living in "rented houses", the average rent and other data related to the problem of living in "rented houses". How large is the sample needed to provide this information, given that this neighborhood had 60,000 families, and that the proportion of "rented houses" in 1980 was 20%? It is possible to solve the problem with a relative error E = 0.05 and a confidence coefficient of 95%.
+n = 676 families.
+
+n= 345 families.
+
+n = 503 families.
+
+n= 406 families.
+
+Comment
+Congratulations! Alternative "A" is correct.
+
+
+As we are interested in estimating the sample size of a proportion with N = 60000 and estimating p = 20% = 0.2 , we do
+
+²
+²
+²
+²
+
+Rounding up, we find the sample size of 676 families for this survey.
+FINAL CONSIDERATIONS
+Throughout the modules, it was possible to understand more about the initial sample selection methods, their estimations and their size calculations. Initially, we discuss the fundamental concepts of simple random sampling with and without replacement, from the discussion of selection probabilities to the calculation of the possible quantities of samples to be obtained by each of the methods.
+
+In the second module, we present the statistical tools for estimating the quantities of interest. We learned how to estimate a total and an average from a sample and how these results may not be exactly the same as the population due to estimation error. In addition, we learned how to calculate such errors, using estimates of variance from estimates that had already been calculated.
+
+Finally, we investigated the estimation of proportions, since in certain studies the focus on qualitative variables is much greater than on quantitative variables. We have also seen the calculation of the sample size needed to make the estimates, an important topic that is very useful in practice.
+
+That said, we are sure that, by the end of this topic, you were able to use simple random sampling to make the sample selection and estimation of the variables of interest.
