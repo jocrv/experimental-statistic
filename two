@@ -809,6 +809,7 @@ As we are interested in estimating the sample size of a proportion with N = 6000
 ²
 
 Rounding up, we find the sample size of 676 families for this survey.
+
 FINAL CONSIDERATIONS
 Throughout the modules, it was possible to understand more about the initial sample selection methods, their estimations and their size calculations. Initially, we discuss the fundamental concepts of simple random sampling with and without replacement, from the discussion of selection probabilities to the calculation of the possible quantities of samples to be obtained by each of the methods.
 
@@ -817,3 +818,26 @@ In the second module, we present the statistical tools for estimating the quanti
 Finally, we investigated the estimation of proportions, since in certain studies the focus on qualitative variables is much greater than on quantitative variables. We have also seen the calculation of the sample size needed to make the estimates, an important topic that is very useful in practice.
 
 That said, we are sure that, by the end of this topic, you were able to use simple random sampling to make the sample selection and estimation of the variables of interest.
+
+
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: Blucher, 2005.
+
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W. G. Sampling Techniques, third edition. New York: John Wiley & Sons, 1977.
+
+FERREIRA, V. A. M. Análise Estatística. Rio de Janeiro: Estácio, 2015.
+
+JESSEN, R. J. Statistical Survey Techniques. New York: Wiley, 1978.
+
+LARSON, R.; FABER, B. Estatística Aplicada. 4. ed. São Paulo: Pearson, 2009.
+
+LOHR, Sharon. Sampling: Design and Analysis. 2nd edition. Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. de O. Estatística Básica: Probabilidade e Inferência, volume único. São Paulo: Pearson Prentice Hall, 2010.
+
+PFEFFERMANN, D.; RAO, C. R. Handbook of Statistics 29A: Sample Surveys: Design, Methods and Applications. D. Pfeffermann; C. R. Rao, (eds.). Amsterdam: NorthHolland, p. 698.
+
+R CORE TEAM. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria, 2020.
+
+SARNDAL, C. E.; SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. Nova York: Springer-Verlag, 1992.
