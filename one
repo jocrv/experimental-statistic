@@ -1,1 +1,688 @@
+Fundamental aspects for carrying out a survey, constructing a questionnaire and using statistical methods for data collection.
+
+PURPOSE
+Present the concept of research to the student and discuss the fundamental basic concepts of all stages of its realization, from defining the objectives to presenting the results. Also present good practices in the construction of a questionnaire and data selection methods through probabilistic and non-probabilistic surveys.
+
+GOALS
+Module 1
+Identify the different types of research and the key points in their construction
+Module 2
+Describe the fundamental steps in preparing a questionnaire
+
+Module 3
+Distinguish between probabilistic and non-probabilistic sample selection methods and sampling types
+
+INTRODUCTION
+Initially, the basic concepts of all stages of conducting a survey will be addressed, the importance of building a good questionnaire with its characteristics and the differences between data collection methods. Finally, the description of sampling theory will be discussed, as well as the main types of sample selection, including probabilistic and non-probabilistic methods.
+MODULE 1
+Identify the different types of research and the key points in their construction
+
+INTRODUCTION
+Before even thinking about taking a sample, it is necessary to know how to carry out a survey. Sample design is just one of the steps in a survey cycle. So, in this module, we'll learn more about what research is, how to plan correctly, and what the basic steps are for successful execution.
+
+PLANNING YOUR RESEARCH
+Currently, there is an intense and incessant search for data sources and information collected by government institutions, organizations, companies, universities and research centers. Much of this information needs to be collected and updated over time as we have a constantly changing world. For that, we need to obtain this raw data and, from a series of pre-defined procedures and processes, transform this data into information. But how to get this data? How to ensure that he is correct or that he will somehow be able to answer the initial questions?
+
+
+Have you ever stopped to think about the absurd amount of data obtained per second by Netflix? Netflix knows every movie you've watched, when you've watched it, where you've watched it (TV, cell phone, computer, tablet, etc), how many times it's been paused, seen in real time, or downloaded. While it's amazing, it's also scary.
+
+The company knows what you were looking for to get to this movie, or if you started and stopped other movies. According to a director at Netflix, data such as geography, gender and age are of no use in estimating whether an individual will like a movie.
+Example
+For example, a 17-year-old Japanese is accessing from Tokyo. Common sense says to offer an anime, but speculation isn't correct. That's because only 10% of anime hits on Netflix come from Japan. Currently, the amount of data available is absurd, but working with this data and transforming it into some information is the big challenge.
+
+The data collection process is part of our daily lives and, many times, we do not give it due attention. When you make a soup and want to try its seasoning; when, when buying a lamp in the market, we test it beforehand; or when you do an exam and draw some blood. All these examples are simple, they happen all the time, but we don't realize how rich this process is and how much statistics are embedded in it.
+
+Improper use of a data collection procedure can lead to a bias/inaccurate result when interpreting the result.
+remembering
+Bearing in mind that bias is a term used in statistics to designate what is not partial, that is, what is biased.
+
+For example, not mixing the soup well before removing a spoon to try it can lead to the wrong idea of ​​the temperature of the whole dish, resulting in unpleasant consequences for those who consume it. Imagine that you don't mix the soup and taste exactly the unseasoned top. Soon, you end up adding more seasoning and, when you notice, the soup is extremely salty.
+
+Similarly, it can occur with the researcher, who is so involved in the investigation and interpretation of the data that he is not attentive to verifying possible biases originating from the collection procedure.
+Deciding WHAT to measure is one of the most difficult steps in any study. We need to know HOW to measure what was chosen. It is critical in any study to understand exactly how the information was obtained, collected, or asked.
+
+Consider something seemingly simple, like: measuring your height like a ruler. Try measuring a few times and see if you can measure with the same value in cm from time to time. Now imagine trying to measure something more complex, such as the amount of carbohydrates in a person's diet.
+
+WHAT IS A SURVEY?
+Any procedure that aims to collect information about the characteristics of interest of units in a population, using well-defined concepts, methods and procedures can be characterized as research. According to Gil (2002), a survey can be defined as
+Rational and systematic procedure that aims to provide answers to the problems that are proposed. Research is carried out through the concurrence of available knowledge and the careful use of methods, techniques and other scientific procedures.
+We will consider research, then, any system for collecting information about individuals (unit of analysis) or groups of individuals, usually with the objective of describing, comparing or explaining their knowledge, attitudes and behavior.
+The frequency and respondents can also vary with each survey, thus, the surveys are divided into three large groups. Look at table 1.
+
+Table 1 - The different types of surveys.
+Cross sectional          Repeated cross (Rotating panel)                     Longitudinal (Panel study)
+only occasion                  Various occasions                                Various occasions
+
+state of the population             population evolution                  Evolution of units
+
+single sample                     Every time the sample changes          Same sample on occasions
+
+Single interview per unit    Usually a few interviews per unit       Multiple interviews per unit
+
+CROSS SURVEYS
+Cross-sectional surveys are those carried out only once (occasion) for a specific event. Thus, information is collected only once.
+
+They are important to know the state of the population at that specific moment in time, as it has a unique sample. Therefore, each unit will be interviewed only once.
+
+Think of a survey carried out only once and no longer repeated, this is the cross-sectional survey. As an example, we can think of the 2005 referendum in Brazil on the prohibition of the sale of firearms and ammunition. The population went to the polls only once to vote on whether the trade in firearms and ammunition should be banned in Brazil.
+REPEATED CROSS SURVEYS
+In repeated cross-sectional surveys, data is collected repeatedly over time, with the same variables being measured for different samples. In this case, the survey is repeated from time to time, but the same sample is used. The planning and the questionnaire are kept, however the sample is changed.
+
+This type of survey is important to assess the evolution of the population as a whole. For example, the Federal Government's Basic Education Assessment System (SAEB), which assesses on a large scale the diagnosis of Brazilian basic education and factors that may interfere with student performance. The survey is repeated every year, but the students are different.
+
+Another classic example of a cross-sectional survey is the electoral government evaluation surveys. If you've ever followed an election, you've noticed that, in an election year, polls appear all the time. The questionnaire is kept, but the people who respond to the surveys are not the same. Thus, we are able to find out in general the evolution of the population's opinion.
+LONGITUDINAL RESEARCH
+Finally, we have the longitudinal research, in which the same and/or different variables are raised for the same respondents over time.
+
+In this type of research, individuals are kept on several collection occasions. Only in this form of collection is it possible to study stronger causal relationships. If a company wants to test the effectiveness of a diabetes drug, it needs to select people and track them over time.
+
+An example is the testing of a possible vaccine against COVID19, in 2020. The Ministry of Health of Brazil, in partnership with the University of Oxford, began testing in June a possible vaccine candidate in 2,000 seronegative volunteers (who did not enter in contact with the disease). Thus, these people will be researched and followed over time.
+
+In a longitudinal survey, it is also common to keep a fixed part of the survey and change another part so as not to tire the individual respondents. As an example, we have the Annual Surveys on Commerce (PAC) and the National Survey by Continuous Household Sample (PNADC), both carried out by the Brazilian Institute of Geography and Statistics (IBGE).
+IBGE's PNADC aims to investigate a series of information on fluctuations in the workforce, on education and on regional and sociodemographic differences in the Brazilian reality.
+
+As the name of the survey says, it is continuous, so it is not recommended to keep the same person answering for life. The survey then rotates part of its sample, so as not to tire the respondent. So, every time the research goes into the field, one part is kept, another is changed, and so on.
+
+Which type of survey to choose?
+The choice of research type will depend on the nature of the study in question. If the objective is only to assess the impact of an effect once, then it will be of the transversal type. However, if at each completed cycle you want to make a new evaluation of the results, there is a repeated cross-sectional survey. In this case, the collection takes place more than once, but each time new individuals are interviewed.
+Finally, we have the longitudinal surveys, in this case, the survey takes place on more than one occasion with all individuals or a part of them being done repeatedly. If you want to study the impact of a public policy, for example, or the effect of a drug, the most correct thing is to study the same individuals over time. Only then will it be possible to analyze cause and effect studies.
+Finally, we have the longitudinal surveys, in this case, the survey takes place on more than one occasion with all individuals or a part of them being done repeatedly. If you want to study the impact of a public policy, for example, or the effect of a drug, the most correct thing is to study the same individuals over time. Only then will it be possible to analyze cause and effect studies.
+WHAT ARE THE ESSENTIAL STEPS FOR A RESEARCH?
+For the success of a research, all phases of the process are fundamental and must be worked on carefully. It is no use using sophisticated computational tools for analysis, or hiring the fastest statisticians to define the sample if the information collected is not true. In the same way that a well-done questionnaire is useless if the collection team, or also called field team, is not well trained, it is useless if the two previous ones are well carried out, but one does not know how to analyze the data.
+
+Imagine an income survey, where the interviewer was not asked to note whether the information refers to gross or net income. How will it be possible to analyze the data correctly? Or, in a household survey, in which only one person in the household will be interviewed. It is very risky, by statistical bias, to leave this choice to the interviewer, as he will probably interview the very person who attended him or the easiest one.
+Imagine that the survey is about job satisfaction, you cannot simply interview anyone, as it may be that, at home, there are only unemployed people, introducing a bias in the survey.
+
+Heads up
+If not taken care of, fieldwork can totally ruin a survey. Thus, one must plan and use procedures that minimize errors or biases introduced in data collection.
+
+Below are the steps in the correct preparation of a survey.
+
+Definition of goals, concepts and resources
+Generally, the objective of a survey is well defined, the problem often arises in how to obtain the information. Example: You want to investigate the effect of drug use associated with heart problems. The objective is clear, but how to simply obtain individuals for the research without causing bias to the results? And how to gather this information with a questionnaire that, at the same time, fulfills its role and does not bring discomfort or trauma to the respondent?
+It is at this moment that one begins to think about what that survey intends to answer and the resources available for that. Time and budget constraints are very common in practice and should be taken into account when defining the objectives and scope of the study to be carried out.
+
+Oftentimes, it is desired to carry out a robust survey, collecting people from several cities, or even from several states, but the financial resources are scarce. This type of situation should be taken into account at this time, as planning a whole survey and after it is ready to be collected, not having the funds is wasting all the time allotted.
+
+A very common mistake is wanting to change or add new objectives throughout the survey. It is essential that this step is very clear, correctly identifying the issue you want to assess. It is based on the defined objectives that the units interviewed will be delimited. Once the research has been all planned out, it is not possible to want to add new objectives. This could make the study unfeasible and go back to the beginning.
+Imagine a survey that aims to investigate the quality of work in Brazil. Everything was very well planned and the collection done correctly.
+
+Example
+At the time of data analysis, the research manager decides to include the issue of quality of work on people with special needs. It may be that, in the collection, some people who responded actually have special needs. However, it is not possible to give results for these individuals, as the research was designed to meet the general quality of work in Brazil. If you want to study something specific, it should be made clear at the beginning.
+
+Obtaining and evaluating registration
+The registry is what provides access to the research population. It is from there that we will select our sample. It consists of an identifying list of the elements that make up the population. Remember the famous and voluminous paper phone book? Those copies are classic examples of a register. A company just selected a number from there and that was it, started calling people.
+The register also contains auxiliary information to carry out sample planning and even help in estimating the results.
+
+Imagine an electoral poll in Brazil. In this case, the registration would not be for the entire Brazilian population, but for people who have the right to vote (since children under 16 years old do not vote).
+
+
+For a registration to be considered good, it needs to meet certain requirements. First, it must contain enough information about each unit of the population to be able to identify its location. It is from this register that the future sample will be selected, therefore, it would be terrible for the progress of the research if the selected individuals had their contact details out of date or still wrong. This situation could significantly delay data collection.
+
+In addition, the registration must be available in a central place, with quick and easy access to everyone involved in its handling. It is also important that the register is built in accordance with the research objectives. If the interest is to select people to demonstrate their intention to vote in the election, the register must be built from data from the Superior Electoral Court, for example.
+Heads up
+The register must contain all the individuals who match that characteristic of interest. Such registration must always be updated and complete. This is because it is no use working with outdated data, as the population is dynamic, that is, it is always changing.
+
+It's no use using a record from a previous election in a current election, for example. Also, it must be complete because it is important that you have as much information as possible about that individual. It's no use selecting someone for the survey if you can't contact them later.
+
+It is also important not to be redundant (with duplications), as it is not valid for a survey if that same person answers the questionnaire more than once. Still, the use of multiple entries is relevant, that is, it is possible to create several independent entries with some common identifying variable (also called key variable). So, at the time of use, just activate the identification and get the items you want.
+
+Planning, selection and control of the sample
+At this stage, all data collection planning will take place. There are many questions to be answered:
+Who will be the individuals interviewed?
+
+How will they be interviewed?
+
+What approach will be taken?
+
+Will the questionnaire be on paper, telephone, electronic means?
+
+How long will the research take?
+
+What is the estimated cost?
+
+What budget is available?
+
+If the person refuses to answer what should be done?
+
+If you don't find the person at that moment, how many times should you return to the room?
+
+These questions are just a few examples of problems faced in real life. All answers to such questions need to be very well defined so that no unforeseen events are faced at the time of collection.
+
+The collection can be carried out in two ways:
+direct
+indirect
+Direct collection is the one in which data will be collected within the survey itself. In addition, direct data collection can be classified according to turnaround time into:
+To be continued
+When data is collected non-stop such as student attendance data in classrooms. Birth and death data are also collected according to this frequency.
+Periodic
+In this case, the collection is carried out from time to time, in general, the intervals are approximately regular. The Monthly Survey of Services (PMS), carried out by the IBGE, as the name implies, is carried out monthly to assess the scenario of service providers in Brazil.
+occasional
+When performed without a well-defined time interval. It can be done in extreme cases to respond to an emergency.
+
+Indirect collection occurs when it is not necessary to properly go into the field to obtain the information. That is, there is partial or total availability to existing data. Imagine that you want to study the behavior of a disease in a certain municipality in Brazil. If your study isn't very specific, chances are you'll find everything you want without actually having to go out into the field.
+
+Estimating the quantities of interest
+After obtaining the questionnaires, a complete and unique database with all available information is created.
+
+It is with these data in hand that the statistical analysis will begin. It is always recommended that data be carefully critiqued before being analyzed. All data collected is always susceptible to possible flaws and imperfections, so it is important that this criticism is made so that gross errors do not appear and considerably influence the results, or worse, make their disclosure unfeasible.
+
+Errors can happen (which is common) and should be minimized as much as possible, because eliminating them is theoretically impossible.
+
+Heads up
+The moment of criticism is, therefore, essential, as tools are used to measure, monitor and preserve data quality. The main reason should be to ensure that the data and results produced are suitable for use.
+For example, if a school survey were conducted that asked the age of students and one of the answers was “100 years old”, logically, that answer would be an error. This error could occur intentionally, with the student playing with the research, or unintentionally, as an extra zero could have been placed for simple distraction.
+
+When investigating the data, you must create critical rules applied to the problems. A questionnaire about companies returned with the result that a company has 3 employees, zero salary and income in the millions. Do you agree that it would be, at the very least, something suspicious for investigation? It could be that the company is in debt with the IRS and omitted your information. In this case, the initial review ended up encountering an error. Or not, the company may have 3 owners who call themselves employees, and their salary is zero, because only salary was considered to be employees. According to business terminology, the correct term for partner or manager remuneration is "pro-labore". In this case, the data is correct and the review has been validated.
+Once the critique was carried out, the variables of interest are then estimated. It is time to use all statistical tools to obtain answers to the research objectives. The most common measures are means, totals, ratios, variances, standard deviations and coefficients of variation. Still in this example of a company survey, we can estimate the average salary, the total number of employees, the salary variability or a ratio involving operating costs. Calculations require mathematical/statistical knowledge to perform, or mastery of software that performs such calculations. We'll look at these issues later.
+
+Assessment of the quality (accuracy) of estimates
+The precision of the results is related to the agreement between the different measures.
+
+The more different the values ​​are measured from each other, the greater the dispersion of results, that is, the lower the precision. On the other hand, the more similar the measured values ​​are, the smaller the dispersion of results, that is, the greater the precision. Ideally, the data from a survey is both accurate and precise.
+Let's look at these two concepts through an example. Imagine that you wanted to test the precision and accuracy of your home scale. First, you could go to a pharmacy scale or take an assessment at the gym and write down the amount. Let's assume this is your true weight value. When you get home, you take several measurements on top of your scale. Let's assume that the weight registered at the pharmacy is 72 kg. When taking 5 measurements at home, you see the values ​​71.5; 72.5; 72; 72.4; 71.8. In this case, the values ​​were around the target of 72 kg, but with a lot of inaccuracy. That is, we have something exact, because it was around the target, however, imprecise (because it varied a lot). If by chance you find 71; 71.2; 71; 71.1; 70.9 we would say that your scale is inexact, but accurate, as the values ​​were close to each other, but relatively far from the supposed target of 72 kg. In order for your home scale to be accurate and accurate, you should find measurements very close, around the 72 kg target.
+
+know more
+In practice, these precision measures are calculated using formulas and statistical models, some of which are very complex, by the way, and analytical results may not be available. Therefore, one has to use computational tools and software assistance to obtain approximations.
+
+Preparation of results and construction of the report
+This is the final step of the research, a moment to consolidate the results obtained and build the report. In general, tables and graphs are used at the time of disclosure.
+
+
+It is important to present the results effectively, avoiding making it difficult for those receiving the content to read the information. Graphic features can and should be added to the results for a more eye-catching presentation, with greater highlights. It's no use making a graphic in color or in three dimensions if it doesn't manage to convey the most important thing: the message, the information. Always remember to use graphics with the true values ​​in the correct scale, thus avoiding any kind of manipulation in the published values.
+
+Another essential recommendation is to use simple, clear, objective language. In general, users of that information don't want to go to the trouble of deciphering what is written. The use of correct Portuguese is fundamental and be very careful not to express your opinion to the results. Keep in mind that the report can be made available on the web and reach the entire world, so be very careful with the text, the examples and any possible criticisms and/or analogies. Use complete sentences that follow a line of reasoning and are consistent with the discussion of reported results.
+
+After knowing all the steps of preparing a survey, we can build the following flowchart:
+
+definition of goals
+population                    concepts
+         technical choice of collection
+
+build and test quiz            design and select sample
+              Collect data
+            process data
+analyze                          estimate
+
+Realize that all the steps studied so far are very well inserted in the flow above. The steps are successive and if, by chance, problems occur, it may be necessary to return to the previous step. This cycle must always be respected and for each completed process, the operation must be looked at and reported on the difficulties faced, the obstacles overcome and the proposals for improvements.
+
+CHECKING THE LEARNING
+1. The preparation of a good research goes through several steps. Failure to carry out any step can make an entire process already defined unfeasible. Among the options below, which correctly characterizes the order of steps in a survey?
+Definition of objectives, registration evaluation, estimation, sample selection and estimation of estimates accuracy.
+
+Definition of objectives, evaluation of the registry, selection of the sample, estimation and evaluation of the precision of the estimates.
+
+Registration evaluation, objective definition, estimation, sample selection and estimation accuracy evaluation.
+
+Registry evaluation, estimation accuracy evaluation, objective definition, estimation, sample selection.
+B" is correct.
+
+
+The order of planning a survey must follow a clear and pre-established structure. First, the research objectives are defined, then the available record to select the sample is evaluated, the data is then estimated and, finally, the accuracy of the estimates is evaluated.
+
+2. Based on what you've learned in this module, which definition related to survey types is properly correct?
+Cross-sectional surveys are carried out on several occasions with the same respondents.
+
+Longitudinal research is done only once.
+
+Repeated cross-sectional surveys take place more than once with the same respondents.
+
+Longitudinal surveys take place more than one occasion with the same respondents over time.
+
+D" is correct.
+
+
+There are several classifications for a survey, but the only one that correctly relates the type of survey to its definition occurred in option D, since, in longitudinal surveys, we have the idea of ​​surveying the same individuals over time.
+MODULE 2
+Describe the fundamental steps in preparing a questionnaire
+
+INTRODUCTION
+Now that you understand the correct steps to carry out a survey, let's go a little deeper into this universe and discuss good practices in the construction of the questionnaire. The data coming from the field team is the foundation of the research. If they are not collected correctly, all that has been done will have been in vain. It is extremely important that the questions that make up the research are very well constructed and collected, as any type of failure in this process can make any project unfeasible.
+
+CONSTRUCTION OF THE QUESTIONNAIRE
+The questionnaire can be defined:
+As the investigation technique consisting of a more or less high number of questions presented to people in writing, with the objective of knowledge of opinions, beliefs, feelings, interests, expectations, situations experienced, etc.
+(GIL, 1999, p. 128)
+
+Its correct elaboration is important as it is said that the questions are more important than the answers. Since an error in the form of asking a question can compromise the entire chain of responses.
+
+Another extremely important point in conducting a survey is to carry out a pre-collection to test, not only the questionnaire, but also the entire operation. It is not enough for the research mentors to test the questionnaire questions alone.
+
+Heads up
+People are different, they receive information differently; making a test sample, or also called a pilot sample, is critical to the success of the research. In this case, it doesn't have to be anything too complex, it's just a test, these questionnaires will be discarded later.
+It's more about testing that the questions are easy to understand, that the question flow is on the correct timeline, and that the answer options support all possible scenarios. In a survey where the individual's religion is asked, we cannot provide only 4 or 5 answer options. There is a huge diversity of religions, so it is correct to give all the answer options or leave the field open for the interviewer to write down the answer.
+
+Before writing the questionnaire questions, also take into account the target population of your research in order to ensure that the vocabulary adopted is appropriate. Even if the information to be collected is difficult to understand, concepts and simple words should be used. Avoid language complexity. This causes misunderstanding and bias in response.
+
+
+Take a look at the example below of how NOT to ask a question:
+
+"Would you rather have non-recyclable garbage in green cans collected daily, organic garbage in brown cans every two days or would you prefer dry recyclables in green cans collected every two weeks, organics in brown cans and non-recyclables in blue cans, both collected daily?"
+Did you manage to absorb the above question? No? Me neither. When the end of the question is reached, we have forgotten its beginning. See how bad some questions are? Probably, the person would answer anything to finish soon, and this information, despite being filled in, would be of no use. The questions should be simple, if deep you can break the question down into two questions, or you can provide a picture for the person to choose from.
+
+Also, don't forget to allow, in addition to the answer categories, the other categories, don't know how to answer or didn't want to answer in every question. It is common to combine not knowing how to respond and not wanting to respond into one. Regardless of whether or not to join, it is important to add these options, as the undecided can represent a large slice of the population. The other category is also fundamental and its response percentage must be small. If it is high, it means that some answer option was not considered and should be considered for the next research occasions.
+
+As we saw above, the construction of the questionnaire must be done with extreme caution. Below are extremely important factors that cannot be disregarded in the construction of the questionnaire.
+
+deliberate addiction
+When research is done to investigate some cause, questions are sometimes framed in ways that influence responses in the desired direction. Beware of questions that start like, "Do you agree that...". The appropriate question MUST NOT indicate the desired answer.
+Questions in a survey should be neutral, especially in opinion and attitude surveys. Questions should not encourage or induce respondents to give certain answers. Sometimes they end up being included in questionnaires because researchers try to defend their point of view on an issue, and assume that everyone shares a similar opinion.
+
+Below are two examples of how deliberate addiction can affect research progress.
+
+Example 1:
+Don't you think the government is spending a lot of money organizing a certain event? The correct one, without any kind of bias would be: Mr./Mrs. do you support or oppose the expenditures that the government is making with the organization of the event?
+
+Example 2:
+Scientists and highly educated people believe that astrology is superstition. What is your opinion about this? The correct one would be: What is the opinion of Mr./Mrs. about astrology?
+In the first question of both examples, the researcher added his or other people's opinion to the question, already prompting the response that the government was spending too much or that highly educated people are against astrology. In the second form, the bias was neutralized, as the question was well prepared, leaving the respondent free to give his opinion without any bias.
+
+unintentional addiction
+This type of problem happens when, unintentionally, a question in the questionnaire ends up being poorly formulated. Initially, for those who built it, it may make total sense, however, in practice, the formulation of the question is misinterpreted by many respondents. One more bias that could be easily corrected by running a pilot sample.
+
+The following is an example of when it might appear.
+
+Example
+Do you/Ms. use or have used regularly in the last year any type of drug?
+
+If you are going to ask people if they use/take drugs, you should specify which types of drugs (are drugs prescribed by doctors considered drugs?). In other words, sometimes, the question was asked incorrectly or simply whoever asked the question was not able to put himself in the place of the person who was going to answer and this ended up causing a bias in the result.
+
+Another classic example is asking something with not very well defined tense or intensity adverbs. Have you been exercising lately? What does it mean to you lately? Of course, your interpretation will be different from mine and it will be different from other people.
+The correct thing is to define the question of time well so as not to create any kind of confusion in the answer. Have you exercised at least twice a week this year? Question misinterpretation problems are very common and should be avoided.
+
+desire to please
+Most respondents tend to understate statements about “antisocial” habits or opinions, or exaggerate statements about “good habits”. People, of course, tend to respond in ways they deem socially desirable or expected.
+
+Many issues generate discomfort and the person who received it may feel embarrassed and afraid to tell the truth in front of a stranger. You can already see how important the construction of the questionnaire is from a psychological point of view, right?
+
+Obtaining information can be a very complex task. Note the examples below:
+
+Example 1:
+
+How many times have you missed school in the last month?
+Example 2:
+
+Have you ever been drunk?
+“Socially more respected” is a person who doesn't miss a class (as if that were the only metric of learning) or who hasn't gotten drunk. These are issues that may have no bearing on someone's professional behavior. However, saying it out loud can even cause some kind of “pain in conscience”. More sensitive issues or issues that can generate discomfort have to be very well placed and approached with great caution.
+
+It is very common for questions of this type to have a low acceptance and, consequently, a high non-response rate. Under no circumstances should the respondent be constrained. In sensitive research, the participation of trained professionals in the construction of the questions is important. In such cases, it may be better not to wait for a verbal response and ask the respondent to write down the correct answer on paper. This will decrease the likelihood of bias and will encourage the respondent.
+
+
+Ask the uninformed / who don't know
+People don't like to admit they don't know what it's about when you ask a question.
+
+Heads up
+The fact that whoever is being interviewed is totally unaware of the subject can cause a great bias in the research. Good questions are those that extract the true information that the respondent has. Check that respondents would have the information or knowledge needed to answer the question.
+Doing a household income survey with a teenager in the household may not be the most recommended situation. It may provide an idea of ​​household expenses and wages, but it will likely be inaccurate. Note below how not knowing a question could cause the answer to be highly biased.
+
+Example:
+
+Would you allow your child to use AutoCAD?
+That question asked of the general public could have a catastrophic return. The question already induces a negative answer, as the verb permit conveys the image of something that may not be well accepted by society. Furthermore, many people who do not know what the matter is may believe that it is an illicit substance and answer completely wrongly due to simple ignorance. When, in fact, AutoCAD is software for making technical drawings and creating models in more than one dimension.
+
+unnecessary complexity
+Another crucial point for a good answer is not to make the questionnaire too complex. A good questionnaire cannot take a long time to complete, as people get tired, busy, or simply don't want to answer.
+You may be defending your graduation thesis and need a lot of the questionnaires answered, but don't forget that, on the other side, there may be someone who doesn't care about this.
+
+If with an extremely well-structured questionnaire people can simply refuse to answer, imagine if it is something complicated? Therefore, the questions must be short, simple, direct, avoiding double denials. Follow the examples below:
+
+Example 1:
+
+"Shouldn't ex-drug dealers not be allowed to work in hospitals after they get out of prison?"
+Example 2:
+
+"Don't you agree with the new law that didn't pass energy rationing so that everyone had energy?"
+Possibly, the questions above would have a bad rate of return, as the questions were complex and poorly formulated. The examples have double denials, which makes the answer extremely challenging for the listener. The person may be embarrassed to ask the interviewer to repeat it, or even say they didn't understand and simply answer something just to go through the questionnaire and finish soon.
+
+It is also important to avoid double questions, as the answers can be completely different. Some questions may appear to have the same answer pattern, but it may be something completely different.
+
+Example 3:
+
+"How often do you visit your parents?"
+
+Ask separately about the father and the mother. You don't know the background of the survey respondents, so the questionnaire cannot be based on any assumptions.
+
+Example 4:
+
+"Do you usually buy frozen meat and frozen fish?"
+
+Ask separately about meat and fish. Never try to guess the consumption habits of individuals, ask the independent questions and put the option of not consuming or not buying that product. That's because he can buy and not consume or consume and not buy. Consider all possible combinations.
+Ordering of response categories
+This is a very common mistake and is often used on purpose by several research institutes.
+
+Heads up
+If a question makes respondents reflect on something they hadn't thought of before, then the order of questions can affect the answers. In general, the rule is that the first question is easy, short, interesting, encouraging participation, and applicable to all respondents.
+
+A good example is in electoral research. Imagine a city with several candidates for mayor, where the population's voting intention will be researched. The question was asked in a simple, short and direct way: Which candidate will you vote for?
+
+1- Mary
+
+2- John
+
+3- Carlos
+
+4- Joseph
+
+5- Renata
+
+6- Luciana
+
+7- Marcelo
+
+8- Julius
+
+Initially, it may seem that there is no problem whatsoever with the question, but there is a huge problem with ordering in the categories. Trying to ask someone something and giving several answer options, probably only the first and/or last cases will be remembered. In the example, when he finishes reading the candidates, a voter who is not very oriented about his vote will likely not remember all the names and, statistically, will end up saying either the first or the last option.
+
+Tip
+In this case, the most correct thing is to give him a disk with all the candidates corresponding to the same angle, without colors, as even the color can cause a bias in the answer, since we know how colors are linked to political parties.
+Note that, on the disk, all candidates have the same angular distribution (360/8 = 18°). The disc is homogeneous, colorless and completely regular. Also, all names are facing the center, so there is no bias in the answer. Just give the person the disk and ask them to point out the candidate they most identify with. This is the correct way to obtain information of this type, as, in addition to making the information truer, it makes data collection more interactive.
+
+Confidentiality and anonymity
+When planning the survey, two factors about the respondents must be very well defined from the objective of the study. Are they:
+
+confidentiality
+anonymity
+These are similar concepts, but they have a difference that can be vital for the type of result you want.
+
+
+All research, no matter how simple, must be kept confidential. In this case, only the researcher knows the identity of the respondents. This is essential for obtaining honest cooperation from individuals. It's what we call the Secrecy Law.
+It is considered that there is a risk of identifying the informant when the number of units, for the tabulated aggregation level, is equal to or less than two. In this case, data cannot be disclosed. Due to the legislation that ensures the confidentiality of statistical information, rules were adopted to avoid the identification of informants based on the disclosed data. This procedure consisted of applying an (x) in the cell corresponding to the value to be omitted. This step is called disidentification.
+
+In surveys by IBGE company, the IBGE researcher knows exactly the individual information of each company that responded. However, when the results are released, the data can never be presented in a way that any company can have its data disclosed. Let's see the example below:
+
+Industry Activities of a State X Companies
+Total Sales Revenue (1,000 R$)
+Extraction of metallic minerals
+
+3
+
+2 893 125
+
+Support activities for mineral extraction
+
+two
+
+(x)
+
+Manufacturing of food products
+
+14
+
+17 813 285
+
+beverage manufacturing
+
+5
+
+11 451 775
+
+Manufacture of tobacco products
+
+1
+
+(x)
+
+Total
+
+25
+
+32 158 185
+This is a part of a table in the dissemination of industrial research. Above, the values ​​of the total number of companies and their sales revenue are represented. If users do a brief internet search, they will find the only tobacco company in the state. Soon, their data would be fully disclosed and this could not be disclosed. Another case happened in the “support activities for the extraction of minerals” where only two industries appeared. Thus, from the moment the owner of one of them has access to this data, he can find the result of his competitor. In both cases, values ​​are replaced by (X). Imagine if the data were revealed, companies would feel harmed by having their data revealed and would stop responding.
+
+Heads up
+The basic rule is to de-identify, at the same subtotal or totalization level, the columns for which you have information relating to only one or two economic units.
+
+All IBGE surveys (and all of them should be like this) are concerned with the possible vulnerability to breaches of confidentiality.
+
+
+Anonymity, on the other hand, occurs when not even the researcher knows the identity of the respondents. It is sometimes necessary to increase the honesty of responses on sensitive topics or to provide reassurance to those taking part in the study. In this case, the respondent would have total confidentiality and would feel more comfortable in participating in the survey, as no one would know of their identification.
+
+The recommendation is that any matter that could cause extreme discomfort or intimidate the respondent should be treated in this way. Think that the research can be repeated over time, so if it causes some trauma on the first occasion, it may have a low return on the next ones.
+
+For example, a survey made to find out if that group of people consume some kind of drug. In this case, it is preferable that not even the researcher knows who answered positively, as this will give them much more freedom to tell the truth. A second example might be in testing the effectiveness of a drug. Let's think about testing for a vaccine against COVID19. In this type of study, it should be initially separated into two groups. Those who receive the drug's active ingredient and those who receive the placebo. The placebo contains absolutely nothing, but the research participant will not know what he is getting. Furthermore, it is ideal that no one knows who the individuals are, so as not to generate any kind of comfort or even persecution.
+When elaborating a survey, the following question was added to the questionnaire: "Don't you think it's bad if you drink alcohol before lunch?" Regarding this question, which of the factors in the construction of the questionnaire was broken?
+Unintentional addiction, because, despite not being done consciously, it can affect the result of the response.
+
+Deliberate addiction, as the way the question was drafted can influence the answer given.
+
+Desire to please, as asking about alcoholic beverages is something relaxed that the respondent would be happy to participate in.
+
+Unnecessary complexity, as the individual may not know what the issue is about.
+
+"B" is correct.
+
+The question "You don't think it's bad for those who drink alcohol before lunch" inserts a huge bias in the answer, as it evidences the opinion of those who framed the question, and it is clear that they think drinking alcohol before lunch is bad. type of bias is called deliberate.
+
+The owner of a new mall received many alerts in a given month that customers were leaving stores without paying for the products. Most, for mere distraction, and as soon as the door equipment beeped, the customer realized the mistake and returned to the store. As this caused some embarrassment, he thought of hiring a research team to try to measure how much and why this was happening. Which of the alternatives below would be the best way to raise this issue?
+Have you ever left a store without paying?
+
+Did you know that leaving a store with a product without paying is considered a theft?
+
+Many people, unintentionally, sometimes leave the store without paying. Has this ever happened to you?
+
+If you left a store without paying and no one noticed, would you take the product home?
+
+"C" is correct.
+
+A sensitive question that must be very well constructed so as not to embarrass or intimidate the respondent. No question that implies that the individual may have acted in bad faith should be asked. Therefore, the only possible solution to this problem in the question is the letter c. In this way, we try to minimize the impact of the person leaving the store without paying, using the idea that, sometimes, unintentionally, some forgetfulness can happen.
+
+MODULE 3
+Distinguish between probabilistic and non-probabilistic sample selection methods and sampling types
+
+INTRODUCTION
+In the previous module, you realized the importance of a good questionnaire construction and how this can impact the results. In this, we will see the main methods of data collection, the distinction between probabilistic and non-probabilistic sample selection methods and, at the end, the different ways to classify the types of sampling. It is very important that you understand these sample selection methodologies, as they will be the basis for building more elaborate plans.
+
+STATISTICAL DATA COLLECTION METHODS
+Census
+In a census-type survey, information should be collected on ALL units of the population. The correct thing for this type of collection is to return to the individual's home until the information is obtained.
+Furthermore, census data are the necessary basis for sample surveys, so important in a society where information must be reliable and quickly available. The operation that involves this procedure is grandiose, it requires enormous preparation, sometimes years before starting the collection. Below, we will observe examples of large censuses carried out in Brazil, all of them highly complex and carried out by the IBGE.
+
+demographic census
+The demographic census of Brazil is carried out every 10 years by the IBGE (Brazilian Institute of Geography and Statistics). In 1872, the first national census was carried out in Brazil, still during the imperial period. It was the first major collection operation in our territory. IBGE was only created in 1934, so this was the beginning of statistical activities in the country, having been a milestone in the history of our nation.
+
+
+The population is counted throughout the entire territory of Brazil and the results are used by the government in the development of public policies and in the allocation of government funds to the federative units. It tells us how we are, where we are and how we live.
+
+In 2010, IBGE carried out the XII demographic census, however, the preparatory phase of the census operation began in 2007 and its work was intensified as of 2008. The collection began on August 1, 2010, lasting 3 months. The first results were released in December of the same year. The next one would take place in 2020, but, due to COVID-19, it was postponed (initially, to 2021).
+agricultural census
+Heads up
+It presents a statistical and territorial investigation on the country's agricultural production. The agricultural census in Brazil is also carried out every 10 years by the IBGE (research periodicity is 10 years).
+
+In 1920, the first agricultural census was carried out in Brazil, as part of the general census.
+
+The last agricultural census took place in 2017 with data collection carried out from October 2017 to February 2018. Information on property, production, area, employed personnel, stocks, livestock, permanent farming and forestry, among other totals, were raised.
+
+economic census
+Since the 1940 economic census, the IBGE has been collecting data on companies in Brazil. The last economic census was that of 1985 (census 85), and information on the group of companies was only available in 1991. Based on the census 85 and with the adoption of the registration number in the General Taxpayers Registry (CGC) it was done a register of informants for about 1.1 million companies.
+
+From 1985 onwards, economic censuses were replaced by sample surveys. Currently, the country has more than 4 million companies and researching all of them would be a highly costly job that would demand a lot of time and money.
+Advantages and recommendations of the census
+As mentioned before, the census presupposes the collection of all population units. The recommendation for its use and its main advantages are listed below:
+Study of very small populations
+If populations are small, all individuals can be collected. It makes no sense to want to select a sample if there is a very small population. For example, if we are interested in knowing a class of 30 students' knowledge of politics, there is no need to ask just a few people. We can ask everyone, as there are not many people to be interviewed.
+Study of very small populations
+If populations are small, all individuals can be collected. It makes no sense to want to select a sample if there is a very small population. For example, if we are interested in knowing a class of 30 students' knowledge of politics, there is no need to ask just a few people. We can ask everyone, as there are not many people to be interviewed.
+maximum accuracy
+The degree of precision of an estimate is the range, in terms of percentages, in which the difference between the estimated value and the actual value of a variable can be located. Thus, if the survey requires complete precision, the census is mandatory, because if the error is to be practically nil, the census must be carried out. As the entire population will be interviewed in the census, the error is assumed to be zero. Any non-census survey will have errors, which can and should always be minimized.
+Allows the construction of records
+The geographic base, built on the occasion of the census, represents a complete register of areas in the country, of wide application, as an intermediate stage of sampling, for planning further research. The census has a fundamental role not only for the construction of registries for the selection of probabilistic samples of household surveys conducted in the inter-census period, but also for the structuring of sampling plans, which traditionally use census information for the dimensioning and selection of samples .
+Sampling
+Sampling theory is one of the most important components of an area of ​​statistics called inference. This derives from the word infer, which means to draw conclusions from some information.
+
+Heads up
+In this case, the objective is to present results on a population based on studies carried out in only a part of it, what we call a sample. These results are made based, for example, on descriptive statistics and on the calculation of probabilities.
+
+According to Thompson (2002), “sampling consists of selecting part of a population to observe, so that it is possible to estimate something about the entire population.” Note that the author of the sentence did not use the verb calculate, find or obtain, for example, he used the verb estimate. When doing a sample search, the error will always be part of the work, so we'll only get an estimate of the result. It is impossible to do an excellent job without having to interview the entire population. It is impossible to do a sample survey without error, which is actually the price you pay for not interviewing all the individuals, that is, the price for not doing the census.
+
+From this definition, we conclude that a statistical inference requires the adoption of a probabilistic or random sample selection method. Probabilistic sample selection processes are important because they avoid introducing trends into the sampling results. A sample is called probabilistic if its selection is made in such a way that each element of the population has a known probability of being selected.
+Governments, at all levels, are increasingly making public policy decisions based on data obtained through sample surveys. This is because they collect information about a portion (SAMPLE) of the population. An example of population and sample can be seen in figure 1. Imagine that the population in figure 1 is of all the companies that are part of the IBGE register and the sample is only those that will, in fact, be selected for collection.
+
+
+Figure 1 - Sample and population example.
+Another important aspect of using samples occurs in destructive testing, as it is the only viable alternative for quality control in these cases.
+Example
+A company that produces matchsticks, for example, cannot test all of its matchsticks, because at each test a unit is destroyed. Thus, the use of sampling is important, as not using it would lead to the destruction of the entire stock.
+
+In addition, sampling is also used for populations considered to be infinite. Imagine testing a new anticide, it is impossible to know the population and ants in any place, so you work with the hypothesis of an infinite population when making a sample.
+
+Sample and non-sample errors
+A very important aspect of conducting a survey is error. As we saw above, the error is part of a research and the important thing is not to deny it, but to know how to work with it. In a sample survey, there are two types of errors:
+
+sample errors
+The first type is the measurable error, it is one that you define a pre-fixed value before the search goes into the field. When calculating the size of a sample, you define an acceptable error (we'll see this in theme 2). This is the sample error; if you want a very small error, you will need to have a very large sample.
+Non-sample errors
+The second error, non-sampling, does not allow for a direct measurement method. For example, an interviewer who has not been well-trained may ask the questions wrongly and this may hinder the completion of the questionnaire, or even if everything has been done correctly and the individual may refuse to answer the survey. These are non-sampling errors, but ones that influence the outcome of the process.
+
+According to Lutz (2007), sampling errors are errors that occur when there is a difference between the value obtained in the sample and the parameter of interest in the population. Non-sampling (systematic) errors occur when sample data is incorrectly collected, recorded or analyzed. In all studies, sampling and non-sampling errors can occur. Non-sampling errors appear at any stage of the sampling survey and, if not identified and evaluated, possible distortions can seriously compromise a sampling plan.
+
+With technology, some non-sampling errors can be minimized, since, if the questionnaire is electronic, some criticisms can already be programmed. Thus, the questionnaire does not advance to the next question if the previous one is still blank. With electronic equipment, it is also possible to map whether the interviewer was actually present in that particular neighborhood and day, for example.
+
+Every result of a sample is an estimate of the population. The sampling error is the difference between the actual result (whole population) and the sample estimate. As the real value is not known, this value is unknown. In order for a sample to be a good representative of the population, control over sampling error must be exercised. This is because not all members of the population are part of the sample. Therefore, the results of each sample will be different. In each population, there are several samples and each one of them can give different results.
+Sample Advantages and Recommendations
+Just as the census had a series of advantages and recommendations for use, the sample also has its own characteristics. Furthermore, a well-done sample has as much scientific value as the study of a population as a whole. Below are the main factors when choosing to select a sample:
+LOWER COST
+With the observation of only a portion of the population, the cost of collection is much lower than that of a census (total coverage of the population). If the survey will not collect all units of the population, it is evident that the cost of the sample is lower.
+HIGHER SPEED
+Agility and speed are also part of a sample, as the collection time is small compared to the census. The need for a short collection time is intended to measure characteristics at that moment. In general, if the variable of interest has high variability in a short time, the ideal is for the sample to take a few days to be collected.
+
+A sample that takes a long time to be collected may no longer reflect its population, as there may be variables that undergo many changes over time.
+
+A survey that is investigating the incidence of COVID 19 in the population, for example, cannot take long to give a result, as the virus can be fatal, the ideal is a quick survey with a quick result.
+CONTROLLED PRECISION
+Indicates how far the estimate can deviate from the true value. Here is one of the most beautiful things about working with the sample. This is because, contrary to popular belief, it is possible to estimate, before the sample goes into the field, the amount of error that is supposed to happen.
+
+A great example is election polls. Before the research went into the field, sample size calculations were already established. Then, that sample will have an expected error that has already been established.
+
+When you hear it say “an error of 4 percentage points more or less”, it means that, before the survey took place, this value had already been established. Sample size will be fully tied to budget and time constraints.
+REDUCTION OF COLLECTION LOAD
+With a well-prepared sample design, the collection is positively influenced, as there is a reduction in its load. The possibility of using a sample reduces the collection load, because, as the entire population will not be investigated, only a part of it, then the number of questionnaires to be collected decreases, also reducing the work of the collection network.
+
+This is a vital point for the research, as, by reducing the collection load, time and cost will also be reduced. Many research institutes pay the interviewer for each questionnaire collected, so with fewer questionnaires, the amount will be lower.
+SPECIALIZED NEEDS
+The sample can meet specific characteristics that you want to analyze. If the interest is to study only men or only women, this information can be used to prepare the sampling plan. The sample allows you to establish the focus of the study in advance. If the idea is to investigate only the participation of women in the labor market, a sample focused on women and not on the population as a whole can be created.
+Sampling Types
+Basically, sampling comes down to two types:
+
+probabilistic
+non-probabilistic
+The first case is the one where you can actually estimate variances, estimate sampling errors and generalize results to the population. This is the type of sampling used by serious statistical institutes. This is the correct way to gather information from the sample and carry out a broader study of the population. The non-probabilistic is more complicated, as the fundamental principle of statistics has been broken, the random and probabilistic selection of units.
+
+Therefore, non-probabilistic surveys can give an idea about that variable, but never an expansion for the population as a whole. Do you know those polls you take with friends or see on Facebook groups? So, these are classic examples of non-probabilistic research.
+Example
+Imagine the following situation: a company wants to conduct an electoral survey to investigate the candidates' voting intention for an election. However, instead of a probabilistic survey, where all individuals would have a probability of being selected (it may be a very small value, but it should still be greater than zero), the company decides to collect only from those who are in the town square of morning.
+
+Do you believe this result will really reflect reality? Probably not. If you never pass that square, then your probability of being part of the survey is zero. In other words, you will never be part of the survey. This breaks the basic premise of sampling, where all elements must have a greater than zero probability of being part of the sample. No wonder we see many surveys with absurd results.
+
+probabilistic sampling
+In short, the characteristics of a probability sampling are:
+Selection probabilities incorporated in population estimates
+It means that, when we are going to calculate estimates of interest, a total or an average for example, the value of the selection probability of that unit will be taken into account.
+
+Known and Calculable Selection Probabilities
+Given that we will select an individual from the sample, the probability that he will be part of the research must be something known, that is, it has to be something that could have been calculated. It is impossible to select an individual for a survey if he does not have a known selection probability.
+Allow Statistical Inference
+Only in probability sampling is it possible to make generalizations for the population, we call this step Statistical Inference.
+
+Every unit of the population has > 0 probability of being chosen
+Fundamental condition for a probabilistic sample, as all units must have a probability greater than zero. It may be a tiny value, but it still cannot be zero.
+There are several types of probabilistic sampling, below are the main ones, which, by the way, are the same covered in the course:
+
+
+SIMPLE RANDOM SAMPLING
+It refers to a sample selected from a population in such a way that each combination of elements in the population has an equal probability of being selected, and selection can be made with replacement and without replacement.
+STRATIFIED SAMPLING
+It consists of dividing the population into groups (called strata) by a process called stratification and having each group select a simple random sample or another form of random selection. The purpose of dividing the population into groups is to bring together in the same group elements of the population that are more homogeneous among themselves as to the characteristic under study than in the population as a whole, and from stratum to stratum a different behavior.
+SAMPLING BY CONGLOMERATES
+It consists of dividing the population into groups (called clusters) and a sample of groups is randomly selected to represent the population. The groups serve as a sampling unit, and selection can be done in more than one stage.
+SYSTEMATIC SAMPLING
+When the elements of the population are presented in order and the removal of elements from the sample is carried out periodically, with the first element being randomly drawn. As the name says, it is a form of systematization, that is, it is a sample selection made up of x in x regular units.
+
+Example
+Annual Services Survey (PAS), Innovation Survey (PINTEC), PNADC (Continuous National Household Sample Survey).
+
+All these surveys are sample and carried out by IBGE. In practice, a more elaborate research hardly uses only one sampling method. The idea is to mix these selections to make a more efficient method. Depending on the specificity of the research objectives, one type or another is used.
+
+Non-probabilistic sampling
+Now that you understand the difference between probabilistic and non-probabilistic methods, let's know a little more about the second one.
+
+Its use does not allow us to know the accuracy of the results obtained, this accuracy being conditioned to assumptions or judgments that cannot be objectively measured. That is, there are no mathematically demonstrated formulas and expressions for this type of collection.
+Thus, we cannot make any kind of generalization of the results to the population. The following are the main non-probabilistic sample selection methods:
+SAMPLING FOR CONVENIENCE
+Elements selected because they are immediately available. The selection of sampling units is left to the interviewer. It's that classic case of going to the square and interviewing anyone who passes by, because it's more comfortable.
+INTENTIONAL SAMPLING
+Selection is based on knowledge about the population and the purpose of the study. For example, if the researcher is studying the nature of student spirit in a protest, he might interview people who are not sensitized to try to belittle the movement, or research on the importance of religion within a Church. Completely biased results.
+SNOWBALL SAMPLING
+Used when population members are difficult to locate. The researcher asks each element of the sample to identify others who belong to the same target population of interest. Despite the randomness of the choice of elements in the 1st sample, the final sample is not probabilistic! Example: Research with immigrants without a permanent visa in the country. An immigrant invites another, who invites another one and so the "snowball" grows.
+SAMPLING BY QUOTAS
+Units are selected based on characteristics of the proportion of the total population. The proportion of elements in the sample, with a given characteristic, will be equal to the proportion of elements in the population. Example: sex, age, race etc. It may seem random, but it isn't, because as soon as your quota is reached, you stop interviewing people with that characteristic.
+
+The sampling process requires the selection of population units. Within the sampling we have the probabilistic and non-probabilistic methods. About the types of sampling defined below, which presents itself as being a type of non-probabilistic sampling?
+
+simple random sampling
+
+Stratified sampling
+
+intentional sampling
+
+Cluster sampling
+
+"C" is correct.
+
+
+Intentional sampling has an intrinsic bias that seeks to highlight the aspect of interest to the interviewer. Unlike the principles suggested in probability sampling, it is not possible with this type of sampling to make inferences about the population only with the sample constructed in this way.
+
+2. From a population, it is possible to select a part for study, through some selection method, which we call a sample. According to the definitions below, what is the correct definition of sampling?
+Sampling consists of selecting part of a population to observe so that you can find something about the entire population.
+
+Sampling is about selecting an entire sample to observe so that you can estimate something about the entire population.
+
+Sampling is about selecting an entire population to observe so that you can estimate something about the entire population.
+
+Sampling consists of selecting part of a population to observe, so that it is possible to estimate something about the entire population.
+
+D" is correct.
+
+
+The correct definition of sampling is to select part of a population to observe so that you can estimate something about the entire population. The correct term is to estimate, as the values ​​found will always be a value that approximates the true one. So, verbs like get, find, or find should never be used.
+
+FINAL CONSIDERATIONS
+Now, you already know what a survey is and what are the fundamental steps for its successful execution. Throughout this topic, we know the entire methodology to be followed, from defining the objectives, obtaining the registration, selecting and collecting the sample, estimating the variables of interest and their precision measures, to finalizing the preparation and presentation of the results.
+
+We realized the importance of building a good questionnaire, its main characteristics and how a poorly prepared question can impact the entire dissemination. Finally, we learn the concepts and differences between sampling and census, as well as the differences between probabilistic and non-probabilistic sampling selection methods. In addition, sampling types used in practice were presented, along with examples of probabilistic and non-probabilistic selections.
+
+Knowing sample plans in theory and then applying them to real problems is the ultimate goal of our discipline. We took the first step in this more theoretical chapter about the types of surveys and the different sampling plans. It is very important to clearly define the objectives of the work and who will be the participants in the research, so that the sample is carried out correctly. Next, we will enter the universe a little more mathematical of sample designs, making calculations and estimating some quantities of interest. The knowledge of statistics, mainly sampling and inference, together with the computational part, are fundamental in the preparation and knowledge of a data scientist.
+
+BIEMER, P. P.; LYBERG, L. E. Introduction to survey quality. Hoboken, NJ: John Wiley & Sons, 2003.
+
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: Blucher, 2005.
+
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W.G. Sampling Techniques, third edition. New York: John Wiley & Sons, 1977.
+
+FERREIRA, V. A. M. Análise Estatística. Rio de Janeiro: Estácio, 2015.
+
+FREI, F. Introdução à Inferência Estatística. Rio de Janeiro: Interciência, 2018.
+
+GIL, A. C. Métodos e técnicas de pesquisa social. 5. ed. São Paulo: Atlas, 1999.
+
+GIL, A. C. Como elaborar projetos de pesquisa. 4 ed. São Paulo: Atlas S/A, 2002.
+
+GUTIERREZ, H. A. Estrategias de muestreo. Diseño de encuestas y estimación de parámetros. Universidad Santo Tomás, 2009.
+
+JESSEN, R. J. Statistical Survey Techniques. New York: Wiley, 1978.
+
+LARSON, R.; FABER, B. Estatística Aplicada. 4. ed. São Paulo: Pearson, 2009.
+
+LOHR, S. Sampling: Design and Analysis. 2. ed. Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. O. Estatística Básica: Probabilidade e Inferência. São Paulo: Pearson Prentice Hall, 2010.
+
+PFEFFERMANN, D.; RAO, C. R. Handbook of Statistics 29A: Sample Surveys: Design, Methods and Applications. Amsterdam: North Holland, 2009.
+
+SARNDAL, C. E., SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. Nova York: Springer-Verlag, 1992.
+
+SMITH, T. Refining the Total Survey Error Perspective. International Journal of Public Opinion Research, 2011.
+
+THOMPSON, S. K. Sampling. John Wiley. 2 ed. EUA, 2002.
 
