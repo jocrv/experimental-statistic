@@ -1,0 +1,698 @@
+DESCRIPTION
+Basic concepts of cluster sampling and aspects of its selection in one, two and multiple stages; Variables of interest, such as mean and total; Correlation coefficient between clusters; A particular case of cluster sampling, systematic sampling.
+
+PURPOSE
+Understand the characteristics of the conglomerate sampling technique for estimating the quantities of interest in a survey. Present the expressions used to perform this estimation and the intraclass correlation coefficient. Also present a particular case of the conglomerate sample, in this case, systematic sampling.
+
+PREPARATION
+Before starting the content on this topic, make sure you have paper and pencil around to follow up on the examples and demonstrations.
+
+GOALS
+MODULE 1
+Apply the concept of cluster sampling in one or more stages, comparing different sampling plans in selecting sample units
+
+MODULE 2
+Apply statistical expressions in estimating quantities of interest according to cluster sampling, including the intraclass correlation coefficient
+
+MODULE 3
+Describe systematic sampling for sample selections and estimations
+
+MODULE 1
+Apply the concept of cluster sampling in one or more stages, comparing different sampling plans in selecting sample units
+
+INTRODUCTION
+In many surveys, the cost of collecting population units can be very high. As much as you have some information about this population, it can be very difficult to collect all sampling units. To try to minimize these impacts and work around this problem, conglomerate sampling can be used.
+
+This module will analyze selection types in cluster sampling. We will see what are the advantages of making a conglomeration in the population and how to carry it out. In addition, we will study cluster sampling selection at more than one level. We'll start at one level and then look at selection in multiple stages. You will find it useful to create groups in the sample before sampling.
+
+
+Source: GoodStudio/Shutterstock
+REASONS FOR SAMPLING BY CONGLOMERATE
+The cost of a survey is an extremely important variable when defining the planning stages. Probably the person who hires a survey does not know anything about the sampling plan, selection methods, estimation or margin of error. But one thing she wants, and wants a lot: to save.
+
+TIP
+This is a huge challenge in practice, as convincing someone to do X while Y is much cheaper can be very tricky. Therefore, it is always important to explain and let the customer choose among the different sampling scenarios. When making these sampling choices, use different confidence levels (Z ) and error values ​​as well (E = 1%, E = 3%, E = 5%). Explain the impacts the results can have using one scenario or another. To help solve problems of this complexity, cluster sampling (CA) can be very useful.
+
+Sometimes updated records of units of analysis are available, however the investigation of units in this population can be difficult because they are dispersed in real life, resulting in high collection costs and delays in obtaining data.
+
+Depending on the case, even if the register of this population is well defined, well organized and well updated, it can be very costly to select samples for it through simple random sampling (AAS) or stratified sampling (AE).
+
+AAS
+
+At AAS, you select your sample from a list in a completely random way that can be done with or without replacement. Thus, any unit can be part of your sample and the problem increases if a single element far away from the others is selected. Having a very high travel cost to get a single questionnaire may not be worth it. This is a very undesirable characteristic of simple random sampling.
+
+AE
+
+In AE, you need to build the natural and/or statistical strata, however, for each stratum built, you need to select a sample within it. So, if there are 1000 strata, we will have to select sample in each of the 1000 strata. If you don't have a lot of time constraints or budget resources, that's fine, but if that happens, what alternative would we have?
+
+This is where cluster sampling comes in. Imagine dividing your population into groups, but without having to select samples from each of these groups as in AE and, furthermore, you are also not completely dependent on the randomness of the distance of each unit, as in AAS. You first randomly select a few groups and only after that do you get your sample.
+
+Thus, in cluster sampling models, the investigation of units grouped into clusters should be carried out, instead of investigating each simple unit in isolation, as in the simple random and stratified sampling models.
+
+COMPARISON OF STRATIFIED SAMPLING AND SAMPLING BY CONGLOMERATES
+The idea of ​​a cluster sampling plan reminds, in a way, of stratified sampling. In both cases, we initially have to divide the population into groups. Until this part the steps are the same, however, from there, the differences begin to appear.
+
+Stratification
+
+Stratification is more indicated when the groups that were formed are internally more homogeneous among themselves. So, in theory, the variability within strata will be very small, which makes the variability between strata large (if the variability is small inside, it should be large outside). Not to mention that, in the case of AE, we have to ensure that we make a selection of samples in each of the strata, no matter how many strata there are.
+
+Conglomeration
+
+In conglomeration, the premise is that these groups formed from the population are somehow similar to each other, so there would not be so much difference in selecting one group or another. The idea is that the sample elements are well distributed in the groups and that there are no individuals with very particular characteristics in any one group. It is expected that the selected conglomerates will be able to represent the entire population well.
+
+We say, then, that the greater the heterogeneity within the clusters, the greater the efficiency of the sampling procedure. And this is exactly the opposite required in stratified sampling. According to Bolfarine (2005), the more similar the elements within a conglomerate, the less efficient the procedure. Such a result is expected, because, for the conglomerate to be a good representative of the universe, it must be a micro-representation of it, that is, it must have every type of participant and not just the same type. So we say it's the opposite of what's expected in AE. Although both methods divide the population into groups (either strata or conglomerates), the techniques are completely different.
+
+CONCEPTS ABOUT SAMPLING BY CONGLOMERATE
+In this type of sampling, stocks are grouped into clusters, also called clusters. In such situations, it is possible to define groups between the units of analysis that are close to each other. The use of such groupings as sampling units makes it possible to increase the speed of collection and reduce investigation costs without great loss of efficiency.
+
+COMMENT
+When the records of the units of analysis are not available (people, households, workers in an industry, commercial establishments, etc.), obtaining and updating these records becomes a problem with regard to cost.
+
+It is possible that the time needed to update them is too long compromising some surveys. Having "registries" in which these units are grouped, such as, for example: demographic census sectors, census sectors from economic censuses, industrial registers, etc. the cost of updating these clustered units is much lower, making it easier to carry out statistical surveys by sampling.
+
+Figure 2: Example of conglomerates. Source: The Author, 2020.
+In Figure 2, we have an example of a population that was divided into 6 groups, that is, into 6 clusters (could be 6 neighborhoods, for example) and each unit within these clusters is a unit of the population. In this case, the sampling unit is no longer each element and becomes the conglomerate as a whole (for example: regions, states, municipalities, households, families, schools, etc.).
+
+Thus, each conglomerate contains more than one population element. According to Bolfarine (2005), what characterizes cluster sampling planning well is that the sampling unit contains more than one population element.
+
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+The first step in using this sampling plan is to define the clusters. Some feature must be found that allows this population to be separated into mutually exclusive (distinct) and exhaustive (all individuals have to be placed in some group) groups, so that there is no non-random difference between the groups.
+
+STEP 2
+Once these groupings are defined, we will select some of them for our sample. When building clusters, it is possible to take advantage of and use the geographic groups themselves. It is a great facility to take advantage of the natural construction of the regions in defining the conglomerates.
+
+STEP 3
+For example, if we want to study how much time Brazilians devote to leisure, we can divide our population into several microregions and then select some for study. This would represent a good saving in travel and travel costs.
+
+ADVANTAGES AND DISADVANTAGES OF SAMPLING BY CONGLOMERATE
+We can say that the biggest advantage of this selection method is in relation to the operational part, which consequently implies a reduction in expenses. Selecting a cluster and investigating the population within it is cheaper than doing the other sampling methods we discussed above.
+
+EXAMPLE
+An electoral poll, for example, in a country like ours with a continental dimension can be something very complicated. AC can then be extremely advantageous, as imagine making a selection across the country. The best thing would be to separate the population into groups and then select some for study. Furthermore, the use of these geographic clusters can greatly reduce research costs.
+
+The biggest disadvantage of this type of selection is that the clusters are very homogeneous internally. This would be very bad for the research, because if the elements within the cluster are very similar, the sampling plan will result in problems at the time of statistical analysis, as it will present greater variance. Within the same conglomerate, the units tend to have similar values ​​(high correlation) with regard to the research variables. This phenomenon tends to make sampling plans of this type less efficient.
+
+SAMPLING BY CONGLOMERATES IN STAGES
+So far, you've learned the importance of creating clusters for using this sample plan. However, CA is not limited to just that, it allows you to make several later stages of selection. We will now see how this can be done in practice.
+
+SAMPLING BY CONGLOMERATES IN ONE STAGE
+This is the simplest type of AC. First, we define the clusters and then we select a sample of them according to some sampling plan (simple random sample, for example). Thus, we first organized the groups and then selected them by AAS, which is now called simple cluster sampling (ACS). For the selected clusters, all elements belonging to these clusters will be part of the sample.
+
+In this case, we do not define the sample size, but the number of clusters, because from the selection of these clusters, all individuals within will be interviewed.
+
+Figure 3: Selection of some conglomerates. Source: The Author, 2020.
+In Figure 3, we have the population divided into 6 groups, in which 3 groups were randomly selected (painted yellow). Once this has been done, 1-stage CA says that all the individuals inside will be selected, no matter how many there are.
+
+THEORY IN PRACTICE
+Imagine a survey that wants to estimate the average household income of students in a particular city. Considering the one-stage cluster sampling, what steps were used in order to carry out this research?
+
+RESOLUTION
+First, you can divide the municipality into school districts. In other words, each district will be a conglomerate. Once this is done, we must select some conglomerates and then ask each student's household income. In this way, a sample of units is obtained by selecting a sample of clusters and including all units in the selected clusters (1-stage cluster sampling or ACS1).
+
+SAMPLING BY CONGLOMERATES IN TWO STAGES
+Perhaps you thought: Why do we have to select all individuals? Why not just select a few? If you thought that, you thought exactly in AC in 2 stages. In this case, after selecting the clusters, we must also select individuals within each cluster. Therefore, we are not "at the mercy" of the size of each conglomerate, being able to better control the cost of collecting the survey.
+
+Figure 4 shows a two-stage CA, in which first some clusters (2, 3 and 4) were selected and then only a few units were randomly selected by AAS. We call this case two-stage cluster sampling, or simply ACS2.
+
+Figure 4: Selection of elements within selected clusters. Source: The Author, 2020.
+SAMPLING BY CONGLOMERATES IN MULTIPLE STAGES
+A terminology widely used in data selection concerns the sampling unit. The first items that are used in sampling are called the primary sampling unit (UPA), the second groups are called the secondary sampling unit (USA), the third level called the tertiary sampling unit (UTA), and so on successively .
+
+Multistage sampling is nothing more than the deployment of more selection units from previous levels. Imagine a school survey in a municipality. First, each school is defined as a conglomerate from which a few will be selected. From this draw, some classes are selected from each school and, finally, students are selected by class, as can be seen in Figure 5.
+
+
+Figure 5: Representation of multi-stage cluster sampling. Source: The Author, 2020.
+In Figure 5, we first select the schools that will be part of the research (1 and 3), then the classes of these schools (class 2 in school 1 and class 25 in school 3). Finally, we make a selection of students within each class. So we have:
+
+Primary sampling unit (UPA): School.
+Secondary sampling unit (USA): Class.
+Tertiary sampling unit (UTA): Students.
+In summary, we have this 3-stage cluster sampling:
+
+STEP 1
+Sample of selected UPAs.
+
+STEP 2
+Selection of a sample of USAs in each of the UPAs selected in the first step.
+
+STEP 3
+Sample of selected elementary units from each of the selected USAS.
+
+Some authors use the term elementary unit for the last level of sampling. So, in this case, the students would be called UTAs or elementary units.
+
+In this example we saw 3 stages, but this could be as big as the groups formed. We could select states in Brazil, then cities in those states, neighborhoods in those cities, households in those neighborhoods, and individuals in those households. We would have a cluster sampling in 5 stages, with the States being the UPAs and the individuals the elementary units.
+
+
+WHAT THE CONGLOMERATES ARE AND WHAT THEY ARE FOR.
+
+CHECKING THE LEARNING
+1. (ADAPTED FROM NAVY ‒ CP ‒ 2012) SAMPLING BY CONGLOMERATES IS A VERY USED METHOD OF SAMPLING SELECTION. REGARDING SAMPLING BY CONGLOMERATES, IT IS CORRECT TO SAY THAT:
+Units within the same conglomerate are expected to have similar values ​​in relation to the variables being researched. This feature makes cluster sampling more efficient.
+
+In a sample of the same size by simple random sampling or cluster sampling, the latter tends to have a higher cost per element.
+
+For the conglomerate to be a "good" representative of the universe, it must be a "micro-representation" of it, that is, have all kinds of participants.
+
+Comparing cluster sampling with other sampling plans, it always tends to have lower variance.
+
+2. (ADAPTED FROM NAVY ‒ CP ‒ 2012). CONSIDERING THE SAMPLING THEORY, ANALYZE THE STATEMENTS BELOW.
+
+I - IN SIMPLE STRATIFIED SAMPLING, THE POPULATION IS DIVIDED INTO STRATA (FOR EXAMPLE: SEX, INCOME ETC.) AND SIMPLE RANDOM SAMPLING IS USED IN THE SELECTION OF A SAMPLE FROM EACH STRATUM.
+II - SAMPLING BY CONGLOMERATES IS, IN GENERAL, LESS EFFICIENT THAN SIMPLE RANDOM SAMPLING AND STRATIFIED SAMPLING, BUT ON THE OTHER HAND, IT IS MORE ECONOMIC.
+III - IN SIMPLE RANDOM SAMPLING, EACH SAMPLE UNIT IS SEQUENTIALLY SELECTED WITH EQUAL PROBABILITY, IN SUCH A WAY THAT EACH SAMPLE HAS THE SAME CHANCE OF BEING CHOSEN. SELECTION CAN BE MADE WITH OR WITHOUT REPLACEMENT.
+
+TICK THE CORRECT OPTION.
+Statements I, II and III are true.
+
+Only statements I and II are true.
+
+Only statement III is true.
+
+Only statement I is true.
+
+JACKET
+1. (Adapted from Navy ‒ CP ‒ 2012) Cluster sampling is a widely used method of sampling selection. Regarding cluster sampling, it is correct to state that:
+
+Alternative "C " is correct.
+
+In cluster random sampling, we expect groups of heterogeneous elements within clusters in order to obtain population representativeness. Thus, in order to have this representation, we need every type of population element in the sample.
+
+2. (Adapted from Marine ‒ CP ‒ 2012). Considering the theory of sampling, analyze the statements below.
+
+I - In simple stratified sampling, the population is divided into strata (eg: Gender, income, etc.) and simple random sampling is used in selecting a sample from each stratum.
+II - Cluster sampling is, in general, less efficient than simple random sampling and stratified sampling, but, on the other hand, it is more economical.
+III - In simple random sampling, each sampling unit is sequentially selected with equal probability, so that each sample has the same chance of being chosen. Selection can be made with or without replacement.
+
+Check the correct option.
+
+Alternative "A " is correct.
+
+
+All three alternatives are correct. In simple stratified sampling, the population is divided into strata and the AAS is used in selecting a sample from each stratum. In cluster sampling, the population is divided into distinct subpopulations (clusters). Some of the clusters are selected according to the AAS and all individuals in the selected clusters are observed. In general, it is less efficient than AAS or AE, but on the other hand, it is much more economical. In the simple random sample, each sampling unit is sequentially selected with equal probability; each sample has an equal chance of being chosen. Selection can be made with or without replacement.
+
+
+MODULE 2
+Apply statistical expressions in estimating quantities of interest according to cluster sampling, including the intraclass correlation coefficient
+
+INTRODUCTION
+In the previous module, we saw all the concepts related to cluster sampling, its advantages and disadvantages, and some comparisons between sampling plans.
+
+From this module, we will learn how to make estimates of quantities of interest from the conglomerate sampling plan. First, we'll look at the basic notations and definitions, and then we'll use all of the mathematical expressions to make the estimations in sampling theory. Finally, we will look at the concept of interclass correlation and how it affects the efficiency of the cluster sampling plan.
+
+
+Source: Bakhtiar Zein/Shutterstock
+BASIC NOTATION AND ESTIMATION
+Cluster sampling uses a very specific notation in the estimation process. Remember that we want to know our population, but we will hardly work with all of them. These population variables that we are interested in studying, but they are not known, are called parameters. Our objective from a sample is to be able to estimate these population parameters. For example, the mean of some variable of interest to the population is a parameter, however we will hardly be able to obtain its population value, so we make a sample to estimate this mean.
+
+KNOW MORE
+The theory of multistage CA estimation changes as the number of sampling units increases, but the basic part is the same. We will see the 1-stage cluster sampling estimation. The notation used is given by:
+
+An identifier i to represent the conglomerate to which it belongs.
+An identifier j to represent the variable it refers to.
+The value of some variable in the research we call yij, that is, we are referring to the sample value of a variable j from cluster i.
+The population size of a cluster is defined as N, while the sample size of a cluster is given by n.
+Each element within a cluster is identified by Mi. So, to find the population size, it is enough to add all the units of all the conglomerates. In this way:
+
+M0=∑I=1NMI
+ Attention! For complete visualization of the equation use the horizontal scroll
+In the case of the sample, the total number of individuals m0 is made by adding the individuals of the selected clusters, thus:
+
+ 
+M0=∑I=1NMI
+ Attention! For complete visualization of the equation use the horizontal scroll
+Note that the grand total is given by an uppercase M in the population (M0) and a lowercase M in the sample (m0). In CA notation, population parameters are in capital letters and estimates made by the sample are in small letters.
+
+POPULATION PARAMETERS
+TOTAL IN CONGLOMERATE I
+YI=∑J=1MI YIJ
+Where yij is the value of the search variable for unit j of cluster i.
+
+AVERAGE IN CONGLOMERATE I
+Y¯I=YIMI=∑J=1MI YIJMITOTAL POPULATION
+Y=∑I=1N YIMEDIA PER CONGLOMERATE
+Y¯C=YN=∑J=1MI YIJNMEDIA PER UNIT
+Y¯=YM0=∑I=1N YIM0
+From the population, we selected a sample of clusters by AAS, among the existing N. With that, we will use the sample data to make the estimates as follows:
+
+TOTAL IN SAMPLE CONGLOMERATE I, I =1,...,N
+YI=∑J=1MI YIJ
+Where yij is the sample value of the studied variable for unit j of cluster i.
+
+AVERAGE IN SAMPLE CONGLOMERATE I, I =1,...,N
+Y¯I=YIMI=∑J=1MI YIJMITOTAL SAMPLE
+Y=∑I=1N YIMEDIA PER CONGLOMERATE
+YC=TN=∑I=1N YIN AVERAGE PER UNIT
+Y=TM0=∑I=1N YI∑I=1N MIPROBABILITY OF INCLUSION OF CONGLOMERATES
+P=NNPROBABILITY OF INCLUDING UNITS
+P=NN
+As in ACS1 we selected the clusters by AAS and then searched all the units, it is natural that the probability of inclusion of the clusters and the probability of inclusion of the units are equal.
+
+With these sample values ​​in hand, we can finally make our estimates, including measures of variance:
+
+AVERAGE ESTIMATION:
+Y¯=Y^M0=NM0∑I=1N YIN=Y¯CM
+ Attention! For complete visualization of the equation use the horizontal scroll
+It is this expression then that we will use to estimate the mean of a given variable in CA. In terms of variability, we have the following expressions for variance:
+
+POPULATION VARIANCE OF THE AVERAGE ESTIMATOR:
+VACSY¯=1M21-NNN S2
+ Attention! For complete visualization of the equation use the horizontal scroll
+We will now use the ^ to estimate with the sample data.
+
+ESTIMATOR OF THE AVERAGE ESTIMATOR:
+V^ACSY¯=1M21-NNN S2
+ Attention! For complete visualization of the equation use the horizontal scroll
+Where
+
+S2=∑I=1NYI-Y¯C2N-1
+ Attention! For complete visualization of the equation use the horizontal scroll
+In addition, the standard error of the mean variance estimator is given by:
+
+EPV^ACSY¯=V^ACSY¯=1M21-NNNS2
+ Attention! For complete visualization of the equation use the horizontal scroll
+In the same way as we did for the average, we can estimate the total population. Soon:
+
+
+
+
+
+ESTIMATION OF THE TOTAL POPULATION:
+Y^=NN∑I=1N YI=NY¯C=∑I=1N∑J=1MI WIJ YIJ
+ Attention! For complete visualization of the equation use the horizontal scroll
+Where wij=Nn are the individual weights, that is, it is the inverse of the selection probability nN.
+
+POPULATION VARIANCE OF THE TOTAL ESTIMATOR:
+VACSY^=N21-NNN S2
+ Attention! For complete visualization of the equation use the horizontal scroll
+We will now use the ^ to estimate with the sample data.
+
+ESTIMATOR OF THE VARIANCE OF THE TOTAL ESTIMATOR:
+V^ACSY^=N21-NNN S2
+ Attention! For complete visualization of the equation use the horizontal scroll
+Where
+
+S2=∑I=1NYI-Y¯C2N-1
+ Attention! For complete visualization of the equation use the horizontal scroll
+In addition, the standard error of the total variance estimator is given by:
+
+EPV^ACSY^==V^ACSY^=N21-NNN S2
+ Attention! For complete visualization of the equation use the horizontal scroll
+Now that you know the expressions used to estimate the CA, let's see a practical example of their use.
+
+PRACTICAL FIXATION EXAMPLE
+You want to estimate the Y number of units rented in a corporate condominium. The condominium consists of 270 areas (blocks or blocks, for example). You select a simple random sample from 20 of these areas and determine, through interviews in all units, the number of rented units yi within the area i of the sample, for i = 1, ..., 20. You calculate and find the following values:
+
+∑I=1N YI=333 AND ∑I=1N YI-Y¯C2=5645.55
+ Attention! For complete visualization of the equation use the horizontal scroll
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+To find the estimate of Y, we do:
+
+Y=NN∑I=1N YI=27020333=4495.5
+Therefore, we have about 4496 units rented in this condominium of companies.
+
+
+STEP 2
+To get the variance estimate, we first have to find s2. Therefore, as the value of ∑i=1nyi-y¯c2=5645.55 was given, we have:
+
+S2=∑I=1NYI-Y¯C2N-1=5645.5520-1=297.18
+STEP 3
+Now, we can estimate the total variance, so:
+
+V^ACSY^=N21-NNNS2=27021-2027020297.18=20059650.420≅1002983
+The estimated standard error is Ep=V^ACSY^=1002983≅1002 leased units.
+
+INTRACLASS CORRELATION COEFFICIENTS
+As discussed in the previous module, the efficiency of a conglomerate will depend on the degree of similarity between its elements. The more similar the elements within a conglomerate, the less efficient its results. Thus, the greater the intracluster variability, the greater the efficiency of the sampling plan. On the other hand, the smaller the variability within a cluster, the less efficient that sampling plan will be.
+
+WARNING
+given this
+
+
+the importance to the individuals of a cluster, it is very important to use some measure that indicates the degree of similarity of the elements within the clusters. One of the most common measures is the intraclass correlation coefficient (ICC). The ICC then provides a measure of homogeneity or heterogeneity within a cluster.
+
+If the cluster sizes are approximately equal, we can calculate the ICC as follows:
+
+ICC=∑I=1N∑J=1M∑K≠J=1MYIJ-YYIK-YM-1NM-1SY2
+ Attention! For complete visualization of the equation use the horizontal scroll
+However, in practice, we do not need to calculate this formula, as the value is approximated by a ratio between the variance within the clusters and the total variance. Therefore, we will use the following expression for the ICC:
+
+ICC≅1-SD2SY2
+ Attention! For complete visualization of the equation use the horizontal scroll
+Where SD2 is the calculated variance within the cluster and Sy2 is the total variance. This total variance is given by the sum of the variance between clusters (Se2) and the variance within clusters (Sd2), thus Sy2=Sd2+Se2. The closer to 1 the ICC value is, the more correlated those sampling units are, therefore, the less efficient the cluster sampling plan.
+
+This expression then tells us that if the variance within clusters is so large that Sd2≅Sy2, then ICC≅1-Sd2Sy2=1-Sy2Sy2≅0. That is, if the variance within the clusters is maximum, the variance between them will be approximately zero and the ICC will be close to zero as well. This makes this AC more efficient. On the other hand, if the clusters present little internal variability, the value of SD2 is small, so ICC is closer to 1 and less efficient is the use of cluster sampling in this case.
+
+ESTIMATION BY CONGLOMERATES
+
+CHECKING THE LEARNING
+1. (ADAPTED ‒ EBSERH ‒ 2014) A SCHOOL DIRECTOR WANTS TO ESTIMATE THE AVERAGE OF THE GRADES OF STUDENTS LIVING IN A REPUBLIC. INSTEAD OF OBTAINING A LIST OF ALL STUDENTS IN THE REPUBLIC AND CONDUCTING A SIMPLE RANDOM SAMPLE, HE NOTICED THAT THE REPUBLIC CONSISTED OF 100 BEDROOMS (CONGLOMERATES), EACH WITH 4 STUDENTS. HE RANDOMLY CHOSEN 5 OF THESE BEDROOMS AND VERIFIED, FOR EACH PERSON, THEIR AVERAGE IN THE CURRICULUM GRADE. THE RESULTS ARE AS FOLLOW:
+
+THE ESTIMATES OF THE TOTAL POPULATION AND THE POPULATION AVERAGE ARE, RESPECTIVELY:
+900.37 and 12.20
+
+900.37 and 12.20
+
+1130.40 and 2.82
+
+1130.40 and 11.34
+
+2. ONE WAY TO MEASURE THE EFFICIENCY OF THE SAMPLING PLAN PER CONGLOMERATE IS THROUGH THE INTRACLASS (OR INTRACONGLOMERATE) CORRELATION COEFFICIENT. THE FOLLOWING INTRA-CONGLOMERATE VARIANCE, SD2=687 AND TOTAL VARIANCE, SY2=800, WERE OBTAINED. REGARDING THESE VARIANCES, CALCULATE THE ICC AND MARK THE CORRECT STATEMENT.
+The calculated ICC was approximately 0.14. Furthermore, in AC we expect groups of homogeneous elements within the clusters, in order to obtain population representativeness.
+
+The calculated ICC was 0.14 and the closer to 1, the more homogeneous a cluster is and the less efficient is the use of cluster sampling.
+
+
+The calculated ICC is 1.16, so the efficiency was maximum as the result was above 1.
+
+The intraclass correlation coefficient measures how similar elements within clusters are. As the value obtained was 0.14, we can say that this plan is not efficient at all.
+
+JACKET
+1. (Adapted ‒ EBSERH ‒ 2014) A school principal wants to estimate the average grades of students living in a republic. Instead of taking a list of all students in the republic and conducting a simple random sample, he noticed that the republic consisted of 100 dormitories (clusters), each with 4 students. He randomly chose 5 of these dorms and checked their grade point average for each person. The results are as follows:
+
+Estimates of the total population and the population mean are, respectively:
+
+Alternative "C " is correct.
+
+
+For that matter, we have to first find the estimate of the total population. Therefore, we do:
+
+Y^=NN∑I=1N YI=100512.16+11.36+8.96+12.96+11.08=1130.40
+To find the estimated population mean, we do:
+
+Y^N=Y^M0
+As M0 represents the total unit among the clusters M0=∑i=1N Mi, and from the statement we have 100 clusters and 4 individuals inside, the value of M0 is M0=100*4=400.
+
+Therefore, the estimate
+
+
+
+
+
+of the average is given by:
+
+yn=1130.40400=2.82
+
+The correct alternative is letter c) with the estimate of the total equal to 1130.40 and the average of the grades equal to 2.82.
+
+2. One way to measure the efficiency of the sampling plan per cluster is through the intraclass (or intracluster) correlation coefficient. The following values ​​of intracluster variance, Sd2=687 and total variance, Sy2=800, were obtained. Regarding these variances, calculate the ICC and mark the correct statement.
+
+Alternative "B " is correct.
+
+
+In cluster random sampling, we expect groups of heterogeneous elements within clusters in order to obtain population representativeness. A measure of homogeneity is given by the ICC intraclass correlation coefficient.
+
+When we calculate the ICC, we have ICC≅1-Sd2Sy2=1-687800≅0.14. The closer the ICC is to 1, the more homogeneous a cluster is and the less efficient is the use of cluster sampling.
+
+MODULE 3
+Describe systematic sampling for sample selections and estimations
+
+INTRODUCTION
+In the previous module, we saw all the concepts related to estimating the quantities of interest in a survey, totals and averages, for example, in the case of cluster sampling. In addition, we saw how to estimate the variance and standard error for these estimates. Then, we understand how the intraclass correlation coefficient works and how it is useful to know the variability of the observations and, consequently, the efficiency of the conglomerate plane.
+
+We will now see in this module a particular case of cluster sampling, which is systematic sampling. This sample selection methodology, in addition to being simple, is widely used in practice. In addition, we will also see how to make estimates for this sample design.
+
+Source: cigdem/Shutterstock
+CONCEPTS ABOUT SYSTEMATIC SAMPLING
+Systematic sampling (SA) is a very simple, practical and widely used sample selection method. If you look up the word 'systematic' in the dictionary, you will find something like: Ordered, ruled, which always behaves according to a method. This is exactly what happens in this type of sampling plan. As the name implies, AS is something that depends on a systematization, on something that always occurs in the same way.
+
+COMMENT
+This sampling method is widely used in practice, but it must be applied with care. Suppose the elements of a population are arranged in a row. You should not select only the first ones, or only the last ones, or even those in the middle of the line. The correct thing is to go through the entire queue and make a selection that is completely random.
+
+But how to ensure that the entire list is covered? Let's look at an example to begin to understand how this can be accomplished.
+
+THEORY IN PRACTICE
+Imagine that you have been hired to do a queue search for a super famous and sold out show. Your goal is to find out some basic information about those people, such as: where they came from, how long they will stay, how much they intend to spend inside the event, etc. You don't have a record, you can't create strata, you can't create a study cluster. So how could you do a survey like that?
+
+RESOLUTION
+Maybe you've thought something like this: We could interview some people in this queue from time to time. Congratulations! You intuitively thought of systematic sampling. In this selection module, we need to start at some point and after that just go searching according to some pre-established interval. You can start by interviewing the 1st in line, after 10 come in you interview again, wait another 10 come in and interview another 10, and so on.
+
+AS consists of selecting one unit for every K units, starting from a completely random starting game, a starting point that must be drawn. According to Kalton (1983), we have to consider the N elements of the population gathered in groups defined by an amplitude interval Nn and draw one element from each group to compose the sample.
+
+Also, units are selected without replacement. Also because it makes no sense to interview someone who has already been interviewed (in this case) and even left the queue. In addition, the units have the same chance of being selected, like this:
+
+Probability of a unit being selected: Ps=1K
+Therefore, the probability of a unit being part of the sample will depend only on this K factor.
+
+SAMPLE SELECTION STEPS
+When carrying out systematic sampling, we have to follow a few steps.
+
+STEP 1
+STEP 2
+STEP 3
+STEP 4
+STEP 1
+Let us consider a population of N units, ordered from 1 to N. The first step is the ordering of the listing.
+
+STEP 2
+Divide the population size N by the sample size n, obtaining the withdrawal interval k and the remainder of the division c, then:
+
+k=Nn for remainder 0 and N=n*K+c for remainder≠0
+STEP 3
+Select a random integer r between 1 and k, that is, 1≤r≤k, with probabilities equal to 1K for all integers in the range. This number can be selected by AAS.
+
+STEP 4
+Finally, select the sr sample using the following rule:
+
+sr=r+j-1k with j=1,…,nr and r=1,…,k
+Remember that by listing all the possible samples that can be taken sr , we find the sample space (set of all possible samples to be taken) of this plane.
+
+In addition, we have to:
+
+NR=N+1, WHEN R≤C N, WHEN R>C
+ Attention! For complete visualization of the equation use the horizontal scroll
+Thus, if the remainder c is smaller than the integer r, the sample size is n, however, if the remainder is larger, the sample size will be n + 1. Therefore, we say that the sample size is not fixed. In short, let's find a starting point for sampling and then, from a fixed value, let's select the next samples. It sounds complicated, but it isn't. Let's look at some practical examples to better understand this methodology.
+
+FIXING EXAMPLE 1
+In a class of 20 students, you want to interview 4 individuals to answer a survey. How could this be done under systematic sampling?
+
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+If the population is N = 20, then first let's find our withdrawal interval k by doing:
+
+k=Nn=204=5
+In this case, the remainder c is equal to zero. So we have k = 5 and c = 0. Now we have to select our starting point r, and since k = 5, r can be r = 1, r = 2, r = 3, r = 4 or r = 5, because r is always less than or equal to k.
+
+STEP 2
+Suppose the AAS selection of r has been performed and found the value 1, and since we have c = 0, then r > c. Thus, we will have nr=n, and since n = 4, then j can vary from 1 to 4. Thus, we will have s1=r+j-1k=1+1-1*5=1. Thus, the first element interviewed will be 1 and then the next ones will be collected from k to k. For the second element, we have 1 + k = 6, and so on, successively: s1=1;1+5;1+10;1+15=1;6;11;16.
+
+STEP 3
+If we had r = 2, we would have s2=2;2+5;2+10;2+15=2;7;12;17.
+
+For r = 3, we have s3=3;3+5;3+10;3+15=3;8;13;18.
+
+For r = 4, we have s4=4;4+5;4+10;4+15=4;9;14;19.
+
+For r = 5, we have s5=5;5+5;5+10;5+15=5;10;15;20.
+
+When finding the sequences s1,s2,s3,s4,s5 we have all the AS options for this search. But what if we had N = 19 instead of 20 individuals? How would we do it? Let's see example 2.
+
+FIXING EXAMPLE 2
+If we had N = 19, we would do: N=n*K+c =>19=4*4+3. That is,
+
+K=Nn=194=4 with remainder 3
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+Thus, we would give k = 4 and the rest is equal to 3. And the sample size would be variable, because for r = 1, r = 2 and r = 3 we have r≤c, which makes the sample to be nr=n +1, that is, nr=5.
+
+STEP 2
+So, for r = 1, s1=1;1+4;1+8;1+12;1+16=1;5;9;13;17
+For r=2,s2=2;2+4;2+8;2+12;2+16=2;6;10;14;18
+For r=3,s3=3;3+4;3+8;3+12;3+16=3;7;11;15;19
+For r = 4, the value of r becomes greater than c, which makes nr=n. Therefore, s4=4;4+4;4+8;4+12=4;8;12;16
+STEP 3
+For this last case, we have the smallest sample size, because if we add 4 to the last element (16) it will give 20, but we do not have this element in the population. That's why, depending on N and r, the sample size can vary.
+
+ADVANTAGES OF AS
+Ease of execution
+
+AS is a simple and basic sample selection method. Due to its simplicity, it is often compared to AAS itself. And it turns out to be actually even easier to select than the AAS, because from the moment you have the starting point, you just have to obtain the other samples regularly (with the withdrawal interval k).
+
+sample spread
+
+Another positive aspect of AS is that this method spreads the sample more evenly over the population. As the systematic plan selects elements according to the selection k interval, it allows the sample to be distributed in a completely even way over the population. This means that no part of the population is privileged over the others.
+
+ Attention! For full view of the table use horizontal scroll
+DISADVANTAGES OF AS
+Despite being a method widely used in practice, AS has some negative aspects as well.
+
+Cost
+The first one is the high cost of researching people (scattered sample). As the sample is well distributed in the population, it may be expensive to select the sample, especially if it is very large.
+
+biased estimates
+
+Another important point to consider is that the periodicity in the registration can result in inefficient estimates, unless the units are reordered. Imagine a list of companies from which they are selected in AS since the pickup interval and the starting point are always the same. This information after a while can present biased estimates, so you should reorganize the record to avoid this type of problem.
+
+Complications to Estimating Accuracy
+
+Finally, a real problem in AS occurs in the estimation of precision measures. It's really complicated to estimate the variance for this type of sampling. According to Bolfarine (2005), in the case where the population is in random order, there are not many problems in estimating the variance of the estimator obtained through the systematic sample by estimating the AAS estimator. This is an important result, as even with computational resources, it can be difficult to find this variance. Thus, what is done in practice is to approximate this estimation using the AAS variance estimation formulas.
+
+ Attention! For full view of the table use horizontal scroll
+ESTIMATION UNDER THE
+Estimates under the systematic sampling plan are made from very simple expressions. The problem arises when one intends to estimate the variance. For cases where the sample does not present any type of trend, we will use the approximate variance expressions by the AAS without replacement. We have the following expressions, then:
+
+AVERAGE ESTIMATOR
+Y¯AS=Y^ASN=K∑I=1NYIN=1N∑I=1N YI
+TOTAL ESTIMATOR
+Y^AS=K∑I=1N YI=KYRESTIMADOR OF THE POPULATION RATIO (SAMPLING RATIO)
+P^AS=1N∑I=1N YI=Y¯AESTIMATOR OF THE VARIANCE OF THE AVERAGE ESTIMATOR
+V^Y¯AS=N-NNN∑I=1NYI-Y¯AS2N-1=N-NNS2 TOTAL ESTIMATOR VARIANCE ESTIMATOR
+VY^AS=N21N-1NS2
+Remembering that in both cases:
+
+S2=∑I=1NYI-Y¯AS2N-1 PROPORTION ESTIMATOR VARIANCE ESTIMATOR
+V^P^AS=N-NNP^1-P^N-1
+Also, the Standard Error of all estimators above is given by:
+
+EP=V^
+ Attention! For complete visualization of the equation use the horizontal scroll
+Now that you understand the expressions used to estimate in AS, let's see a practical example of their use:
+
+An interactive museum intends to investigate the public's assessment of its collection. Therefore, at the end of the course of the works on display, it is intended to interview some individuals. As we do not want to create any kind of trend in the data, but rather spread the research well, we thought about carrying out a systematic sampling. In general, about 210 people pass by the museum and, in order not to tire the visitors, they made a sample of 20 individuals.
+
+First, we calculate the withdrawal interval by obtaining k =Nn=21020=10 with remainder c=10. Since k=10, we have to select our integer r between 1 and 10. When performing an AAS, let's assume that r = 5. That is, the first individual to be interviewed will be 5 and then 10 out of 10. How r≤c, we have that nr=n+1. That way, we're going to have to interview 21 individuals. The answers obtained were:
+
+Individual Position in line Liked the museum Time inside the museum (min.) Money spent on souvenirs (R$)
+1 5 1 30 20
+2 15 1 60 0
+3 25 1 40 40
+4 35 0 20 10
+5 45 1 40 5
+6 55 1 60 30
+7 65 0 40 0
+8 75 1 50 20
+9 85 1 20 30
+10 95 1 30 0
+11 105 1 45 0
+12 115 0 25 0
+13 125 1 60 50
+14 135 0 30 10
+15 145 0 20 20
+16 155 1 ​​90 20
+17 165 1 80 50
+18 175 1 100 80
+19 185 1 90 70
+20 195 1 40 20
+21 205 1 50 50
+Sum - 16 1020 525
+ Attention! For full view of the table use horizontal scroll
+Table 1: Results of a systematic sample survey. Source: The Author, 2020.
+Let's make estimates for the average time inside the museum, the total souvenir spent at the convenience store, and whether the person liked the museum (1 ‒ liked it and 0 ‒ didn't like it). In addition, we will find the variance estimates and their standard error.
+
+Estimated average time inside the museum: y¯AS=121∑i=121yi=102021≅48.5 minutes.
+
+Remembering that the time must be in the same unit of measure, or everything in minutes or everything in hours. Thus, the average estimate of time people spend inside the museum is 48.5 minutes.
+
+The estimate of the total is given by: y^AS=k∑i=1nyi=kyr=10*525=R$5250. Thus, the museum's convenience store sales estimate is around R$5250 per day.
+
+The estimated proportion of people who liked the museum is p^AS=121∑i=121yi=1621≅0.76. So we have that about 76% of people positively evaluated the museum's collection.
+
+The estimate of the mean variance is given by: V^y¯AS=N-nNs2n. We need to find s2. Hence, s2=∑i=1nyi-y¯AS2n-1=30-48.52+…50-48.5220=1180720≅590.35.
+
+Thus, V^y¯AS=N-nNs2n=210-21210590.3521≅25.3. Hence, the standard error is given by Ep=V^y¯AS=25.3≅5.02.
+
+Thus, the standard error resulting from the estimate of the average length of stay inside the museum is around 5 minutes. This value logically varies from person to person, but on average this measurement error was 5 minutes.
+
+To estimate the variance of the total, we have: V^y^AS=N21n-1Ns2=2102*121-1210590.35=1115761. Hence, the standard error is given by Ep=V^y^AS=1115761=340.23. Thus, we can say that the error in estimating the total spent by customers at the convenience store for this sample was around R$340.
+
+Finally, we will find the estimate of the population proportion variance. We then make V^p^AS=N-nNp^1-p^n-1=210-212100.761-0.7621-1≅0.008. Hence, the standard error is given by Ep=V^p^AS≅0.09. We say, then, that the error due to the estimation of people who said they liked the exposure is around 9%.
+
+RELATIONSHIP WITH SAMPLING BY CONGLOMERATES
+Now that you are familiar with all of systematic sampling, you may be asking yourself: But what is the relationship between CA and SA? Maybe you've already "deciphered the riddle", if not, let's see the example in table 2 to understand together.
+
+1 6 11 16 21 26 31 36 41 46
+2 7 12 17 22 27 32 37 42 47
+3 8 13 18 23 28 33 38 43 48
+4 9 14 19 24 29 34 39 44 49
+5 10 15 20 25 30 35 40 45 50
+ Attention! For full view of the table use horizontal scroll
+Table 2: Example of clusters formed within systematic sampling. Source: The Author, 2020.
+EXAMPLE
+Suppose a population of N = 50 people and that you want to do a survey with 10 individuals. In this case, our k would be equal to 5. If you look closely at Table 2, we are systematically sampling every 5 individuals from element 4 selected by AAS. But look how interesting, you can think that each of these groups of 5 people is a conglomerate, that is, each group of 5 can be considered a cluster. Thus, we can consider AS as a particular case of CA when the clusters have these fixed sizes.
+
+According to Bolfarine (2005), the selection of a systematic sample can be seen as the selection of a cluster sample, in which the number of clusters is A = k, and from these k clusters, some element is selected to be observed.
+
+
+SYSTEMATIC SAMPLING
+
+CHECKING THE LEARNING
+1. (ADAPTED ‒ CESPE ‒ 2020) THE OWNER OF A RESTAURANT WISHES TO SELECT 50 OF THEIR LOYAL CUSTOMERS FOR THE TASTING OF A NEW RECIPE WHICH WISHES TO BE INCLUDED IN THE MENU. HE HAS A REGISTER IN WHICH EACH LOYAL CUSTOMER IS NUMBERED SEQUENTIALLY FROM 1 TO 1980. TO PERFORM THE SELECTION, HE DECIDED TO USE THE SYSTEMATIC SAMPLING TECHNIQUE. IN THIS SITUATION, IF THE SAMPLE SELECTION INTERVAL IS EQUAL TO 39 AND THE FIRST SELECTED POPULATION UNIT IS THE 12TH, THEN THE THIRD SELECTED POPULATION UNIT WILL BE:
+117th
+
+36th
+
+90th
+
+3rd
+
+2. A POPULATION IS COMPOSED OF 2960 ELEMENTS THAT ARE ORDERED IN A QUEUE. A RESEARCH INTENDS TO MAKE A DATA SURVEY WITH THE REMOVAL OF A SYSTEMATIC SAMPLE OF 20 ELEMENTS OF THIS POPULATION. WHAT WOULD BE THE POSITIONS OF THE FIRST THREE AND LAST THREE ELEMENTS SELECTED? ALSO, CONSIDER THE FIRST ELEMENT TO BE SELECTED AS POSITION 44.
+The first three are: 44, 192 and 340. The last three are: 2412, 2560 and 2856.
+
+The first three are: 44, 64 and 84. The last three are: 2412, 2560 and 2856.
+
+The first three are: 44, 192 and 340. The last three are: 2116, 2560 and 2856.
+
+The first three are: 44, 200 and 348. The last three are: 2412, 2560 and 2960.
+
+JACKET
+1. (Adapted ‒ CESPE ‒ 2020) A restaurant owner wants to select 50 of his loyal customers to taste a new recipe that he wants to include in the menu. He has a register in which each loyal customer is sequentially numbered from 1 to 1980. To carry out the selection, he decided to use the systematic sampling technique. In this situation, if the sample selection range is equal to 39 and the first stock selected is the 12th, then the third stock selected will be:
+
+Alternative "C " is correct.
+
+
+By the question, we have that N = 1980 and n = 50. Therefore, we can find the withdrawal interval K, making k =198050=39 and the remainder c=30. The starting point of the sampling was given and is worth 12. Thus, the first individual to be interviewed is the 12th, then 12 + 39 = 51. Finally, the third selected stock will be 51 + k = 51 + 39 = 90th.
+
+2. A population is made up of 2960 elements that are arranged in a row. A research intends to carry out a data survey with the withdrawal of a systematic sample of 20 elements of this population. What would be the positions of the first three and last three selected elements? Also, consider the first element to be selected as the one with position 44.
+
+Alternative "A " is correct.
+
+To find the samples, we first need to find our selection range k, so k =198020=148 and the remainder c=0. Starting from the starting point 44 of the row, we will have the first three samples composed of 44, 44 + k and 44 + 2*k. So we will have 44, 192 and 340. Since our sample has a size of 20, we can find the last three elements as follows: 44 + K*16, 44 + k*17, 44 + k*18 = 2412, 2560 and 2856. We multiply by 16, 17 and 18 instead of 18, 19 and 20 because the first value of k (k = 1) is only used in the second element.
+
+CONCLUSION
+FINAL CONSIDERATIONS
+Throughout the modules, it was possible to understand more about the cluster sampling method in one, two and multiple stages, in addition to systematic sampling. We also saw the comparisons between some sampling plans and the importance of the intracluster correlation coefficient.
+
+Initially, we discuss the fundamental concepts of cluster sampling, the creation of clusters and the importance of heterogeneity within groups. In addition, we learned the differences in conglomeration in one, two, and multiple stages.
+
+In the second module, we present the statistical tools for estimating the quantities of interest. We learned how to estimate a total and a mean from a clustered sample and also the estimates of variance from these measures. We saw that there is a widely used measure to work on the issue of CA efficiency, in this case, the intraclass correlation coefficient (ICC). The closer the ICC is to 0, the less correlated the sampling units will be, which makes the plan more efficient.
+
+Finally, we also investigate systematic sampling, which is a particular case of cluster sampling. We saw its methodological aspects and how to select samples by this method. At the end, we use AS expressions to estimate some variables of interest in the research.
+
+Thus, we are sure that, by the end of this topic, you have understood the importance of cluster sampling and systematic sampling, and how to make estimates of the variables of interest for each sampling plan.
+
+
+TOPIC EVALUATION:
+REFERENCES
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: Blucher, 2005.
+
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W. G. Sampling Techniques. Third edition. New York: John Wiley & Sons, 1977.
+
+FERREIRA, V. A. M. Análise Estatística. Rio de Janeiro: Estácio, 2015.
+
+JESSEN, R. J. Statistical Survey Techniques. New York: Wiley, 1978.
+
+KALTON, G. Introduction to Survey Sampling. In: SAGE University Paper Series on Quantitative Applications in the Social Sciences, series no. 07-035. Beverly Hills and London: SAGE Publications, Inc., 1983.
+
+LARSON, R.; FABER, B. Estatística Aplicada. 4. ed. São Paulo: Pearson, 2009.
+
+LOHR, S. Sampling: Design and Analysis, 2nd. edition. USA: Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. de O. Estatística Básica: Probabilidade e Inferência, volume único. São Paulo: Pearson Prentice Hall, 2010.
+
+PFEFFERMANN, D.; RAO, C. R (Eds.). Handbook of Statistics 29A: Sample Surveys: Design, Methods and Applications. Amsterdam: North Holland, 2009, p. 698.
+
+SÄRNDAL, C. E.; SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. New York: Springer-Verlag, 1992.
+
+
+
