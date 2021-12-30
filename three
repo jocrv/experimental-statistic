@@ -155,86 +155,8 @@ For this to happen, it is essential to have access to a registry with auxiliary 
 GENERAL METHOD
 First, one must partition the population U into H mutually exclusive and exhaustive subsets called strata. Two events are called mutually exclusive when they cannot occur at the same time. When flipping a coin, events can be heads or tails, but never both. The exhaustive term, on the other hand, refers to the fact that all categories have to be covered with at least one sampling unit.
 
-Thus, the samples have to be in only one stratum and all strata must be covered with some sample. In mathematical notation, we have the representation of each stratum denoted by
-U
-H
-, so we have
-U
-1
-,
-…
-,
-U
-H
-,
-…
-,
-U
-H
-, so that
-
-
-
-
-
-U
-=
-U
-1
-∪
-U
-2
-∪
-... 
-∪
-U
-H
-=
-∪
-H
-h
-=
-1
-U
-h
- e 
-U
-h
-∩
-U
-k
-=
-∅
-,
-h
-≠
-k
-. 
-
-Be
-N
-H
- the size of
-U
-H
-, then
-N
-
-
-
-
-1
-+
-N
-2
-+
-⋯
-+
-N
-h
-=
-N
-.
+Thus, the samples have to be in only one stratum and all strata must be covered with some sample. In mathematical notation, we have the representation of each stratum denoted by UH, so we have U1,…,UH,…,UH, so that
+U = U 1 ∪ U 2 ∪ ... U U H = ∪ H h = 1 U h e U h ∩ U k = ∅ , h ≠ k. Be N H the size of UH, then N 1 + N 2 + ⋯ + N h = N.
 After defining the population strata, we can select a sample
 s
 H
@@ -247,16 +169,6 @@ H
 >
 0
 , according to an independent sample selection within each stratum h, where
-
-
-
-
-
-
-
-
-
-
 h
 =
 1
