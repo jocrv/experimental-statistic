@@ -1,1 +1,1033 @@
+DESCRIPTION
+Use of the R software in the specification and estimation of sampling plans by simple random sampling, systematic, stratified and by clusters.
+
+PURPOSE
+Present the free statistical software R in sample selection and estimation of different sampling plans, such as simple random sampling, stratified sampling, cluster sampling and systematic sampling.
+
+PREPARATION
+Before starting the current content, install R statistical software on your computer or mobile device to carry out practical applications of sampling theory. You can also download RStudio.
+
+GOALS
+MODULE 1
+Describe general concepts about the R statistical software and the sampling package in the estimations according to simple random sampling
+
+MODULE 2
+Describe the survey package for estimations from stratified sampling
+
+MODULE 3
+Select samples from systematic and conglomerate sampling with estimates for these plans in Software R
+
+
+MODULE 1
+Describe general concepts about the R statistical software and the sampling package in the estimations according to simple random sampling
+
+INTRODUCTION
+When building a survey and designing a more complex sample, data analysis on paper can become unfeasible. Furthermore, programming the same formulas every time wastes a lot of time that could be spent on other steps in the process. Therefore, we will learn how to make sample selections and estimates for various sampling plans via statistical software. In this case, we will learn how to use the R program within sampling theory.
+
+This module will describe how to install the R software and what are the main features that make it an increasingly versatile and widespread program within the academic and professional milieu. We will use a series of libraries within the software to select simple random samples and make estimates according to this sampling plan.
+
+
+Source: Rawpixel.com/Shutterstock
+SOFTWARE R
+R is a statistical software that works as an alternative to traditional statistical programs such as SPSS, SAS and Stata, being an extensible open source language. In other words, the software, in addition to being free, can be updated by the users themselves. Imagine an extremely robust software, simple to use, advanced and still free?
+
+That's what we have in R. It doesn't have a demo version and then a more complete paid version. It is completely free. And each person can simply feed it their own schedules. This is really interesting, because someone on the other side of the world can add something into the program and you can just use that code too.
+
+As interest in using R has increased in recent years, it is very likely that something you need to do may have already been implemented by someone else and is available for free. Furthermore, this programming environment is available on the most diverse platforms (Windows, Macintosh, UNIX and Linux).
+
+DID YOU KNOW
+The software is always undergoing updates and the user can simply download the new version. Previously, there was only the classic, original R, with an older platform, however, nowadays, you get a super friendly and simple interface to use it. In fact, you first install Classic R and then install that interface with several improvements. Feel free to choose the best way to get started.
+
+The operation of R is done through packages, also called libraries. When you install R, it comes with several packages already installed in its memory, which allows you to use a series of interesting functions. This is done so that R can save memory space and not be so overwhelmed. In other software, when you click to open them, everything it can do is loaded automatically, which often leaves that heavy environment, with many crashes. R already works differently, as you only install or load what you really need to use.
+
+ KNOW MORE
+To install the R software you can simply download it from https://cran.r-project.org/.(https://cran.r-project.org/)
+In Figure 1, we have the opening screen of the classic R software. The number was added to the figure just to identify that this is the only space where you can type something into the program. There, you type in the schedule and the results appear.
+
+
+Figure 1: R software splash screen. Source: The Comprehensive R Archive Network.
+ KNOW MORE
+If you want to install the interface a little friendlier, you can also download RStudio from the RStudio page. Remember to install Classic R first and then this one. As RStudio is a more user-friendly platform, we will always use it from now on. Also, if any of the schedules below do not work or the software crashes, please close it and launch it again.(https://rstudio.com/products/rstudio/download/#download)
+
+
+Figure 2: RStudio software splash screen. Source: RStudio.
+In Figure 2, we have RStudio's splash screen. Notice how we have a lot more options than in Figure 1. In this case, we have in 1 the place where you can make your schedules, being a backup place. If the program crashes and/or the computer shuts down, you would lose everything if you were using classic R, but in RStudio this is saved. This is a huge advantage of the second over the first.
+
+In 2, we can also easily see the databases and variables that are currently being used. Just click on some base and, quickly, you'll be able to see how many variables it has and what type of each variable is. Automatically, when creating or reading a data file, it will be added in this window.
+
+In 3, we have the command execution window. That is, this window is equivalent to classic R. We can say that RStudio contains R plus 3 other windows. Everything you need to do will be done in this part of the screen.
+
+Finally, we have a part in 4 with graphical results output, help menu, installation and loading of libraries, among other things. So, if you need to install a package, you can go to 4, click on packages and install as many packages as you like. But remember that installing a package is not enough for it to work, you have to load it. Every time you close and open R, it keeps only the default (basic) packages. The others need to be carried at all times.
+
+FIRST ACCESS
+When you open RStudio, you have the "world in your hands". You can read a data file, build your own base, install a package, create a package, load a package or just program. You can make a table, a simple graph, a three-dimensional graph, a schematic, there are a multitude of options.
+
+We will always use RStudio to do our analyses. To run the programming in the software, you can type it in the window corresponding to number 2 in Figure 2 and then press RUN while still in this window. Or you can directly type in 3 and hit enter. Let's look at an example of some graphics that R can offer you. For that, we're going to use a package that is already installed and loaded in R. It's the graphics package. From now on, every command you have to type in the software will be written in italics to differentiate between text and content. Let's start by watching the demonstration of a 2D graphics package with the demo command. You can simply copy the code and paste it directly into the program or type in R:
+
+demo(graphics)
+After typing the above command, press the enter command repeatedly. This will show you several graphs that R is capable of making. Very cool, is not it?
+
+ KNOW MORE
+This package was previously installed and loaded in R, so we don't need to do anything other than type its code. Many libraries need to be installed and loaded, as we'll see in the topics below. At installation time, depending on the version of R, it may show you a list of places where you can download this package. You can choose any location from the list, but it is always recommended to download from cities listed in Brazil. This procedure makes the download faster.
+As mentioned earlier, within R there are a multitude of packages that can be used. To perform our sampling, we will use the preloaded functions in R and basically two packages: Sampling and Survey.
+
+SAMPLE FUNCTION
+One of the frequently used functions to select samples in R is through sample(). This function is already preloaded in R's memory, so we won't need to install any packages to run it. To do this, just use sample() which takes a vector as input and then you say how many samples to take from that list.
+
+Let's say you want to simulate rolls of a common 6-sided die and want to get ten results. Since the result for a roll of the dice is a number between one and six, our code would be:
+
+sample(1:6, 10, replace=TRUE)
+That is, we are using the sample() function with three parameters. The first refers to the range of values ​​used (data varies from 1 to 6), the second says the desired sample size (in this case, the number of repetitions) and replace says whether that removal is with or without replacement . In this way, you tell the sample function to return 10 values, but all of them are within the range of 1 to 6. So we are doing a selection by the simple random sampling method with replacement.
+
+You can use sample() to do simple random sampling without replacement as well. In this case, just replace TRUE by FALSE in replace or simply leave this part blank, as the function defaults to no replacement. Imagine that you made a purchase at a store and received a numbered coupon. The store will hold the draw for two televisions. They will probably do it without replacement, so that the same person cannot win twice. Knowing the total number of coupons used, just put in sample() and get the result. The store's survey estimated that 9780 coupons were made available. So, we can do:
+
+sample(1:9780, 2, replace=FALSE)
+or simply
+
+sample(1:9780, 2)
+If you ran the two ways above, you might have noticed that the results were different. Since the return value of the sample() function is a randomly determined number, if you run this code several times, you will get different results each time. This is correct behavior in most cases, but sometimes you may want repeatable results every time you run the function.
+
+COMMENT
+Typically, this will only happen when you want to develop and test your code, or if you want someone else to be able to replicate your results and get exactly the same values. In this case, it is common to specify a certain initial reference value, called a seed.
+
+If you supply a seed value, the random number sequence will reset to a known state. This is because R does not create truly random numbers, only pseudorandom numbers. A pseudorandom sequence is a set of numbers that, for all practical purposes, appear to be random, but have been generated by an algorithm. When you define a seed seed for a pseudo-random process, R always returns the same pseudo-random sequence.
+
+In R you use the set.seed() function to specify the seed's initial value. The argument to set.seed() is any integer value. We're going to use an equal seed, so we'll get the same results over and over again.
+
+set.seed(5)
+sample(1:9780, 2, replace=FALSE)
+or simply
+
+set.seed(5)
+sample(1:9780, 2)
+The result of your programming must have provided the winners of both televisions as coupon numbers 2255 and 6859, correct? Remember that we are using RStudio. If you run on classic R, the result might be different.
+
+SAMPLING PACKAGE
+The package called sampling is another way to select samples, especially if we use more complex sampling plans. It contains many built-in functions and options, but its main purpose is to select samples using probabilistic methods. Getting samples in R is very easy because the software treats these selections simply as a new subset of data.
+
+We will also select simple random samples with and without replacement through this package. Let's install and load the package by:
+
+install.packages("sampling")
+library(sampling)
+In the method with replacement we have to use the srswr(n,N) function. We just define the sample size n and the population size N. The function returns a vector with the number of times the unit has been sampled. First, we load the sampling package and then use its functions. As an example, let's select a sample size 20 from a population size 100. We will always use a seed to align our results. So we have:
+
+SRSWR(N,N)
+From English, srswr is short for sample random sampling with replacement. Translating this we have "simple random sample with replacement".
+
+set.seed(9)
+s=srswr(20,100)
+s
+After running the commands above, we will have the following results:
+
+[1] 0 0 0 0 0 0 0 0 0 2 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 1 0 1 0 1 0 1 0 1 0 0 1 0
+[43] 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0
+[85] 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0
+This result, which by seed is the same for everyone, tells which units of the population from 1 to 100 were selected. Values ​​equal to 1 were elements selected only once and as it is with replacement, values ​​equal to 2 mean that unit was selected twice.
+
+To see the units, we can simply do:
+
+(1:100)[s!=0]
+The selected units were:
+
+[1] 10 13 18 21 26 29 30 32 34 36 38 41 50 51 78 89 94
+
+And to see who was selected twice, we can use the following command:
+
+(1:100)[s==2]
+We had three units selected more than once:
+
+[1] 10 51 78
+
+For simple random sampling without replacement, we will use the srswor(n,N) function. It is an abbreviation for sample random sampling withOut replacement, ie “simple random sampling without replacement”. So, we'll do the same thing we did in the previous case:
+
+set.seed(10)
+s=srswor(20,100)
+(1:100)[s!=0]
+The results found were:
+
+[1] 7 8 9 13 15 24 27 34 39 42 54 55 71 72 74 76 83 88 91 99
+
+ESTIMATION BY SIMPLE RANDOM SAMPLING
+We will use the R software for data estimation by applying simple random sampling. It is very important that you review the expressions used to estimate the mean, total and variance for the AAS.
+
+R already has a series of databases loaded internally in its memory. Other bases are added when loading a package. Do the following command to see all available bases:
+
+date()
+We will use a base referring to the sampling package called MU284. This database is an actual database dated 1992. There are data on 284 municipalities in Sweden. Several pieces of information are raised, but let's stick to the P85 information. This variable tells the amount of population (in thousand units) in each of the 284 municipalities. To load the base and see the variables, we do:
+
+date(MU284)
+fix(MU284)
+Note that the fix command opens another window so you can view the base. But remember to close the open window before proceeding. If you don't close, R will not execute the next commands. Our population consists of N = 284 municipalities, you can see this when viewing the number of lines in the file with:
+
+N = nrow(MU284)
+N
+Let's now select a non-replacement AAS composed of 80 municipalities with the sample function. We will also use a seed to get the same results:
+
+n = 80
+set.seed(8)
+select = sample(1:N,n)
+sample = MU284[select]
+sample
+Let's make estimates of totals, means, variances for this AAS. We will "hand" the programming for each of the estimations below.
+
+ESTIMATION OF POPULATION VARIABLES
+Estimation of the population mean
+
+sum(sample$P85)/n
+From this sample of 80 municipalities, we have that the estimated population average for all municipalities was approximately 28,688 people (remembering that the data are in thousands)
+
+Estimation of the variance of the population mean estimate
+
+(1-n/N)*var(sample$P85)/n
+The estimated variance of the average estimate is 6.26 people².
+
+Standard error of population mean estimate
+
+sqrt((1-n/N)*var(sample$P85)/n)
+After taking the square root with the sqrt function, we have the standard error of estimating the mean at about 2,503 people. Thus, the average estimate error was about 2,503 individuals (always remember the unit in thousands when giving the final result).
+
+Estimation of the total population
+
+N*sum(sample$P85)/n
+We have then that the estimate of the total population of all municipalities is approximately 8147.25, that is, 8,147,250 people in all these municipalities.
+
+Estimation of the variance of the estimate of the total population
+
+N^2*(1/n-1/N)*var(sample$P85)
+The estimated variance of the total population estimate is 505,685.8 people².
+
+Standard error of total population estimation
+sqrt(N^2*(1/n-1/N)*var(sample$P85))
+After taking the square root, we have the standard error of estimating the total at approximately 711,1159 people. Thus, the error in estimating the total was around 711,115 individuals (always remember the unit in thousands when giving the final result).
+
+You might be wondering: Every time I need to estimate something do I need to program? It's a valid question. The answer is: It depends. If you need to use something very specific, it might be. Or maybe you have to search the internet for a package that does this in R. But we usually say that it's not that there isn't that programming, you haven't found it yet.
+
+Luckily for us, there is a package called survey that makes all these estimations without us needing to remember the formulas of mean or variance estimators, for example. We just need to specify the parameters of the sampling plan and we will have our estimates. For this example that we did together, we will do:
+
+install.packages("survey")
+library(survey)
+sample$N = N
+AAS = svydesign(id = ~0, date = sample, fpc = ~N)
+AAS
+The id parameter serves to say if there is any kind of cluster in the data, as we don't have it, we leave it as 0 or 1, then we enter our sample and with the fpc factor. This factor is called the finite population correction factor. It is nothing more than the total population in the case of AAS. So, before svydesigning, we added a new column with the total population. To make the estimations using the survey package, we will do:
+
+Estimation of the population mean (svymean)
+
+svymean(~P85, AAS)
+Estimation of the total population (svytotal)
+
+svytotal(~P85, AAS)
+Compare the results obtained by the survey with the results where we had done the programming. See how we got the same results. This way, we don't need to do any programming, we just need to enter the database, say which sampling plan we'd like to adopt and the package takes care of the rest.
+
+
+THE SOFTWARE R AND ITS PACKAGES IN THE SELECTION AND ESTIMATION UNDER AAS
+CHECKING THE LEARNING
+1. A DRAWING OF 5 INTERNATIONAL TRIPS WILL BE CARRIED OUT FOR ALL BUYERS OF A CERTAIN STORE IN A SHOPPING. AFTER A YEAR OF COUPONS ADDED TO THE BOX, THE LAST COUPON DISTRIBUTED WAS 45,965. ASSUMING ALL PAPERS ARE IN THE URN, MAKE A SELECTION BY AAS WITHOUT REPLACEMENT AND INDICATE THE WINNING COUPONS IF YOU USE THE SAMPLE FUNCTION OR THE SAMPLING PACKAGE (USE A SEED WITH VALUE 7 IN BOTH CASES).
+Sample ={26067 4572 30088 15171 6312} and Sampling = {4572 6312 15171 26067 30088}
+
+Sample={26067 4572 30088 15171 6312} and Sampling = {3432 12155 27135 30404 45557}
+
+Sample={7895 10640 35521 4427 20841} and Sampling = {4810 9203 13072 31496 42143}
+
+Sample={7895 10640 35521 4427 20841} and Sampling={19838 21012 27612 32174 34088}
+
+Sample={7895 10640 35521 4427 20841} and Sampling={7895 4427 10640 20841 35521}
+
+2. THE R SOFTWARE HAS A SERIES OF INTERNAL DATABASES IN ITS MEMORY. OTHER BASES ARE ADDED WHEN LOADING SOME PACKAGES. READ A BASE CALLED BELGIANMUNICIPALITIES. IT CONTAINS A SERIES OF INFORMATION FROM DIFFERENT MUNICIPALITIES IN BELGIUM. ONE OF THE VARIABLES IS PER CAPITA INCOME, ON THE BASIS CALLED AVERAGEINCOME. WHAT IS THE ESTIMATE OF THE AVERAGE OF THIS VARIABLE AND ITS STANDARD ERROR FOR A SAMPLE SIZE 200? (USE SEED WITH VALUE 2).
+
+TICK THE CORRECT OPTION.
+The estimated average population income is approximately 14973205 euros and its standard error is around 228 euros.
+
+The estimate of the average population income is approximately 14973205 euros and its standard error is around 134228 euros.
+
+The estimated average population income is approximately 24888 euros and its standard error is around 260 euros.
+
+The estimate of the average population income is approximately 24888 euros and its standard error is around 211 euros.
+
+The estimate of the average population income is approximately 24888 euros and its standard error is around 228 euros.
+
+JACKET
+1. A draw for 5 international trips will be held for all shoppers from a particular store in a mall. After a year of coupons added to the ballot box, the last coupon distributed was 45,965. Assuming all papers are in the urn, make a selection by AAS without replacement and indicate the winning coupons, if you use the sample function or the sampling package (use a seed with a value of 7 in both cases).
+
+Alternative "A " is correct.
+
+
+Congratulations, you got it right! Good work! The first thing we should pay attention to is using the seed with a value equal to 7 in RStudio. To make this selection by AAS without replacement with the sample() function, just do:
+
+set.seed(7)
+sample(45965.5)
+or yet
+
+set.seed(7)
+sample(45965.5,rep=F)
+The result found are the value samples 26067 4572 30088 15171 6312.
+
+With the use of the sampling package, we will use the srswor (sample random sampling withOut replacement) function with the following commands:
+
+library(sampling)
+set.seed(7)
+s=srswor(5.45965)
+(1:45965)[s!=0]
+Thus, we have found the following samples 4572 6312 15171 26067 30088. Therefore, alternative A is correct.
+
+2. The R software presents a series of internal databases in its memory. Other bases are added when loading some packages. Read a base called belgianmunicipalities. It contains a lot of information from different municipalities in Belgium. One of the variables is per capita income, on the basis called averageincome. What is the estimate of the mean of this variable and its standard error for a sample size 200? (use seed with value 2).
+
+Check the correct option.
+
+Alternative "D " is correct.
+
+
+Congratulations, you got it right! Good work! First, we have to load the sampling package, read the database and make clear the size of population N and the size of sample n. Soon:
+
+library(sampling)
+date(belgianmunicipalities)
+fix(belgianmunicipalities)
+N=nrow(belgianmunicipalities)
+n=200
+That done, we need to select our sample size 200 with seed value 2.
+
+set.seed(2)
+select = sample(1:N,n)
+sample = belgianmunicipalities[select,]
+With the selected sample, we will use the survey package to estimate the data:
+
+library(survey)
+sample$N = N
+AAS = svydesign(id = ~1, date = sample, fpc = ~N)
+AAS
+Now we can estimate the mean and its standard error:
+
+svymean(~averageincome, AAS)
+The result found was 24,888 for the mean and around 211 for the standard error. Therefore, the correct alternative is the letter D.
+
+MODULE 2
+Describe the survey package for estimations from stratified sampling
+
+INTRODUCTION
+In the previous module, we saw the main features in using the R software, mainly related to sampling. We saw that the software is built from packages, which each person can create their own and share with other users in the community.
+
+From this module on, we will explore a little more about the survey package to estimate the data. In addition, we will see how to perform a stratified sampling in the R software and how to correctly make some types of allocation of the existing sample.
+
+
+Source: SeventyFour/Shutterstock
+SURVEY PACKAGE
+We briefly saw in the previous module the use of the survey package to estimate our variables of interest. We will now see more details about using this package.
+
+ KNOW MORE
+The survey was created in 2004 by Thomas Lumley, from the University of Auckland, New Zealand. It contains a series of built-in functions with many parameters available and allows you to analyze data under complex sampling.
+
+To use the package, a few steps are required:
+
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+The first is to select the sample to be used, which can be done with the sampling package.
+
+STEP 2
+Then, it is necessary to specify the used sampling plan, through the svydesign() function.
+
+STEP 3
+With the sample design built, we can use the survey functions to make the estimates considering this plan. All these special functions start with svy, for example svymean() and svytotal().
+
+In the case of stratified sampling (AE), the first thing we will do is to check if there is any variable referring to the stratum in the base. Remember that in AE all strata must have selected samples. To make the selection, we will use the sampling package again. The idea will always be to use the functions of the sampling library to select samples and the survey library to make the estimates. Some parameters of the function are:
+
+svydesign(id=~, strata=~ , data= , weights = , fpc= , method= )
+
+Let's understand each of these parameters of the package survey svydesign function:
+
+ID Indicates whether sampled units are clustered. As cluster sampling has not been used here, we just have to put ~1 or ~0 as a placeholder.
+STRATA Argument to say which variable is used to perform the stratification.
+DATA Parameter referring to the name of the sample database.
+WEIGHTS Indicates the sample weight of that unit. In this case, it will be influenced by the stratum size factor h by the population size
+(
+w
+H
+=
+no
+H
+N
+H
+)
+. If you don't want to use the weight, you can use the selection probability as well, as the weight and the selection probability are inverse quantities.
+ Attention! For full view of the table use horizontal scroll
+Consider the following example: You will select 4 companies out of a total of 1000 for analysis. What is the probability of selection of these companies? we simply do
+P
+=
+4
+1000
+=
+0
+,
+004
+. Thus, each company has a 0.4% chance of being selected. Now, think about the following question: How mHow many companies will each of these 4 have to represent?
+
+
+
+
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+When selecting 4 out of 1000, these 4 selected companies have to answer for themselves and for the other companies that were not selected. This is the idea of ​​weight, giving greater representation to whoever was selected, since not everyone will be.
+
+STEP 2
+thus, doing
+w
+=
+1000
+4
+=
+250
+, that is, the information of each company will have a weight of 250, because it needs to represent the others that were not selected. In this example, the sample weight of each of these units is 250. If you look closely, there is a relationship between the 0.004 value of the selection probability and the 250 value of the weights.
+
+STEP 3
+One is the inverse of the other: If we multiply 250*0.004, the result is equal to 1. So, if we have the selection probability, just do 1 divided by it and we'll find the weight. By getting one of the two quantities, you automatically get the other.
+
+For the svydesign function, you can choose to enter both probability and weight. If you prefer to leave it blank, the software will understand that it is making a stratified selection with equal weighting between the strata.
+
+fpc ‒ Argument used to make a correction due to finite population correction. It is a vector added to the sample base in which, for each record, the total population will be added. If we are doing a stratified sample, the fpc will be the total population of each of the strata. The importance of its use is that, knowing the total value of the population, it is possible to reduce the variance when a substantial fraction of the total population is sampled in the estimation of the data.
+
+After creating the sampling plan object, we can simply use svymean and svytotal to make the mean and total estimations with their respective standard error measures.
+
+MU284 DATABASE
+To build our stratified sampling plan and then make estimates from this sample, we will again use the base MU284. As our plan is now more complex as it involves stratification, let's go into more detail about the data.
+
+The database then contains 11 different variables described for 284 municipalities in Sweden. The variables are:
+
+id CS82 REV84
+P85 SS82 REG
+P75 S82 CL
+RMT85 ME84
+ID
+Identifier of each municipality, with values ​​between 1 and 284.
+
+P85
+1985 population (in thousands).
+
+P75
+1975 population (in thousands).
+
+RMT85
+1985 Municipal Tax Receipts (in millions of SEK).
+
+CS82
+Number of conservative politicians on the city council.
+
+SS82
+Number of Social Democratic politicians on the municipal council.
+
+S82
+Total number of politicians on the municipal council.
+
+ME84
+Number of municipal employees in 1984.
+
+REV84
+Real estate values ​​according to 1984 valuation (in millions of SEK).
+
+REG
+Geographic region indicator.
+
+CL
+Cluster indicator (a cluster consists of a set of neighboring municipalities).
+
+To make our sampling stratified on this basis, we will use the REG variable, which is the geographic region indicator as the stratification variable.
+
+STRATIFIED SAMPLING IN R
+Let us select a simple stratified sample without replacement of size 80 with allocation proportional to the size of the strata. Let's understand by parts each step of this sampling plan. First, we will investigate in the population how many strata there are.
+
+Once this is done, we will allocate the sample proportionally to the size of each stratum, so larger strata will receive larger samples than smaller strata. Thus, we will indicate the number of units that will be selected in each of the strata through the AAS without replacement. Finally, after the stratification is done, we can create our sample design object and make our estimates.
+
+The first step to carry out an EA is to verify the amount of strata that we have in our register, that is, in our population. Remember that the registration must be criticized in the search for errors and possible inconsistencies and, in addition, that it is always up to date. First, we need to read our data and find out how many regions we have in the base, that is, how many strata we are going to create. We will use the MU284 base again as follows:
+
+library(sampling)
+date(MU284)
+table(MU284$REG)
+The result found after running the codes above was:
+Figure 3: Table with the number of municipalities in each region generated in the R software.
+From the result obtained in Figure 3, we have 8 possible regions to perform the stratification. In addition, we have the total for each region, for example, 25 municipalities in region 1.28 municipalities in region 2, and so on.
+
+To find the strata weighting factor
+W
+H
+, we will do
+W
+H
+=
+N
+H
+N
+ , that is, the proportion of each region in relation to the total. Through R, we do:
+
+prop.table(table(MU284$REG))
+Therefore, we have the weight of each stratum in relation to the total:
+
+
+Figure 4: Weight of each stratum generated in the R software
+If you add all the values ​​above, you will find the value 1, as the total must be 100%. Since we will use proportional allocation, the distribution keeps the sampling fraction in each h stratum equal to the population fraction. In other words, in this type of allocation, the previously defined sample of size n is distributed proportionally to the size of the strata. The allocation is given by
+no
+H
+=
+no
+N
+H
+N
+ and in R we will simply do:
+
+
+Figure 5: Proportional allocation in each stratum generated in the R software.
+From this information, we will be able to calculate the sample size in each stratum. It is important to always round the sample size to the nearest upper integer.
+
+WARNING
+In this way, you will be able to obtain the minimum required per stratum, however, it may happen that the final sample size is slightly larger than previously planned. Thus, the sample size in each stratum will be 8, 14, 10, 11, 16, 12, 5 and 9, and the size will then change from 80 to 85 units.
+
+To select our stratified sample, we will use the strata function, which is also part of the sampling package, as follows:
+
+set.seed(3)
+select = strata(MU284, stratanames = "REG", size = c(8,14,10,11,16,12,5,9), method = "srswor")
+select
+Using the seed, we will find the same selected units. When you run the select command, you will see the selected sample printed on the screen. Let's use a command to see only the first 10 units of the sample. You can replace the 10 below with any value:
+
+head(select,10)
+The result found was:
+
+
+Figure 6: The first 10 units selected by stratified sampling in R.
+Note from the figure above that we have 4 columns, the REG region; the Id_unit, which identifies the unit that was selected; the variable Prob, which is the probability of selection; and the stratum, which is the same as REG, but created by the function itself.
+
+Let's understand how the selection probabilities for these two strata were obtained. For the 1st, we have a total of 25 companies in the stratum and as we want to select only 8, we just need to do
+P
+1
+=
+8
+25
+=
+0
+,
+32
+. For stratum 2, we have
+P
+two
+=
+14
+48
+=
+0
+,
+2916667
+, and so on for the others.
+
+To filter only some variable from a file, we use the symbol $ separating the base name and the variable name. We can then obtain only the selection probabilities as follows:
+
+select$Prob
+We already have the selected units, we now need to use the original database to create a new object with all the variables for those sample units. Thus, we will do:
+
+sample = getdata(MU284, select)
+head(sample,8)
+The getdata function will complete the sample data with the MU284 population information. The base called sample will contain all possible information for selected units only.
+
+With our sample well established, we will be able to build our sampling plan and then perform data estimation. Let's create an fpc vector with population totals. For example, the first 8 records are from stratum 1 that has 25 units in the population, so we have to repeat the 25 in the first 8 lines, and so on, successively, for the other strata. Our vector will be made with the rep repeat command below:
+
+fpc=rep(c(25,48,32,38,56,41,15,29),c(8,14,10,11,16,12,5,9))
+fpc
+To specify the sampling plan, we will use the svydesign command, in which we will say the stratification variable, the selection probabilities and the fpc. So:
+
+library(survey)
+est_plan = svydesign(id = ~1, strata = ~Stratum, probs = ~select$Prob, data = sample, fpc=~fpc)
+With the sampling plan specified, we can use the svymean function to make our estimates, like this:
+
+Estimate of the mean and its standard error for variable P85 considering the stratified sampling plan
+
+svymean(~P85, plan_est)
+With the above result, our estimate of the population mean is 20,068 people and its standard error is approximately 1,271 people (remember the data is in thousands).
+
+Estimate of the total and its standard error for variable P85 considering the stratified sampling plan
+
+svytotal(~P85, est_plan)
+For the estimation of the total population, we obtain approximately 5,700,000 people with a standard error of approximately 361,100 people.
+
+In this way, we were able to obtain estimates for the mean and total population of our P85 variable. You can repeat the entire process for another bank variable and compare the results.
+
+ANOTHER WAY TO OBTAIN THE SAME RESULTS
+We estimated our quantities of interest using our sampling plan created with the svydesign function. One of the parameters informed was the probability of selection. We can obtain the same results by indicating in the function what the sample weights are instead of the selection probabilities. As we saw that probabilities and weights are inverse quantities, we can use this in the software and indicate the vector of weights when creating the sample design. To do this, just add a column to our sample base with the weight values ​​as follows:
+
+sample$WEIGHT = 1/sample$Prob
+What we are doing is accessing the sample base and adding a new column called WEIGHT, with values ​​of 1 divided by the respective selection probabilities of each row. Now, we will do the sampling plan specification again. Let's call this plane_est2 and then we can re-estimate our means and variances.
+
+est2 plan = svydesign(id = ~1, strata = ~Stratum, weights = ~WEIGHT, date = sample, fpc=~fpc)
+Notice in the code above that the selection probabilities parameter has been replaced by the weight parameter. Making the estimates for this background, we have:
+
+svymean(~P85, est_plan2)
+svytotal(~P85, est_plan2)
+Compare the results, notice that we found the same values. Thus, we can indicate for the function both the selection probabilities and the sample weights. And if we don't indicate anything, we're assuming the strata are the same size.
+
+RESULTS WITHOUT FPC
+Let's now make our estimates ignoring the finite population correction factor. This factor is important, as it indicates the size of the population in each stratum. Thus, the software does not need to assume that the population is infinite and, with that, estimation errors are reduced.
+
+In this case, just eliminate the parameter and make the estimations again, let's call this drawing est_plane3. So we have:
+
+est_plan3 = svydesign(id = ~1, strata = ~Stratum, probs = ~select$Prob, data = sample)
+Or using weights instead of selection probabilities:
+
+est_plan3 = svydesign(id = ~1, strata = ~Stratum, weights = ~WEIGHT, date = sample)
+Estimates are made by:
+
+svymean(~P85, est_plan3)
+svytotal(~P85, est_plan3)
+The table below compares the estimates for plan 1 or 2 with the fpc factor and plan 3 without the factor.
+
+Estimate\ Sampling plan Plan 1 or 2 (with FPC) Plan 3 (without FPC)
+Average (thousands) 20,068 20,068
+Standard error of the mean (thousands) 1.2715 1.5237
+Total (thousands) 5699.4 5699.4
+Standard error of total (thousands) 361.1 432.73
+ Attention! For full view of the table use horizontal scroll
+Table 1: Comparison of the results of sampling plans with and without the FPC factor. Source: The Author.
+Note that the results in Table 1 are interesting, because when comparing the same sampling plans, with the same samples, the use of the fpc makes it possible to reduce the estimation error. We are always looking for the best estimates with the smallest possible errors. When comparing the mean or total estimates, the results were exactly the same, but the standard error of the measurements with the fpc decreased. Therefore, whenever you have this information, use it in your sampling plan specifications.
+
+ESTIMATION BY STRATUM
+One of the great advantages of using AE is the possibility of making general and particular estimates by stratum. In this way, we can track an average or a specific total for some region, as is the case in our example. For that, we will use the svyby function and we will specify within the FUN parameter the svymean, to estimate the average, or the svytotal, to estimate the total. We will use the following commands:
+
+svyby(~P85, by = ~Stratum, design = best_plan, FUN = svymean)
+And the result presented by R for the average was:
+
+
+svyby(~P85, by = ~Stratum, design = best_plan, FUN = svytotal)
+And the result presented by R for the total was:
+
+
+This estimation by stratum is interesting, as we can see that in stratum 1 the estimation of the total and the population mean are much higher than in the others. It is also possible from the estimates of the averages and totals to find the values ​​in general. For the total, just add, for example, for each stratum. So we have,
+Y
+THE
+AND
+=
+1
+.
+128
+,
+1250
++
+939
+,
+4286
++
+604
+,
+8000
++
+663
+,
+2727
++
+997
+,
+5000
++
+536
+,
+4167
++
+411
+,
+0000
++
+418
+,
+8889
+=
+5
+.
+699
+,
+4
+. And this value was exactly the value found when we estimated the grand total.
+
+
+SAMPLE SELECTION AND ESTIMATION UNDER STRATIFIED SAMPLING IN R
+
+CHECKING THE LEARNING
+1. FROM THE MU284 BASE, ESTIMATE THE AVERAGE AND ITS STANDARD ERROR FOR THE RMT85 VARIABLE ‒ 1985 MUNICIPAL TAX REVENUES (IN MILLIONS OF SWEDISH CROWNS) FOR A STRATIFIED PLAN WITH ALLOCATION PROPORTIONAL TO THE SIZE OF STRATA. USE THE SAMPLING PACKAGE TO SELECT THE SAMPLE AND THE SURVEY PACKAGE TO MAKE THE ESTIMATIONS. IN ADDITION, USE SEED EQUAL TO 3 AND A SAMPLE SIZE 50 IN THE RSTUDIO. THEREFORE, TICK THE CORRECT OPTION.
+The estimated population average is approximately 147,440 euros, with a standard error of around 11,941 euros.
+
+The population average estimate is approximately 175,040 people, with a standard error of about 21,509 people.
+
+The estimated population average is approximately 49,711 euros, with a standard error of around 3,394,000 euros.
+
+The estimated population average is approximately 49,711 euros, with a standard error of around 21,509 euros.
+
+The population average estimate is approximately 175,040 people, with a standard error of about 11,941 people.
+
+2. FROM THE SAMPLING PACKAGE, WE CAN WORK WITH A DATABASE OF MUNICIPALITIES IN BELGIUM. READ A BASE CALLED BELGIANMUNICIPALITIES. IT CONTAINS A SERIES OF INFORMATION FROM DIFFERENT MUNICIPALITIES IN BELGIUM. ONE OF THE VARIABLES IS PER CAPITA INCOME, ON THE BASIS CALLED AVERAGEINCOME. WHAT IS THE ESTIMATE OF THE AVERAGE STANDARD ERROR FOR A SAMPLE SIZE 300 FOR REGION 1? ESTIMATE AND FIND RESULTS WITH FPC AND WITHOUT FPC (USE SEED WITH VALUE 5).
+The standard error of the mean with the FPC is €282,973 and without the FPC it is €406,026.
+
+The standard error of the mean with the FPC is 207,973 euros and without the FPC it is 282,973 euros.
+
+The standard error of the mean with the FPC is 406,026 euros and without the FPC it is 282,973 euros.
+
+The standard error of the mean with the FPC is 297,973 euros and without the FPC it is 406,026 euros.
+
+The standard error of the mean with the FPC is €272,433 and without the FPC it is €322,102.
+
+JACKET
+1. From the base MU284, estimate the mean and its standard error for the variable RMT85 ‒ 1985 Municipal Taxation Revenue (in millions of SEK) for a stratified plan with allocation proportional to the size of the strata. Use the sampling package to select the sample and the survey package to make the estimations. Also, use seed equal to 3 and a sample size 50 in RStudio. Therefore, check the correct option.
+
+Alternative "B " is correct.
+
+
+Congratulations, you got it right! Good work! First, we have to load the sampling package, read the database and make clear the size of population N and the size of sample n. Soon:
+
+library(sampling)
+date(MU284)
+N=nrow(MU284)
+n=50
+Now we have to do the proportional allocation of the sample size n = 50, so:
+
+table(MU284$REG)
+50*prop.table(table(MU284$REG))
+With the quantities obtained (always remembering to round up) for each stratum, we can select our stratified sample:
+
+set.seed(3)
+select = strata(MU284, stratanames = "REG", size = c(5,9,6,7,10,8,3,6), method = "srswor")
+sample = getdata(MU284, select)
+We must also indicate our fpc parameter with the population totals for each baseline in the sample:
+
+fpc=rep(c(25,48,32,38,56,41,15,29),c(5,9,6,7,10,8,3,6))
+From now on, we can specify our sampling plan:
+
+library(survey)
+est_plan = svydesign(id = ~1, strata = ~Stratum, probs = ~select$Prob, data = sample,fpc=~fpc)
+Finally, we can estimate the mean and its standard error:
+
+svymean(~RMT85, est_plan)
+Therefore, the result found was 175,040 individuals for the mean and 21,509 for the standard error. Therefore, the correct alternative is the letter B.
+
+2. From the sampling package, we can work with a database of municipalities in Belgium. Read a base called belgianmunicipalities. It contains a lot of information from different municipalities in Belgium. One of the variables is per capita income, on the basis called averageincome. What is the estimate of the standard error of the mean for a sample size 300 for region 1? Make the estimates and find results with the fpc and without the fpc (use the seed with a value of 5).
+
+Alternative "A " is correct.
+
+
+Congratulations, you got it right! Good work! First, we have to load the sampling package, read the database and make it clear the population size N and the sample size n. Soon:
+
+library(sampling)
+date(belgianmunicipalities)
+N=nrow(belgianmunicipalities)
+n=300
+We also have to do the proportional allocation of the sample size n=300, so:
+
+table(belgianmunicipalities$Province)
+300*prop.table(table(belgianmunicipalities$Province))
+With the quantities obtained (always remembering to round up) for each stratum, we can select our stratified sample:
+
+set.seed(5)
+select = strata(belgianmunicipalities, stratanames = "Province", size = c(36,57,33,34,36,43,23,23,20), method = "srswor")
+sample = getdata(belgianmunicipalities, select)
+We must also indicate our fpc parameter with the population totals for each baseline in the sample:
+
+fpc=rep(c(70,111,64,65,69,84,44,44,38),c(36,57,33,34,36,43,23,23,20))
+From now on, we can specify our sampling plan:
+
+library(survey)
+est_plan = svydesign(id = ~1, strata = ~Province, probs = ~select$Prob, data = sample,fpc=~fpc)
+Now, we can estimate the mean and its standard error by stratum:
+
+svyby(~averageincome, by = ~Province, design = plan_est, FUN = svymean)
+As we only want stratum 1, we get an error of 282 973. The results without the fpc are given by:
+
+est_plan2 = svydesign(id = ~1, strata = ~Province, probs = ~select$Prob, data = sample)
+svyby(~averageincome, by = ~Province, design = est_plan2, FUN = svymean)
+The results for stratum 1 without the fpc is 406 026. We noticed how the standard error is greater when not informing the population totals through the fpc parameter.
+
+
+MODULE 3
+Select samples from systematic and conglomerate sampling with estimates for these plans in the R software
+INTRODUCTION
+In the previous module, we saw the main features of the survey package to make the specifications and estimations of the stratified sampling in the R software.
+
+From this module onwards, we will explore the survey package a little more, now in cluster sampling. We will see the differences in the functions resulting from using the sample divided into a cluster. In addition, we are going to make some comparisons between sampling plans and we will also look at systematic sampling to make sample selections.
+
+
+Source: Bakhtiar Zein/Shutterstock
+SAMPLING BY CONGLOMERATES IN R
+Another approach widely used when drawing up the sampling plan is cluster sampling (AC). The great advantage of this plan concerns the operational part, in the sense of reducing the cost of the entire operation. Selecting a cluster and investigating the population within it is generally cheaper than doing the other sampling methods we discussed above.
+
+COMMENT
+CA can be done in several stages, but we need our population to be fully distributed within some cluster. Remembering that in 1-stage AC, we will first select the conglomerates and then investigate all the units inside.
+
+Let's use our MU284 database again, with the 284 municipalities in Sweden. Unlike the previous cases, we will use the variable CL, which delimits the cluster for each record in the base. We will then select a simple cluster sample without one-stage replacement, where clusters are defined with the variable CL in our population of municipalities. To make comparisons with previous plans (stratification, for example), we will use the same sample size, n = 80 municipalities.
+
+We will make an exploratory table to find out how many clusters our population is divided into:
+
+library(sampling)
+date(MU284)
+data=MU284
+table(MU284$CL)
+
+Figure 7: Distribution of municipalities within the clusters.
+Note in Figure 7 that the population of municipalities is divided into 50 clusters with a very similar distribution among them. To find the general average of municipalities within the clusters, we just need to calculate:
+
+¯¯¯¯
+M
+0
+=
+284
+50
+=
+5
+,
+68
+ Attention! For complete visualization of the equation use the horizontal scroll
+Thus, each cluster has, on average, 5.68 municipalities and if we want our sample to have a sample size of approximately 80 municipalities, we will have to select around 14 clusters (since on average 14* 5.68 = 79.52).
+
+Now, we can use the sampling package with the cluster function to build our sample. The cluster function produces an object that contains the selected clusters, the identifier of the municipalities belonging to each cluster and their selection probabilities. Using the seed with a value equal to 5, we do in R:
+
+set.seed(5)
+ACS=cluster(MU284,clustername=c("CL"),size=14,method=c("srswor"))
+Note how we simply enter the name of the base, the name of the variable that defines the clusters, the size of clusters we want to select and the method of selection of these units, in this case the simple random sample without replacement (srswor).
+
+To see some selected clusters, we can use the head() command again as:
+
+head(ACS,10)
+
+Figure 8: First 10 selected units and their respective conglomerates.
+In Figure 8, we have the respective identifications of the units and their clusters. Note that the selection probability is the same for all elements, regardless of which cluster it is. Remember that we are doing a 1-stage conglomerate sampling plan, so since the cluster has been selected, all of its units will be investigated. Therefore, what matters is the selection of conglomerates, not the units within. This probability is fixed and given by the number of clusters that we will select divided by the existing total, like this:
+
+P
+(
+s
+)
+=
+14
+50
+=
+0
+.
+28
+ Attention! For complete visualization of the equation use the horizontal scroll
+Now that we have our selected clusters, let's cross this information with our original database and obtain the other variables referring to these respective sampling units. We'll use the getdata function again, then:
+
+ACSs=getdata(MU284,ACS)
+To view the information on the units of each selected cluster, we can do:
+
+fix(ACSs)
+Remember to close the window before proceeding. Another important point that we must build is the fpc factor. Thus, we will add a vector with the total size of the clusters, which in this case is 50. Thus, we will replicate the 50 according to the dimension of the ACSs object.
+
+fpc2=rep(50,dim(ACSs)[1])
+fpc2
+We can now specify our sampling plan from the survey package and the svydesign function.
+
+library(survey)
+PlanC=svydesign(id=~CL,data=ACSs,probs=~ACS$Prob,fpc=~fpc2)
+Unlike the previous specifications, now our id doesn't have the value 0 or 1, it will receive exactly the cluster variable, in the base it is represented by CL. We can check the definition of the conglomerate sample plan built by R, simply by running the command below:
+
+PlanC
+The result is given by:
+
+
+Source:Shutterstock
+Notice how the R perfectly describes the plan that was built. We have a 1-stage conglomerate plan with a selection of 14 clusters. Finally, the last step is to make the estimates for our variable of interest P85. So we have:
+
+Estimate of the mean and its standard error for variable P85 considering the 1-stage conglomerate sampling plan
+
+svymean(~P85,PlanC)
+With the above result, our estimate of the population mean is 28,354 people and its standard error is approximately 2,500 people (remember the data is in thousands).
+
+Estimate of the total and its standard error for variable P85 considering the 1-stage conglomerate sampling plan
+
+svytotal(~P85,PlanC)
+For the estimation of the total population, we obtain approximately 8,800,000 people with a standard error of approximately 791,400 individuals.
+
+In this way, we were able to obtain estimates for the mean and total population of our P85 variable. You can repeat the entire process for another bank variable and compare the results.
+
+ANOTHER WAY TO OBTAIN THE SAME RESULTS
+In the same way as we did in EA, we can obtain the same results by exchanging the variable of selection probabilities for the variable weight. Since the weight and selection probabilities are inverse quantities, we can simply do:
+
+weight=1/ACS$Prob
+ACS$Prob
+Weight
+With that, we build our vector of weights and we can use it inside the svydesign function to specify the sample plan. So we have:
+
+PlanC2=svydesign(id=~CL,data=ACSs,weights = weight,fpc=~fpc2)
+svymean(~P85,PlanC2)
+svytotal(~P85,PlanC2)
+Compare the results, see how they are exactly the same for both the average and the total estimate.
+
+RESULTS WITHOUT FPC
+Let us now again make our estimates ignoring the finite population correction factor. In this case, just eliminate the parameter and make the estimations again. Let's call this drawing C_without_fpc. So we have:
+
+planC_without_fpc = svydesign(id=~CL,data=ACSs,probs=~ACS$Prob)
+Or using weights instead of selection probabilities:
+
+planC_without_fpc = svydesign(id=~CL,data=ACSs,weights = weight)
+Estimates are made by:
+
+svymean(~P85, planC_without_fpc)
+svytotal(~P85, planC_without_fpc)
+The table below compares the estimates for plan 1 or 2 with the fpc factor and plan 3 without the factor:
+
+Estimate\ Sampling plan Plan 1 or 2 (with FPC) Plan 3 (without FPC)
+Average (thousand) 28,354 28,354
+Standard error of the mean (thousands) 2,5005 2.9468
+Total (thousands) 8000 8000
+Standard error of the total (thousands) 791.4 932.68
+ Attention! For full view of the table use horizontal scroll
+Table 2: Comparison of the results of sampling plans with and without the FPC factor. Source: Author.
+Note that the conclusions drawn from the results in Table 2 are exactly the same as the results in Table 1, because, when comparing the same sampling plans with the same samples, the use of the fpc makes it possible to reduce the estimation error. When comparing the mean or total estimates, the results were exactly the same, but the standard error of the measurements with the fpc decreased. Therefore, whenever you have this information, use it in your sampling plan specifications.
+
+COMPARISON BETWEEN SAMPLING PLAN ESTIMATES
+After obtaining the results of the estimates of the mean, total and their respective standard errors for samples of approximately equal size under different sampling plans, we can gather the values ​​obtained in Table 3 below:
+
+Estimate\ Sampling plan AAS (with FPC) AES (with FPC) ACS (with FPC)
+Average (thousand) 28,688 20,068 28,354
+Standard error of the mean (thousands) 2.5039 1.2715 2.5005
+Total (thousands) 8147.2 5699.4 8000
+Standard error of the total (thousands) 711.12 361.1 791.4
+ Attention! For full view of the table use horizontal scroll
+Table 3: Comparison of results for variable P85 for the sampling plans used. Source: Author.
+Note how the standard error value of stratified sampling is lower than the other two methods. This suggests that AES is more efficient than AAS and ACS. This result is interesting from the point of view of sample size, as stratification can obtain very efficient results with a smaller sample size than AAS, for example. ACS, on the other hand, is generally less efficient than the others, but the cost of sampling it is usually lower than in other cases.
+
+SYSTEMATIC SAMPLING IN R
+In this type of sampling, we select a population starting point and collect our elements from a withdrawal interval k. The elements must be arranged in an organized way, such as a row or a list, and this done randomly. If we are doing a data survey in a lamp factory, we can take one lamp for testing for every 100 pieces produced.
+
+We can also define the sample according to a percentage P% of the population that can be part of the sample. From there, we find the value k by:
+
+K
+≅
+1
+P
+*
+100
+ Attention! For complete visualization of the equation use the horizontal scroll
+Then, we draw an integer r between 1 and k and the sample will be composed by the elements of order r; r+k; r+2k; r+3k; and so on. Let's look at an example of how to make this selection in the R software:
+
+A restaurant wants to know the profile of its customers better and is able to interview approximately 20% of them. On average, 30 customers pass through the restaurant throughout the day in a very orderly queue process. How to select these samples?
+
+STEP 1
+STEP 2
+STEP 3
+STEP 1
+To make this selection in R, we will use very simple functions. First, we'll find our K:
+
+set.seed(10)
+(k<- round((1/20)*100))
+STEP 2
+With our established range, let's draw our starting point r:
+
+(r<- sample(seq(1,k,1),1))
+STEP 3
+With the selection range and the starting point, we can indicate which samples should be selected for this case. It is also possible to create more complex functions that do this automatically or just add r+nk in the function below.
+
+c(r, r+k, r+2*k, r+3*k, r+4*k, r+5*k)
+In this case, the units that will be part of our sample are: 3 8 13 18 23 28.
+
+A real problem in AS occurs in the estimation of precision measures. According to Bolfarine (2005), in the case where the population is in a random order, there are not many problems in estimating the AS variance through the expressions of the AAS estimators. Thus, you can use the same expressions and estimation functions in R that you used for AAS.
+
+
+SYSTEMATIC AND CONGLOMERATE SAMPLING IN SOFTWARE R
+
+CHECKING THE LEARNING
+1. A SURVEY ORDERED BY A SHOW COMPANY WILL BE CARRIED OUT THROUGH SYSTEMATIC SAMPLING. ACCORDING TO THE ESTIMATE OF TICKETS SOLD, 7,900 PEOPLE (NUMBERED FROM 1 TO 7,900) WILL PASS THE LINE OF THE SHOW. A SYSTEMATIC SAMPLE WILL BE TAKEN WITH 10% OF THIS TOTAL. WHAT IS THE NUMBER OF THE FIRST 3 AND THE LAST 3 PEOPLE INTERVIEWED (USE A SEED EQUAL TO 5)?
+The first three are: 1, 11, 21. The last three are: 7,874, 7,884, 7,894.
+
+The first three are: 2, 12, 22. The last three are: 7,874, 7,884, 7,894.
+
+The first three are: 1, 11, 21. The last three are: 7,872, 7,882, 7,892.
+
+The first three are: 2, 12, 22. The last three are: 7,872, 7,882, 7,892.
+
+The first three are: 2, 12, 22. The last three are: 7,876, 7,886, 7,896.
+
+2. READ THE BELGIANMUNICIPALITIES BASE AGAIN FROM THE SAMPLING PACKAGE WHICH CONTAINS INFORMATION FROM SEVERAL MUNICIPALITIES IN BELGIUM. WE WILL CONTINUE WORKING WITH THE PER CAPITA INCOME VARIABLE, IN THE BASE CALLED AVERAGEINCOME. WHAT IS THE ESTIMATE OF THE AVERAGE AND ITS STANDARD ERROR FOR A SAMPLE PER SIZE 200 CONGLOMERATES? MAKE THE ESTIMATES USING THE FPC (USE THE SEED WITH VALUE 10).
+The mean is 26,794 euros and the standard error of the mean is 2,873 euros.
+
+The average is 34,353 euros and the standard error of the mean is 2,073 euros.
+
+The mean is 26,794 euros and the standard error of the mean is 1,146.4 euros.
+The average is 34,353 euros and the standard error of the mean is 2,973 euros.
+
+The average is 34,353 euros and the standard error of the mean is 2,873 euros.
+
+JACKET
+1. A survey commissioned by a concert company will be carried out through systematic sampling. According to the estimated number of tickets sold, 7,900 people (numbered from 1 to 7,900) will queue for the show. A systematic sample will be made with 10% of this total. What is the numbering of the first 3 and the last 3 people interviewed (use a seed equal to 5)?
+
+Alternative "D " is correct.
+
+
+Congratulations, you got it right! Good work! First, we have to find the sample size that will be selected. By the statement, we have 10% of 7900, therefore 790 interviews. Now we find our withdrawal interval k, like this:
+
+set.seed(5)
+(k<- round((1/10)*100))
+The value of k is equal to 10. By randomly selecting our starting point we have the value equal to 2 from the command below:
+
+(r<- sample(seq(1,k,1),1))
+The final step is to find out which units will be selected, so we do:
+
+c(r,r+k,r+2*k, r+787*k, r+788*k, r+789*k)
+Remembering that, as the sequence starts at r, the last value is the sample size minus 1, that is (n -1).
+
+Therefore, the values ​​obtained were 2, 12, 22, 7,872, 7,882, 7,892 and the correct answer is the letter D.
+
+
+2. Read the belgianmunicipalities database again from the sampling package that contains information from several municipalities in Belgium. We will continue working with the per capita income variable, on the basis called averageincome. What is the estimate of the mean and its standard error for a sample per cluster of size 200? Estimate using fpc (use seed with a value of 10).
+
+Alternative "C " is correct.
+
+
+Congratulations, you got it right! Good work! First, we have to load the sampling package, read the database and see how many clusters there are in the population. Soon:
+
+library(sampling)
+date(belgianmunicipalities)
+N=nrow(belgianmunicipalities)
+N
+table(belgianmunicipalities$Province)
+We realize that we have 9 clusters in this population, so dividing the total N=589 by 9, we have, on average, 65.4 units per cluster. As we want a sample size 200, we will need to select 3 clusters. So we do:
+
+set.seed(10)
+ACS=cluster(belgianmunicipalities,clustername=c("Province"),size=3,method=c("srswor"))
+ACSs=getdata(belgianmunicipalities,ACS)
+We must also indicate our fpc parameter with the population totals for each baseline in the sample:
+
+fpc2=rep(9,dim(ACSs)[1])
+From now on, we can specify our sampling plan:
+
+library(survey)
+ACS_Plan=svydesign(id=~Province,data=ACSs,probs=~ACS$Prob,fpc=~fpc2)
+Now, we can estimate the mean and its standard error:
+
+svymean(~averageincome,Plan_ACS)
+From the results obtained in R, we have an estimate of 26,974 for the mean and 1,146.4 for the standard error of the mean, assuming a simple cluster sampling.
+
+
+CONCLUSION
+FINAL CONSIDERATIONS
+Throughout the modules, it was possible to understand more about the importance of using the R software in sampling and analyzing sample data. The software, being free and able to be fed with libraries from all over the world, has been growing more and more in terms of users.
+
+Initially, we discussed some aspects about the program, how to install RStudio and some introductory statistics packages. We then saw the use of the sampling package and how to make selections and estimations through simple random sampling.
+
+In the second module, we present more specific characteristics about the survey library, used to make estimates in the most diverse sampling plans. We learned how to do stratified sampling in R and how to use the survey to make these estimates. We compared some different ways to obtain the data and learned to make specific estimates by stratification.
+
+Finally, we also investigated clustered and systematic sampling in R. We made a comparison of these with the estimates obtained by simple random, stratified and clustered. It became clear how the efficiency of stratification can be substantial in calculating precision measures.
+
+Thus, we are sure that, at the end of this topic, the student learned a little about the R software, a tool so used in Statistics and Data Science, and how to use it in the context of sampling.
+
+
+TOPIC EVALUATION:
+REFERENCES
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: Blucher, 2005.
+
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W. G. Sampling Techniques. 3rd. edition. New York: John Wiley & Sons, 1977.
+
+LOHR, S. Sampling: Design and Analysis. 2nd. edition. USA: Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. de O. Estatística Básica: Probabilidade e Inferência, Volume Único. São Paulo: Pearson Prentice Hall, 2010.
+
+R-PROJECT. R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing, 2019, Vienna, Austria. Consultado em meio eletrônico em: 28 out. 2020.
+
+SÄRNDAL, C. E.; SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. New York: Springer-Verlag, 1992.
+
+
+PDF Package  sampling, Cran
+PDF Package survey, Cran
 
