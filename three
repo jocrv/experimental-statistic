@@ -1,1 +1,3910 @@
+DESCRIPTION
+Use of stratified sampling to estimate the quantities of interest, Allocation of samples between strata, Estimation of proportion and the sample size required for these calculations.
+
+PURPOSE
+To present the stratified sampling technique for estimating the quantities of interest in a survey, carrying out the allocation of the sample to distribute these units in the strata.
+
+PREPARATION
+Before starting the content on this topic, make sure you have paper and pencil around to follow up on the examples and demonstrations. Furthermore, the normal distribution table will be important when we study sample sizes.
+
+GOALS
+MODULE 1
+Describe the stratified random sampling selection method, the importance of using strata and the reasons for stratification
+
+MODULE 2
+Define the notations used in the stratification, with the expressions for estimating totals, means and variances in the stratified sampling
+
+MODULE 3
+Define proportion variables and the sample size used in simple stratified sampling with the different available allocations
+
+INTRODUCTION
+We will initially cover the basics of stratified sampling and aspects of its selection. Then, we will make estimates of some variables of interest, such as the mean and the total, for example. In addition, we will learn the different ways to allocate samples in strata. We will also know the estimation for variables of the proportion type and, finally, we will see how to calculate the sample size for the different sample allocations.
+
+
+
+
+
+MODULE 1
+Describe the stratified random sampling selection method, the importance of using strata and the reasons for stratification
+
+INTRODUCTION
+In many researches, there is an interest in creating selection strata, what we call stratification. Once these strata are created, we can select samples from each of these groups, which will constitute our stratified sample.
+
+null
+Source: Maddas/Shutterstock
+This module will analyze the types of selection by stratified random sampling. We will see what are the advantages of stratifying the sample and how to carry it out. Next, we will estimate quantities of interest from selected samples after stratification. Another important aspect that we will study is how to carry out the allocation, that is, the distribution of the sample in the strata. You will find it useful to stratify a sample before sampling.
+
+Finally, we will present the estimator based on a sampling stratified by proportion variables, as the nature of the study is often qualitative and proportion-type variables are necessary.
+
+CONCEPTS ABOUT STRATIFIED SAMPLING
+Generally, in the real world, the populations found are heterogeneous, that is, there is great variability among their units in relation to the mean of a variable X, for example. In situations where there are heterogeneous populations, the application of simple random sampling can lead to a large sample size, making the research unfeasible due to the increase in cost.
+
+EXAMPLE
+Imagine that you want to do a survey about the lifestyle habits of the Brazilian population. You could do a simple random sampling and select people across the country. But in that case you would have people spread out randomly across the country. If you were to select 1000 people, there might be few people in some states and many in others. Or worse, it could be that several states, or even regions, were left out. It would be very bad to carry out a survey on the lifestyle habits of Brazilians if your sample ended up investigating 90% of people living in the Southeast. Or selecting two people in very distant regions, the cost might not be worth collecting two questionnaires.
+
+How to solve this problem? The answer is: Doing the layering.
+What we should do is select a sample in each of the Brazilian states or at least in each of the regions. It seems a lot more intuitive to create these selection zones than randomly selecting people, doesn't it?
+
+STEP 01
+By doing this, it would be possible to obtain specific samples for these locations and the best thing is that we will be able to give results for each of these locations as well. Since the survey is about lifestyle habits, it is much more interesting to have a result disaggregated by region, or even by state, than something unique for the whole of Brazil.
+
+STEP 02
+If there is a priori information that makes it possible to divide populations into parts, or subsets or strata, it is possible to use them in such a way that by researching each subset or stratum of the population, it is possible to reduce sampling error or reduce the sample size.
+
+STEP 03
+This allows the sampling error to be reduced, as we will research in each interest group, none of them will be empty, so the error will decrease. We will also be able to use, if possible, some differentiated variability in each stratum, this will cause us to have different samples in each stratum.
+
+It is very common that some research objectives want to know the characteristics of parts or subsets of populations, for example: Classifications, regionalization, administrative divisions in urban and rural situation, etc. In these situations, each subset of the population is also treated as a stratum.
+
+BASIC DEFINITIONS:
+There are some important terms regarding the types of strata that exist and how they can be constructed.
+
+Stratification
+natural strata statistical strata
+STRATIFICATION
+The process of dividing the population into subsets, so that each element of the population belongs only to a subset, is called stratification.
+
+STRATUM
+The process in which each subset into which the population is partitioned or divided is defined as the strata.
+
+NATURAL STRATA
+When population elements are subdivided into subsets defined by geographic criteria, political-administrative divisions, classes, categories, etc., such subgroups are said to constitute natural strata. The classification of industrial establishments, the division of Brazil into Federation Units, the separation of population according to household status into urban and rural population are examples of strata.
+
+STATISTICAL STRATA
+They are defined by statisticians or researchers in the field who try to define these strata as more homogeneous subgroups of the population. The idea is to increase the estimation efficiency. When the elements of the population are grouped into subsets defined as a function of the dimension of an X variable, in order to increase the precision of the sample with a reduction in its size, it is said that such subgroups constitute size strata, for example. The classification of industries according to some production ranges or the classification of agricultural establishments according to the total area are examples of size strata.
+
+REAL EXAMPLE OF RESEARCH USING LAYER
+In practice we do not use just one form of stratification, we can have both natural and sized strata at the same time. It is very common that we use these definitions together to further enhance the quality of research.
+
+An interesting example of this is the IBGE's annual service survey (PAS). According to the PAS technical notes in 2017, the objective included in the sample design was to obtain estimates of the population totals related to the investigated variables of service companies, by Federation Units and according to the previously defined activity classification levels. Furthermore, the PAS sample is composed of two types of strata: Natural and Final.
+
+
+Source: rafapress/Shutterstock
+
+Source: Viktor88/Shutterstock
+The natural is composed of the combination of Federation Unit and economic activity for each of the companies. After the natural stratum is constructed, it moves to the size stratum (stratum defined by the statisticians). In this case, the distribution of companies in each of these strata is given by the number of employees in the companies. The strata are defined according to the size of the company, companies in stratum A1 (0 to 4 employees), stratum A2 (5 to 9 employees), stratum A3 (10 to 19 employees) and another stratum with the largest companies, with 20 employees.
+
+In the PAS survey, we will initially have the natural strata being the states of Brazil and then the size strata according to the size of the company (number of employees). First, companies are selected in each natural stratum (state) and then companies are selected according to their size stratum. It is a great way to ensure representation by federation unit and company size.
+
+ADVANTAGES OF STRATIFIED SAMPLING
+The creation or use of existing natural strata brings a series of advantages in the sample selection and, consequently, in the dissemination of results. Regarding the positive aspects, we can highlight:
+IMPROVING THE ACCURACY OF ESTIMATES
+Stratification can increase the accuracy of estimates for the population as a whole. When comparing stratified sampling (AE) with simple random sampling (AAS), we will not necessarily have a sample with smaller error.
+
+According to Bolfarine (2005), the simple use of strata alone does not necessarily produce more efficient estimates than the AAS. However, if the strata are done correctly, it is possible with the same sample size to reduce the variance of the estimator. This is an excellent result, as it is possible to have a smaller sample, with probably a lower cost and, in addition, less variability.
+
+ENSURE THE OBSERVATION OF SAMPLES IN THE CREATED STRATA
+Since the strata have been defined, you will necessarily need to select samples in each of them independently. Thus, no strata can be empty. We say that the selection is done independently and the strata are mutually exclusive, that is, an individual cannot be placed in two groups (strata) at the same time.
+
+ALLOWS ESTIMATION FOR EACH GROUP OF THE RESEARCH POPULATION
+One of the greatest advantages of stratified sampling is that it allows estimation for each of the groups created in the survey. We can then estimate for each of the strata and, if the researcher needs it, he can estimate differently in each stratification performed. As the strata are independent, you can logically estimate independently as well. You might want to estimate a total from one stratum and an average from another, for example.
+
+MAY BE OPERATIONALLY MORE CONVENIENT
+A survey carried out by AAS in which the sample is all randomized in the population can be very costly, as the population can be very spread out. With stratification, interest groups can be limited, simplifying the collection operation. In addition, the expenditure per collected unit decreases, since not only one unit is collected from one place, but several individuals per stratum.
+
+DISADVANTAGES OF STRATIFIED SAMPLING
+It's not all flowers, so we don't just have good points in stratified sampling. Some authors do not even call it the disadvantages of EA, they prefer to call it basic requirements for carrying out this type of sample selection. Among the main requirements, we have:
+
+Requires knowledge of stratification variables for all units in the registry before sampling.
+
+In the PAS survey, each company will have a variable of federation unit, economic activity and number of employees filled out. Thus, first the variable of the stratum of the federation unit and economic activity is used to select the companies that will be part of the sample and then the number of employees to distribute this sample in the strata.
+
+Dividing the population into many strata can lead to very small samples in each stratum.
+
+REQUIRES KNOWLEDGE OF STRATIFICATION VARIABLES FOR ALL REGISTRATION UNITS BEFORE SAMPLING
+It is impossible to build a stratified survey without this variable built in the registry, as it is from this that we will select the sample. In this case, we need each sampling unit (that individual that can be selected) to have its stratum variable filled in with all possible options.
+
+DIVIDING THE POPULATION INTO MANY STRACTS MAY LEAD TO THE EXISTENCE OF VERY SMALL SAMPLES IN EACH STRATUM
+An extremely important point in stratified sampling is the good construction of the stratification variables. If this is not done correctly, it could be that many strata become too rarefied, that is, they remain empty. An empty stratum or one that has only one company is very bad, as it is not possible to calculate any type of variance in that stratum. Variance measures variability, so how can we calculate this with just one element? It makes no sense to calculate variance for just one individual.
+
+THEORY IN PRACTICE
+When defining the strata, the register must be checked if it contains enough individuals that can be selected, as in addition to not being able to estimate variance, the estimate of a total is also very limited. Imagine the following stratum of companies in Table 1:
+
+Stratum Company Responded to the survey Number of employees
+1 A No -
+1 B No -
+1 C YES 2
+1 D No -
+Table 1: Example of a layer.
+In this stratum 1 we have 4 companies, but only one responded (company C) to the survey. Realize how poor the amount of information available in this stratum is. We cannot calculate variance, as there is only one company, just as we cannot estimate a total, for example, as we would be concentrating all our results on just one company.
+
+What to do in this case?
+
+RESOLUTION
+You can chase companies that did not respond to try to reverse the non-collection of information, or better define this stratum so that its size is greater than just 4 companies.
+
+REASONS TO STRATIFY
+There are several important factors to perform the stratification, among which we can enumerate:
+
+1 - The desire to increase the accuracy of global estimates, given that the variability of the characteristic of interest can be large. This improvement in the precision of the estimates can be done by reducing the variance of the estimators after the construction of the strata.
+
+2- Ensure the disclosure of information for each domain of interest, that is, we can obtain estimates for different segments of the population. Thus, we can fix the precision for each stratum, and have better control over existing errors.
+
+3- The strata form natural groups that may be of interest. People who live in a certain neighborhood may have very different lifestyle habits from other neighborhoods. Thus, there are naturally already strata that can be objects of study.
+
+4- The same composition of the population can be replicated in the sample according to some characteristics. If we know that the population is made up of 52% women and 48% men and, in addition, we have 10% with higher education, 50% with secondary education and 40% with elementary education, we can create a sample with exactly this same distribution. . The sample will then be created proportionally to the variables in the population.
+
+5- Spread the sample over the population. As all strata must have selected samples, this stratification process automatically spreads the sample into each of these sample groups.
+
+EFFICIENCY CRITERIA
+In order to gain efficiency with the use of stratification, the idea is to make the values ​​of the study variable(s) within each stratum as similar/homogeneous as possible, that is, to minimize the variance within the strata. The idea of ​​stratification is, then, to create strata that are more homogeneous among themselves, that is, it is expected that within each stratum the populations existing there are similar. This makes the variance within strata smaller while the variance between strata is larger.
+
+COMMENT
+For this to happen, it is essential to have access to a registry with auxiliary variables that can be used to efficiently stratify the population. In this way, we will minimize intra-stratum variability and maximize the variance between strata.
+
+GENERAL METHOD
+First, one must partition the population U into H mutually exclusive and exhaustive subsets called strata. Two events are called mutually exclusive when they cannot occur at the same time. When flipping a coin, events can be heads or tails, but never both. The exhaustive term, on the other hand, refers to the fact that all categories have to be covered with at least one sampling unit.
+
+Thus, the samples have to be in only one stratum and all strata must be covered with some sample. In mathematical notation, we have the representation of each stratum denoted by
+U
+H
+, so we have
+U
+1
+,
+…
+,
+U
+H
+,
+…
+,
+U
+H
+, so that
+
+
+
+
+
+U
+=
+U
+1
+∪
+U
+2
+∪
+... 
+∪
+U
+H
+=
+∪
+H
+h
+=
+1
+U
+h
+ e 
+U
+h
+∩
+U
+k
+=
+∅
+,
+h
+≠
+k
+. 
+
+Be
+N
+H
+ the size of
+U
+H
+, then
+N
+
+
+
+
+1
++
+N
+2
++
+⋯
++
+N
+h
+=
+N
+.
+After defining the population strata, we can select a sample
+s
+H
+ of size
+no
+H
+, with
+no
+H
+>
+0
+, according to an independent sample selection within each stratum h, where
+
+
+
+
+
+
+
+
+
+
+h
+=
+1
+,
+2
+,
+…
+,
+H
+ e 
+∑
+H
+h
+=
+1
+ 
+ 
+n
+h
+=
+n
+. 
+Thus, it is ensured that each stratum will have its population represented in the final sample, as
+s
+=
+s
+1
+∪
+s
+two
+∪
+…
+∪
+s
+H
+.
+
+SIMPLE STRATIFIED SAMPLING
+As we have seen, AE is a method in which the elements of the population will be divided into groups called strata. Let's assume that our goal is to do research on industries in a region. We have two types of industries, red and blue. However, the red ones are the majority, so we can, from the population, create two strata, as can be seen in Figure 1.
+
+
+SOURCE: Yduqs/Personal collection
+
+SOURCE: Yduqs/Personal collection
+
+SOURCE: Yduqs/Personal collection
+Figure 1: Sample stratification and selection process.
+After creating strata 1 and 2, we can select a sample that represents exactly this population proportion. If we had 2/3 red and 1/3 blue, we can select that same proportion in each of the strata. So if our sample was a size 9, we would have 6 red and 3 blue. But how are we going to select companies within each of the strata?
+
+In this case, we'll do simple random sampling.
+
+STEP 01
+In simple random sampling (AAS), we make a random selection where each element is equally likely to be drawn into the sample, and is selected independently of any other.
+
+STEP 02
+That is, using a random procedure, an element of the population is drawn with equal probability. In this way, a simple random sample is taken from each stratum to represent it, in order to enable better population estimates.
+
+STEP 03
+This is the most common form of AE, as we first do the stratification and then we select samples in each stratum by AAS constituting simple stratified sampling (AES).
+
+What is stratification and what is it for
+
+
+CHECKING THE LEARNING
+1. (CESGRANRIO 2009 ‒ MODIFIED) THERE ARE SEVERAL TYPES OF METHODS FOR DATA SAMPLE SELECTION. THE SAMPLING PLAN NAMED STRATIFIED SAMPLING CONSISTS OF:
+Dividing the population into subgroups of units, followed by selecting a sample from subgroups and selecting samples within those subgroups.
+
+Selection of n units from a population register, in such a way that all possible samples of size n have the same selection probability.
+
+Division of the population into subgroups of units, followed by the selection of a sample within each subgroup, with each selection being independent of the others.
+
+Dividing the population into subgroups of units, followed by selecting a sample of subgroups and observing all units in those subgroups.
+
+2. FROM THE STRATIFIED SAMPLING, THE POPULATION IS DIVIDED INTO SELECTION STRATA, AND FOR EACH STRATUM CONSTRUCTED, IT IS POSSIBLE TO ESTIMATE ITS VARIABILITY. THIS MEASURE OF VARIANCE CAN BE OBTAINED BETWEEN STRATUM AND ALSO WITHIN STRATUM. REGARDING THIS VARIABILITY, WE CAN SAY THAT:
+There is no difference in the variability of the strata, as regardless of their size, selection is always random.
+
+In stratified sampling, the variance within strata must be large, while the variance between strata must be zero.
+
+In stratified sampling, the variance within strata must be large, while the variance between strata must be small.
+
+In stratified sampling, the variance within strata must be small, while the variance between strata must be large.
+
+JACKET
+1. (CESGRANRIO 2009 ‒ modified) There are several types of methods for sample selection of data. The sampling plan called stratified sampling consists of:
+
+Alternative "C " is correct.
+
+
+The correct definition of stratified sampling is to divide the population into subgroups, called strata (for example, by gender, income, neighborhood, etc.) and then select samples from each of these groups. Furthermore, the selection in each stratum must be independent of the others. Therefore, the correct alternative is the letter c).
+
+2. From the stratified sampling, the population is divided into selection strata, and for each stratum constructed it is possible to estimate its variability. This measure of variance can be obtained between strata and also within strata. Regarding this variability, we can state that:
+
+Alternative "D " is correct.
+According to the theory of stratified sampling, the population is divided into strata, but within each stratum it is expected that the population will be more homogeneous. The idea is to create groups in which the stocks are similar, that is, they share similar habits, opinions, customs. Therefore, if the variability within strata is small, the variance between strata must be large. Therefore, the correct answer is the letter d), as the intra-stratum variability must be small, while the inter-stratum variability must be large.
+
+MODULE 2
+Define the notations used in the stratification, with the expressions for estimating totals, means and variances in the stratified sampling
+
+INTRODUCTION
+In the previous module, we looked at all the concepts related to stratified sampling, its advantages and disadvantages, and the reasons for stratification.
+
+null
+Source: Rawpixel.com/Shutterstock
+From this module, we will learn how to make estimates of variables of interest and sample allocations using stratification. First, we will look at the concept of sample weight, the basic notations and definitions, and then we will use all the mathematical expressions to make the estimations in the theory of sampling. Finally, we will see how to distribute the selected sample in the strata according to different types of sample allocation.
+SAMPLE WEIGHT
+An extremely important concept that underlies more elaborate sampling plans is the idea of ​​sampling weight. The weight represents the importance that unit has in the population. When taking a sample, only a part of the population will be analyzed, therefore, an adjustment factor is needed so that the sample results are compatible and can give the result for the population. The sample weight then represents the number of population units that will be represented by that specific sample unit. Let's see an example to understand this better:
+
+Suppose you want to do a survey about the amount of time devoted to study (yi) of a certain population that has 120 people. As you learned about stratification, you decide to create strata to separate the different levels of instruction. We will use the index h to denote the number of strata, in the example, we have 3 strata, so h = 3.
+
+STEP 01
+Initially you build, then, 3 strata:
+
+Stratum 1 ‒ Elementary level
+Stratum 2 ‒ Medium level
+Strata 3 ‒ Upper level
+When looking at the population register, you find that there are 70 elementary level people, 30 medium level people, and 20 higher level people. As your time is at a premium, you cannot interview all 120 people, and you sample to select just 20 individuals.
+
+
+
+
+
+
+
+
+STEP 02
+The table below summarizes the levels of study of each individual obtained in the sample and their respective stratum:
+
+Stratum individual (Level of study) Daily study time (hours)
+
+
+
+
+
+
+
+
+
+1	1	1
+2	1	0.5
+3	1	0.3
+4	1	0
+5	1	0.4
+6	1	1
+7	1	0.2
+8	1	0.9
+9	1	2
+10	1	1.5
+11	1	1
+12	2	1.1
+13	2	1.5
+14	2	1.3
+15	2	1.6
+16	2	2
+17	3	2
+18	3	3
+19	3	4
+20	3	10
+Table 2: Example of a stratification.
+STEP 03
+With this table, you decide to average
+(
+y
+)
+ of the study time of all individuals. Adding all values
+(
+∑
+20
+i
+=
+1
+ 
+y
+i
+=
+51
+,
+3
+)
+ and dividing by n = 20, you find the average value of 2,565 hours of study. Let's think about it, do you think it's fair to do a single overall average knowing that there are different strata and, in addition, the total population in each stratum is also different?
+
+Let's find the average per stratum. Adding the values ​​and dividing by the amount of sample in each stratum we have:
+
+Layer 1:
+y
+1
+ 
+=
+ 
+∑
+10
+i
+=
+1
+ 
+y
+i
+10
+ 
+=
+ 
+7
+,
+8
+10
+=
+0
+,
+78
+ 
+H
+The
+r
+The
+s
+Strata 2:
+y
+two
+ 
+=
+ 
+∑
+6
+i
+=
+1
+ 
+y
+i
+6
+ 
+=
+ 
+8
+,
+5
+6
+=
+1
+,
+41
+ 
+H
+The
+r
+The
+s
+Layer 3:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y
+3
+ 
+=
+ 
+∑
+4
+i
+=
+1
+ 
+y
+i
+4
+ 
+=
+ 
+19
+4
+=
+4
+,
+75
+ 
+h
+o
+r
+a
+s
+We now have an average value per stratum, this is already a very interesting result and it makes much more sense than the previous result obtained. But what if we want an overall average, how should we proceed?
+
+ANSWER
+In this case, we will take into account the population size of each stratum. For this, we will use the population quantity as a factor in the calculation of the general average, that is,
+N
+1
+=
+70
+,
+N
+two
+=
+30
+ and
+N
+3
+=
+20
+. With these factors, we will make a kind of weighted average with the participation of each stratum:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+−
+y
+=
+∑
+h
+i
+=
+1
+N
+i
+−
+y
+i
+N
+=
+N
+1
+−
+y
+1
+ 
+N
++
+ 
+N
+2
+−
+y
+2
+ 
+N
++
+N
+3
+−
+y
+3
+ 
+N
+=
+N
+1
+N
+−
+y
+1
+ 
++
+N
+2
+N
+−
+y
+2
+ 
++
+N
+3
+N
+−
+y
+3
+ 
+→
+=
+70
+120
+ 
+0
+,
+78
+ 
++
+ 
+30
+120
+ 
+1
+,
+41
+ 
++
+ 
+20
+120
+ 
+4
+,
+75
+ 
+=
+ 
+192
+,
+1
+120
+ 
+≅
+ 
+1
+,
+6
+ 
+h
+o
+r
+a
+s
+ Attention! For complete visualization of the equation use the horizontal scroll
+Therefore, the overall average is taken taking into account the stratification. This is the correct value for the overall mean, not the previous one, ignoring all strata. What we are doing here is taking into account the share (in calculating the average) of the size of each population stratum. That is, if we know that there are more people at the fundamental level, we have to give more "weight" to this answer.
+
+This factor that we use from
+N
+H
+N
+ It gives us exactly this idea of ​​sample weight, that is, it is a weighting corresponding to the fraction of elements existing in the population in relation to the total N. This sample fraction is widely used in practice and called
+W
+H
+, so whenever we need to consider the size of some stratum in relation to the total, we will divide its total by the grand total and call the result the
+W
+H
+.
+
+BASIC NOTATION AND ESTIMATION
+Stratified sampling uses many variables in the construction of expressions used in the estimation process. For the population, we call these variables of interest parameters. Our objective, then, is to be able to estimate these population parameters through the sample. To identify the units, we will use the following notation:
+
+An identifier h (h = 1, ... , H) to indicate the stratum to which it belongs.
+An identifier i (i = 1, ... ,
+N
+H
+) to indicate the unit within the stratum.
+The value of some research variable we call
+y
+h
+i
+, 
+for i = 1,...
+N
+H
+. , and h = 1,...,H.
+Population sizes are given by:
+N
+1
+ +
+N
+two
+ + ...
+N
+H
+=
+N
+.
+Sample sizes are given by:
+no
+1
+ +
+no
+two
+ + ...
+no
+H
+=
+no
+.
+POPULATION PARAMETERS
+TOTAL
+
+
+
+Y
+=
+∑
+H
+h
+=
+1
+Y
+h
+=
+∑
+H
+h
+=
+1
+N
+h
+−
+Y
+h
+AVERAGE
+
+−
+Y
+=
+Y
+N
+=
+∑
+H
+h
+=
+1
+N
+h
+−
+Y
+h
+N
+=
+∑
+H
+h
+=
+1
+W
+h
+−
+Y
+h
+ 
+o
+n
+d
+e
+ 
+W
+h
+=
+N
+h
+N
+VARIANCE
+
+S
+²
+=
+∑
+H
+h
+=
+1
+[
+(
+N
+h
+−
+1
+)
+S
+2
+h
++
+N
+h
+(
+−
+Y
+h
+−
+−
+Y
+)
+²
+]
+(
+N
+−
+1
+)
+ESTIMATION OF POPULATION PARAMETERS
+The expressions above refer to population values, however, in practice, we will work with samples. As the sampling is done independently by stratum, we can separately estimate the parameters of each stratum. Therefore, the estimation of stratified sampling with selection of sampling units by simple random sampling with replacement is given by:
+
+TOTAL ESTIMATOR
+
+
+
+
+
+
+
+
+ˆ
+y
+e
+s
+t
+=
+∑
+H
+h
+=
+1
+ˆ
+y
+h
+=
+N
+h
+∑
+n
+h
+h
+=
+1
+y
+h
+n
+h
+=
+∑
+H
+h
+=
+1
+N
+h
+−
+Y
+h
+AVERAGE ESTIMATOR
+
+
+
+
+
+−
+y
+e
+s
+t
+=
+w
+h
+∑
+n
+h
+h
+=
+1
+y
+h
+n
+h
+=
+∑
+H
+h
+=
+1
+w
+h
+−
+y
+h
+VARIANCE ESTIMATOR
+
+
+
+
+
+S
+2
+h
+=
+ 
+∑
+n
+h
+i
+=
+1
+[
+(
+y
+h
+i
+−
+−
+y
+h
+)
+²
+]
+(
+n
+h
+−
+1
+)
+TOTAL ESTIMATOR VARIANCE ESTIMATOR
+
+
+
+
+ˆ
+v
+(
+ˆ
+y
+e
+s
+t
+)
+=
+∑
+H
+h
+=
+1
+N
+2
+h
+s
+2
+h
+n
+h
+STANDARD ERROR OF THE TOTAL VARIANCE ESTIMATOR
+
+
+
+
+
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+√
+ˆ
+v
+(
+ˆ
+y
+e
+s
+t
+)
+=
+√
+∑
+H
+h
+=
+1
+N
+2
+h
+s
+2
+h
+n
+h
+AVERAGE ESTIMATOR VARIANCE ESTIMATOR
+ˆ
+v
+(
+−
+y
+e
+s
+t
+)
+=
+∑
+H
+h
+=
+1
+w
+2
+h
+s
+2
+h
+n
+h
+STANDARD ERROR OF THE AVERAGE VARIANCE ESTIMATOR
+
+
+
+
+ˆ
+E
+p
+(
+−
+y
+e
+s
+t
+)
+=
+√
+ˆ
+v
+(
+−
+y
+e
+s
+t
+)
+=
+√
+∑
+H
+h
+=
+1
+w
+2
+h
+s
+2
+h
+n
+h
+Let's look at a practical example of how to make these estimates:
+
+A technology company is interested in knowing the behavior of users in a small town with regard to internet access. To do this, she hired a team to do a survey, so that it can estimate the average number of hours that residents spend online.
+
+In all, 80 people selected under the simple stratified sampling scheme with replacement were interviewed. The municipality is divided into four areas: Area A, Area B, Area C and Area D. Areas A, B and C are considered urban, while area D is rural. There are 620 residents in the city, divided as follows: 310 in area A, 155 in area B, 93 in area C and 62 in area D.
+
+The selected sample size was different between the strata. The table below summarizes the weights of each stratum, the selected size, the mean and the variance found.
+
+Areas
+w
+h
+n
+h
+Y
+h
+s
+h
+A	
+N
+h
+N
+=
+310
+620
+=
+0,50
+40	30	5
+B	
+N
+h
+N
+=
+155
+620
+=
+0,25
+20	25	16
+C	
+N
+h
+N
+=
+93
+620
+=
+0,15
+12	23	13
+D	
+N
+h
+N
+=
+62
+620
+=
+0,10
+8	19	9,5
+
+Table 3: Practical example of a stratification.
+STEP 01
+Let's now find the population average estimate of the number of hours that residents access the internet. For this, let's use the expression
+−
+y
+e
+s
+t
+=
+∑
+H
+h
+=
+1
+w
+h
+−
+y
+h
+=
+[
+0,5
+×
+30
++
+0,25
+×
+25
++
+0,15
+×
+23
++
+0,1
+×
+19
+]
+=
+ 
+26
+,
+ 
+6
+ 
+hours
+
+ Attention! For complete visualization of the equation use the horizontal scroll
+Therefore, on average, people in this city are connected for 26.6 hours.
+
+STEP 02
+In the same way that we find the sample mean estimator, we can find the estimate of its variance. So we do
+ˆ
+v
+(
+−
+y
+e
+s
+t
+)
+=
+∑
+H
+h
+=
+1
+w
+2
+h
+s
+2
+h
+n
+h
+=
+0,5
+²
+*
+5
+²
+40
++
+0,25
+²
+*
+16
+²
+20
++
+0,15
+²
+*
+13
+²
+12
++
+0,1
+²
+*
+9,5
+²
+8
+=
+0,15625
++
+0,8
++
+0.316875
++
+0.1128125
+≅
+1,39
+ 
+
+
+Heads up! For complete visualization of the equation use the horizontal scroll
+Finding the standard error, we have
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+√
+ˆ
+v
+(
+ˆ
+y
+e
+s
+t
+)
+≅
+1,18
+. In other words, the average error of the estimate is a little more than 1 hour per day of internet use.
+
+SAMPLE ALLOCATION
+So far, we have seen how to carry out the estimation procedure according to a sample that had already been defined for the strata. Now, let's understand how the distribution of the n sample units across the strata is done. This process is called sample allocation and it is very important as it guarantees the accuracy of the sampling procedure.
+
+We have three main ways to distribute the sample across strata. This allocation is made, in general, based on the researchers' knowledge or prior knowledge of the variables involved. So we have:
+
+UNIFORM ALLOCATION
+In uniform stratified sampling, we have the same sample size for each stratum. It is the simplest and most basic allocation and, despite being the most intuitive, it may not be the best choice in terms of efficiency.
+
+
+Source: Personal archive/Yduqs
+Figure 2: Stratified sampling with uniform allocation.
+Imagine that your population is divided into three colors, but it is not an equal division. When performing an AE with uniform allocation, the sample is distributed exactly evenly. Thus, for each stratum h:
+n
+h
+=
+n
+k
+ 
+
+
+Heads up! For complete visualization of the equation use the horizontal scroll
+Where k represents the number of strata.
+
+The overall sample size is divided by the number k of strata. So if you have a sample size of 90 and 3 levels of strata, the sample in each stratum is:
+n
+h
+=
+90
+3
+=
+30
+ 
+i
+n
+d
+i
+v
+í
+d
+u
+o
+s
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Simply divide the sample total by the number of strata.
+
+PROPORTIONAL ALLOCATION
+Another way to make the distribution is by the criterion that keeps the sampling fraction in each stratum h equal to the population fraction. In other words, in this type of allocation, the previously defined sample of size n is distributed proportionally to the size of the strata.
+
+
+Source: Personal archive/Yduqs
+Figure 3: Stratified sampling with proportional allocation.
+Note how the sample accurately reflects the structure of the population. If there are 75% blue individuals in the population, then there must be exactly 75% blue individuals in the sample as well. And so on for all strata. It's a slightly fairer way of distributing the sample across the strata. So we have:
+n
+h
+=
+n
+N
+h
+N
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Imagine that, in a survey, you have 800 families in the urban area and 300 families in the rural area in the population (total population -> N = 800 + 300 = 1100 families). If the total of a sample to be selected is 90 families, we do:
+n
+h
+=
+n
+N
+h
+N
+ 
+→
+ 
+n
+1
+=
+90
+800
+1100
+ 
+→
+ 
+n
+1
+=
+65,45
+≈
+66
+ 
+families 
+
+ 
+d
+o
+ 
+e
+s
+t
+r
+a
+t
+o
+ 
+1
+n
+h
+=
+n
+N
+h
+N
+ 
+→
+ 
+n
+2
+=
+90
+300
+1100
+ 
+→
+ 
+n
+1
+=
+24.54
+≈
+25
+ 
+families from strata 2
+
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Thus, with the proportional allocation and rounding the values ​​up, we will have n= 91 families with 66 in stratum 1 (urban) and 25 in stratum 2 (rural). Basically, we replicate the population structure in the sample.
+
+NEYMAN'S OPTIMAL ALLOCATION
+This is a more sophisticated method of allocating samples to strata. As the name says, it is great, that is, it presents a very interesting result. In this case, the distribution of the sample is made not only thinking about the proportion existing in the population, but also about its variability.
+
+In Neyman's allocation, the variability of the variable of interest is also taken into account, as if it is more homogeneous in the population, we will not need very large samples in that stratum. That is, this distribution takes into account the dispersion of the variable in the population. So the sizes
+no
+H
+ will be proportional to the
+N
+H
+ population and also to standard deviations.
+s
+H
+ of characteristic Y in each stratum h. The expression is given by:
+n
+h
+=
+n
+N
+h
+s
+h
+∑
+H
+h
+=
+1
+N
+h
+s
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Where n represents the sample size,
+s
+H
+ represents the standard deviation of variable y in stratum h and
+N
+H
+ represents the size of stratum h.
+
+
+Source: Personal archive/Yduqs
+Figure 4: Stratified sampling with Neyman's optimal allocation.
+Note in this case how the sample distribution does not follow the population pattern. This was because the variability of red individuals was greater than that of blue ones. So we need a larger red than blue sample. Thus, the sample structure takes into account not only population size but also its variability. Let's see an example:
+
+THEORY IN PRACTICE
+A population of size 20 is divided into 2 strata, 8 in stratum 1, 12 in stratum 2. The standard deviation of stratum 1 is
+s
+1
+=
+0.64
+ and
+s
+two
+=
+1.34
+. If a sample of size 10 is selected, what would the distribution be in each of the strata?
+
+RESOLUTION
+n
+h
+=
+n
+N
+h
+s
+h
+∑
+H
+h
+=
+1
+N
+h
+s
+h
+=
+>
+n
+1
+=
+10
+8
+ 
+.
+ 
+0,64
+(
+8
+ 
+.
+ 
+0,64
++
+ 
+12
+ 
+.
+ 
+1,34
+)
+=
+2,4
+ 
+i
+n
+d
+i
+v
+í
+d
+u
+o
+s
+ 
+n
+o
+ 
+e
+s
+t
+r
+a
+t
+o
+ 
+1
+n
+h
+=
+n
+N
+h
+s
+h
+∑
+H
+h
+=
+1
+N
+h
+s
+h
+=
+>
+n
+2
+=
+10
+12
+ 
+.
+ 
+1,34
+(
+8
+ 
+.
+ 
+0,64
++
+ 
+12
+ 
+.
+ 
+1,34
+)
+=
+7,6
+ 
+i
+n
+d
+i
+v
+í
+d
+u
+o
+s
+ 
+n
+o
+ 
+e
+s
+t
+r
+a
+t
+o
+ 
+2
+ Heads up! For complete visualization of the equation use the horizontal scroll
+by adding
+no
+1
+ and
+no
+two
+ we have 10, but we have to decide if we round them both up or not. If it is made up, we will have
+no
+1
+=
+3
+ and
+no
+two
+=
+8
+. The sample would then be 11, this value would be the most correct, however, if you cannot make a sample of 11, it is recommended to round up the smallest stratum, as it is low, it is better to have a value higher. we would then have
+no
+1
+=
+3
+ and
+no
+two
+=
+7
+.
+
+Auxiliary Concepts for Estimation
+
+
+CHECKING THE LEARNING
+1. (CESGRANRIO ‒ 2013 MODIFIED) IN A RESEARCH USING SIMPLE STRATIFIED SAMPLING TO EVALUATE THE COFFEE CROP IN THE NORTHEAST, IT WAS FOUND THAT THE MOST APPROPRIATE VARIABLE FOR STRATIFICATION OF PRODUCING ESTABLISHMENTS WAS THE EFFECTIVE OF COFFEE/COFFEE FEET — 2006. THE TABLE BELOW PRESENTS THE TOTAL OF ESTABLISHMENTS AND THE VARIANCE IN EACH STRATUM. ASSUMING THE SAMPLING COST IS EQUAL IN ALL STRACTS AND THE TOTAL SAMPLE SIZE IS 1000, THE SAMPLE SIZE IS DETERMINED IN EACH STRATUM ACCORDING TO NEYMAN'S OPTIMUM ALLOCATION.
+EFFECTIVE COFFEE FEET STRATUM TOTAL ESTABLISHMENTS VARIANCES SAMPLE
+TOTAL 8680
+1	262 A 301	80	
+s
+2
+1
+=
+900
+n
+1
+2	302 A 3335	600	
+s
+2
+2
+=
+1600
+n
+2
+3	3336 24355	8000	
+s
+2
+3
+=
+2500
+n
+3
+THEN, THE SAMPLING VALUES OF
+no
+1
+,
+no
+two
+ AND
+no
+3
+, RESPECTIVELY, ARE APPROXIMATELY EQUAL TO:
+20, 60 and 920
+
+20, 50 and 930
+
+6, 56 and 938
+
+10, 60 and 930
+
+2. A SURVEY OF A SHOPPING CENTER WANTS TO DETERMINE THE TOTAL MONEY SPENT IN THE CINEMA BASED ON ITS SOCIO-ECONOMIC CONDITION. THE IDEA IS TO THINK ABOUT DIFFERENTIATED FUTURE DISCOUNT PROGRAMS. 3 STRATA WERE CREATED BASED ON INDIVIDUALS' INCOME. STRATUM 1 ‒ HIGH CLASS, STRAT 2 ‒ MEDIUM CLASS AND STRATUM 3 ‒ LOW CLASS. IT IS ALSO KNOWN THAT
+N
+1
+=
+300
+,
+N
+two
+=
+700
+ AND
+N
+3
+=
+1000
+. A SAMPLE OF 200 INDIVIDUALS WAS INTERVIEWED. THE TABLE BELOW SUMMARIZES THE VALUES OBTAINED.
+CLASS STRATUM
+y
+h
+SAMPLE VARIANCES
+no
+H
+1 HIGH 180
+s
+two
+1
+=
+100
+30
+2 AVERAGE 85
+s
+two
+two
+=
+144
+70
+3 LOW 30
+s
+two
+3
+=
+225
+100
+
+WHAT IS THE ESTIMATE OF THE TOTAL SPENDED BY THE POPULATION ON CINEMA IN THAT MONTH AND WHAT IS YOUR ESTIMATE OF STANDARD ERROR?
+
+
+
+ˆ
+y
+e
+s
+t
+=
+143 500
+ 
+r
+e
+a
+i
+s
+ e 
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+1414
+ 
+r
+e
+a
+i
+s
+ˆ
+y
+e
+s
+t
+=
+143 500
+ 
+r
+e
+a
+i
+s
+ e 
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+2 000 000
+ 
+r
+e
+a
+i
+s
+ˆ
+y
+e
+s
+t
+=
+196 000
+ 
+r
+e
+a
+i
+s
+ e 
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+2 000
+ 
+r
+e
+a
+i
+s
+ˆ
+y
+e
+s
+t
+=
+196 000
+ 
+r
+e
+a
+i
+s
+ e 
+ˆ
+E
+p
+(
+ˆ
+y
+e
+s
+t
+)
+=
+1414
+ 
+r
+e
+a
+i
+s
+
+
+
+1. (CESGRANRIO ‒ 2013 modified) In a survey using simple stratified sampling to assess the coffee harvest in the Northeast, it was found that the most suitable variable for stratification of producing establishments was the number of coffee plants provided by the Censo Agropecuário/IBGE — 2006. The table below shows the total number of establishments and the variance in each stratum. Assuming that the sampling cost is equal in all strata and the total sample size is 1000, the sample size in each stratum is determined, according to Neyman's optimal allocation.
+Effective stratum of coffee plants Total Establishments Variances Sample
+Total 8680
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1	262 a 301	80	
+s
+2
+1
+=
+900
+n
+1
+2	302 a 3335	600	
+s
+2
+2
+=
+1600
+n
+2
+3	3336 24355	8000	
+s
+2
+3
+=
+2500
+n
+3
+
+So the sample values ​​of
+no
+1
+,
+no
+two
+ and
+no
+3
+, respectively, are approximately equal to:
+
+Alternative "C " is correct.
+
+
+To resolve this issue, we will use Neyman's optimal allocation. We have the totals N_h and the variances s_h^2 for each establishment. By Neyman's formula, we have:
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+h
+=
+n
+ 
+N
+h
+s
+h
+∑
+H
+h
+=
+1
+ 
+N
+h
+s
+h
+. We need to find the standard deviation, which is the root of the variance, so we do:
+d
+p
+h
+=
+√
+(
+s
+2
+h
+)
+=
+s
+h
+. So we have:
+
+n
+1
+=
+1000
+ 
+80
+√
+900
+80
+√
+900
++
+600
+√
+1600
++
+8000
+√
+2500
+=
+6
+n
+2
+=
+1000
+ 
+600
+√
+1600
+80
+√
+900
++
+600
+√
+1600
++
+8000
+√
+2500
+=
+56
+n
+3
+=
+1000
+ 
+8000
+√
+2500
+80
+√
+900
++
+600
+√
+1600
++
+8000
+√
+2500
+=
+938
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Therefore, the correct statement of Neyman's optimal allocation in this sample is given by the letter "C".
+
+2. A shopping mall survey wants to determine the amount of money spent on cinema based on its socioeconomic status. The idea is to think about differentiated future discount programs. Three strata were created based on the individuals' income. Stratum 1 - upper class, stratum 2 - middle class and stratum 3 - lower class. It is also known that
+
+
+
+
+N
+1
+=
+300
+, 
+N
+2
+=
+700
+ e 
+N
+3
+=
+1000
+. 
+A sample of 200 individuals was interviewed. The table below summarizes the values ​​obtained.
+Class stratum
+y
+H
+Sample Variances
+no
+H
+1 High 180
+s
+two
+1
+=
+100
+30
+2 Average 85
+s
+two
+two
+=
+144
+70
+3 write-off 30
+s
+two
+3
+=
+225
+100
+
+What is the estimate of the total spent by the population on cinema that month and what is your estimate of standard error?
+
+Alternative "A " is correct.
+
+To solve this question, we will use the estimation expressions related to the total population. To estimate this total population, we will do:
+ˆ
+y
+e
+s
+t
+ 
+=
+∑
+H
+h
+=
+1
+ 
+ˆ
+y
+h
+ 
+=
+∑
+H
+h
+=
+1
+ 
+N
+h
+Y
+h
+=
+300
+*
+180
++
+700
+*
+85
++
+1000
+*
+30
+=
+143500
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Regarding the variance estimator of the total estimator, we have:
+ˆ
+v
+(
+ˆ
+y
+e
+s
+t
+)
+ 
+=
+∑
+H
+h
+=
+1
+ 
+N
+2
+h
+ 
+ 
+s
+2
+h
+n
+h
+ 
+=
+300
+²
+*
+100
+30
+ 
++
+700
+²
+*
+144
+70
+ 
++
+1000
+²
+*
+225
+100
+ 
+=
+3
+ 
+558
+ 
+000
+ Heads up! For complete visualization of the equation use the horizontal scroll
+To find the standard error, we do
+ˆ
+E
+p
+ 
+(
+ˆ
+y
+e
+s
+t
+)
+=
+√
+ˆ
+v
+(
+ˆ
+y
+e
+s
+t
+)
+=
+√
+3558000
+≅
+1886
+Thus, the estimated total expenditure on cinema that month in that city was R$143,500.00 and the standard error associated with this measure was approximately R$1,886.
+
+MODULE 3
+Define proportion variables and the sample size used in simple stratified sampling with the different available allocations
+
+INTRODUCTION
+We saw in the previous module how to estimate quantities of interest in a survey, totals and averages, for example, in the case of simple stratified sampling. In addition, we saw how to estimate the variance and standard error for these estimates. Then, we understand how to allocate the sample in each of the strata according to the choice between uniform, proportional or Neyman.
+
+
+Source: Shutterstock/pandpstock001
+Now, we'll look at how to scale the sample size for the sampling plan of stratified sampling. In addition, we will also see how to make estimates for proportion-type variables, in which the interest is to study the occurrence of some characteristic of the population.
+
+ESTIMATION OF PROPORTIONS IN STRATIFIED SAMPLING
+In addition to quantitative variables, a survey can also contain qualitative variables. Data estimation treatment and sample size calculation are done differently. Sometimes, it is desired to estimate the proportion or percentage of population units that have a certain characteristic and attribute or that fall into a certain category. Many of the results of censuses and surveys take this form, such as the proportion of people who borrowed from the bank, the percentage of the population made up of foreigners, etc.
+
+KNOW MORE
+Basically, the proportion variable is a ratio between the number of units in a population with a certain characteristic and the total number of units in that population. The denominator is always the number of population units and the result of the proportion is always between 0 and 1, and can be represented as a percentage.
+
+In qualitative variables, we cannot do any kind of calculation, as this is restricted to quantitative variables only. What we can do in this case is count how many individuals have that characteristic in the population. In this way, we create a variable y, for example, which takes value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y
+i
+=
+1
+ 
+ 
+ for each unit with that characteristic and yi=0 otherwise:
+y
+i
+=
+{
+1
+ 
+s
+e
+ 
+i
+ 
+p
+o
+s
+s
+u
+i
+ 
+a
+ 
+c
+a
+r
+a
+c
+t
+e
+r
+í
+s
+t
+i
+c
+a
+0
+ 
+s
+e
+ 
+i
+ 
+n
+ã
+o
+ 
+p
+o
+s
+s
+u
+i
+ 
+a
+ 
+c
+a
+r
+a
+c
+t
+e
+r
+í
+s
+t
+i
+c
+a
+ Heads up! For complete visualization of the equation use the horizontal scroll
+In stratified sampling, we will have to make the sum of y_i in each of the strata that were constructed. If we want to estimate the proportion of units in the population that fit into some defined class C, the ideal stratification would be that in the first stratum there are all or most individuals with that characteristic, and in the other stratum, individuals who do not have this characteristic. same feature (or have little).
+
+EXAMPLE
+For example, we want to do a survey to estimate the proportion of various characteristics of people who go shopping. The ideal would be in stratum 1 there are only people who frequent the mall and in stratum 2 the other individuals.
+
+As we can estimate independently in each stratum, it would be very interesting to have well-differentiated strata with regard to our variable of interest. For practical purposes you would get the best results if you did this, because it would be possible to estimate in each stratum (one with the characteristic and one without) and then make comparisons. Therefore, we say that the stage of construction of the strata is a fundamental point of the research, which can affect the effectiveness of the results.
+
+with values
+y
+i
+ from a sample in each of the h strata, we can estimate the population proportion, the variance of the proportion and its standard error through simple stratified sampling without replacement, as follows:
+
+POPULATION PROPORTION
+P
+h
+=
+∑
+N
+i
+=
+1
+Y
+h
+i
+N
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+SAMPLE RATIO IN A STRATUM
+ˆ
+p
+h
+=
+∑
+n
+i
+=
+1
+y
+h
+i
+n
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+THE VARIANCE OF Y IN STRATUM H IS GIVEN BY
+S
+2
+h
+=
+ 
+N
+h
+P
+h
+(
+1
+−
+P
+h
+)
+N
+h
+−
+1
+ Heads up! For complete visualization of the equation use the horizontal scroll
+The estimate of the proportion across the population, that is, for all strata simultaneously in the stratified random sampling is given by:
+ˆ
+p
+e
+s
+t
+r
+=
+∑
+N
+i
+=
+1
+N
+h
+p
+h
+N
+=
+∑
+N
+i
+=
+1
+w
+h
+p
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+POPULATION VARIANCE OF THE PROPORTION ESTIMATOR
+V
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+∑
+H
+h
+=
+1
+w
+2
+h
+(
+N
+h
+−
+n
+h
+N
+h
+−
+1
+)
+P
+h
+(
+1
+−
+P
+h
+)
+n
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+PROPORTION ESTIMATOR VARIANCE ESTIMATOR
+ˆ
+V
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+∑
+H
+h
+=
+1
+w
+2
+h
+(
+N
+h
+−
+n
+h
+N
+h
+−
+1
+)
+ˆ
+p
+h
+(
+1
+−
+ˆ
+p
+h
+)
+n
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+STANDARD ERROR OF THE PROPORTION ESTIMATOR
+ˆ
+E
+p
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+√
+ˆ
+V
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+√
+∑
+H
+h
+=
+1
+w
+2
+h
+(
+N
+h
+−
+n
+h
+N
+h
+−
+1
+)
+ˆ
+p
+h
+(
+1
+−
+ˆ
+p
+h
+)
+n
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+From the expressions above, you can see that the proportion behaves as if it were a weighted average, taking into account the weight of each stratum in the population, but instead of adding the values ​​of the variables, the
+y
+i
+=
+1
+ for each stratum and individual and then divided by the total.
+
+Let's look at an example of proportion estimation to understand how this happens in practice.
+
+EXAMPLE
+Consider a simple stratified sample of 400 children under 6 months of age from a certain hospital. Maternity data suggest the construction of two strata according to the use or not of an incubator after birth. In stratum 1, babies who received neonatal care were included, with a total of
+N
+1
+=
+657
+ kids. In stratum 2 were the babies who did not need hospitalization, making a total of
+
+
+
+
+
+N
+2
+=
+1353
+ kids. The parents were asked whether each of these babies had had their first vaccinations. In stratum 1, 328 babies had taken and in stratum 2 there were 406 babies. What proportion of babies received the vaccine and what is the standard error of the measurement in the stratified sampling with proportional allocation?
+
+STEP 01
+Initially, we know that the total population is
+N
+1
++
+N
+two
+=
+2010
+ babies. The sample weight of stratum 1 is
+
+
+
+
+w
+1
+=
+657
+2010
+≅
+0,33
+ e
+ 
+w
+2
+=
+1353
+2010
+≅
+0,67
+. In addition, the sample proportion of babies who received the vaccine is
+
+
+
+ˆ
+p
+1
+=
+328
+657
+≅
+0,5
+ e 
+ˆ
+p
+2
+=
+406
+1353
+≅
+0,3
+ 
+.
+. Now, we can find the proportion estimate, so we'll do
+ 
+ˆ
+p
+e
+s
+t
+r
+=
+∑
+N
+i
+=
+1
+w
+h
+p
+h
+ = 
+0,33
+*
+0,5
++
+0,67
+*
+0,3
+=
+0,366
+STEP 02
+As we made the proportional allocation, we know that from the total of 400 babies we have
+
+
+
+
+n
+n
+=
+n
+N
+h
+N
+, so,
+n
+1
+=
+400
+657
+2010
+=
+132
+ 
+ e 
+n
+2
+=
+400
+1353
+2010
+=
+268
+. In other words, the sample in stratum 1 was 132 babies and the sample in stratum 2 was 268 babies. To find the standard error, we first need to find the variance. Soon, we do
+ˆ
+V
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+∑
+H
+h
+=
+1
+W
+2
+h
+(
+N
+h
+−
+n
+h
+N
+h
+−
+1
+)
+ˆ
+p
+h
+(
+1
+−
+ˆ
+p
+h
+)
+n
+h
+=
+ 
+(
+0,33
+)
+2
+(
+657
+−
+132
+657
+−
+1
+)
+0,5
+ 
+(
+1
+−
+0,5
+)
+132
++
+(
+0,67
+)
+2
+(
+1353
+−
+268
+1353
+−
+1
+)
+0,3
+ 
+(
+1
+−
+0,3
+)
+268
+≅
+ 
+0,00045
+ Heads up! For complete visualization of the equation use the horizontal scroll
+STEP 03
+Taking the root of the variance, we find the value of
+ˆ
+E
+p
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+√
+ˆ
+V
+A
+E
+(
+ˆ
+p
+e
+s
+t
+r
+)
+=
+0,02
+. That is, the standard error of the estimate is 0.02 and since it is a proportion, we have an error of about 2% of babies.
+
+SAMPLE SIZE
+When planning a survey, calculating the sample size is a very important step. A sample design with a very large number of respondents may result in wasted resources, while a very small sample may reduce the quality of results. The decision cannot always be made satisfactorily and it is necessary to make decisions based on the available budget and the quality that is desired.
+
+The most basic method of sampling selection is simple randomization (AAS). In this sampling plan, all sampling units have the same probability of being selected. In stratified sampling, this value is changed according to the unit's stratum of origin. If we are going to take the same amount of sample in each of the strata by AAS, it is natural that larger strata have selection units that are less likely to be selected and small strata have units that are more likely because their population is smaller. This sample weight is an important variable and needs to be taken into account when performing sample size calculations.
+
+THEORY IN PRACTICE
+Imagine, for example, that you want to take a sample of 5 individuals from 3 strata referring to social classes. In stratum 1 there are
+N
+1
+=
+1200
+ individuals, in stratum 2 there are
+N
+1
+=
+5000
+ individuals, and in stratum 3 there are
+N
+3
+=
+300
+ individuals. The selection probability of stratum 1 is
+
+
+
+P
+1
+=
+5
+1200
+≅
+0,004
+; 
+P
+2
+=
+5
+5000
+≅
+0,001
+ 
+ e 
+P
+3
+=
+5
+300
+≅
+0,02
+. 
+Note that smaller strata are more likely to be selected. However, in practice, to find the size of the stratified sample, we will follow these steps:
+
+RESOLUTION
+1 - We will identify which variable we are interested in investigating: Is it an average? A total? A proportion?
+
+2- After identifying the study variable, we will use the specific expressions of each variable to find the sample size.
+
+3 - Finally, with the total sample size, we will use the allocation to distribute this sample in the strata. In the end, the sum of samples from each stratum has to equal the total sample size.
+
+Let's see how to calculate the sample size based on means, totals and proportions and their different allocations.
+
+SAMPLE SIZE FOR ESTIMATION OF THE AVERAGE IN STRATIFIED SAMPLING
+If the research interest is to answer questions related to the means of certain variables, we have to use a set of specific expressions for the sample size. These expressions vary according to the allocation of the sample considered at the time of construction of the research. The general expression for the sample size in stratified sampling for the estimation of the mean is given by:
+n
+=
+∑
+H
+h
+=
+1
+W
+2
+h
+s
+2
+h
+a
+h
+V
++
+ 
+1
+N
+∑
+H
+h
+=
+1
+W
+h
+s
+2
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Where
+W
+H
+=
+N
+H
+N
+ and
+The
+H
+ is a constant that defines the type of allocation used. However, we will not simply use the formula above, because when making the allocations in the sample, we can already find the specific expressions for each case. Thus, the formulas change according to the chosen allocation. We are going to deal here with the two most used sample distributions, which is the case of the proportional and the Neyman optimum.
+
+PROPORTIONAL ALLOCATION
+For a stratified sampling with proportional allocation, we have the following expression for the sample size:
+n
+=
+n
+0
+1
++
+ 
+n
+0
+N
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c
+o
+m
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+n
+0
+=
+∑
+H
+h
+=
+1
+W
+h
+s
+2
+h
+V
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Where V is the minimum desired variance to estimate the population mean. This variance is a function of the "d" error margin and the z value of the normal table. If not given, it can be calculated by:
+
+ 
+V
+=
+ 
+(
+d
+z
+α
+/
+two
+)
+two
+ Attention! For complete visualization of the equation use the horizontal scroll
+That is, in this case, we first calculate
+no
+0
+ and then we calculate n. We could make the substitution and have only one formula, but according to Cochran (1977), making this separation brings gains in computational terms.
+
+Let's look at a practical example to understand how the sample size would be calculated in this case.
+
+EXAMPLE
+An iron ore company is interested in estimating the average amount of a type of iron on a new slab it is producing. The iron used is divided into three types so that the component becomes more resistant and less oxidative (type I, type II and type III). Previous research had already evaluated the variance of these types of iron in these plates and the variance found was
+
+
+
+
+
+
+s
+2
+1
+=
+1,4
+%
+ for type I,
+s
+two
+two
+=
+1,2
+%
+ for type II and
+s
+two
+3
+=
+1.1
+%
+ for type III. Another data provided was the amount of iron produced by each type: 13800T for type I, 23400T for type II and 22800T for type III. The minimum variance V established was 0.02. What is the minimum sample size needed, given that we want a proportional allocation in each stratum?
+
+STEP 01
+To answer this question, we first need to find the weight of each stratum, that is, the value
+w
+H
+. So we do:
+w
+h
+=
+N
+h
+N
+=
+ 
+>
+w
+1
+=
+13800
+60000
+=
+0,23
+ 
+ 
+ 
+ 
+w
+2
+=
+23400
+60000
+=
+0,39
+ 
+ 
+e
+ 
+w
+3
+=
+22800
+60000
+=
+0,38
+ 
+ Heads up! For complete visualization of the equation use the horizontal scroll
+STEP 02
+With the found weight, we can find
+no
+0
+ making:
+
+
+
+
+
+n
+0
+=
+∑
+H
+h
+=
+1
+w
+h
+s
+2
+h
+V
+=
+0,23
+ 
+.
+ 
+1,4
+²
++
+0,39
+ 
+.
+ 
+1,2
+²
++
+0,38
+ 
+.
+ 
+1,1
+²
+0,02
+=
+ 
+73.61
+ Heads up! For complete visualization of the equation use the horizontal scroll
+STEP 03
+From
+no
+0
+, we can find n. Soon,
+n
+=
+n
+0
+1
++
+ 
+n
+0
+N
+=
+>
+n
+=
+73,61
+1
++
+ 
+73,61
+60000
+=
+73,51
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Rounding up, we then have a sample size of 74 iron plates for this research.
+
+NEYMAN'S OPTIMAL ALLOCATION
+The other form of sampling distribution in the strata we saw was Neyman's optimal allocation. As it takes into account the variability of each stratum, it ends up being preferred, if possible, in the practical use of stratified sampling. Thus, for an EA with optimal Neyman allocation, for estimating the mean, we have the following expression for the sample size:
+n
+=
+(
+∑
+H
+h
+=
+1
+W
+h
+s
+h
+)
+2
+V
++
+ 
+∑
+H
+h
+=
+1
+W
+h
+s
+2
+h
+N
+ Heads up! For complete visualization of the equation use the horizontal scroll
+SAMPLE SIZE FOR ESTIMATION OF THE TOTAL IN STRATIFIED SAMPLING
+Just as we did for the estimation of the mean, we can calculate the sample size if our variable of interest is to estimate a total population. The results are very similar. Again, the expressions vary according to the allocation of the sample considered at the time of construction of the research.
+
+The general case is given by:
+n
+=
+∑
+H
+h
+=
+1
+N
+2
+h
+s
+2
+h
+a
+h
+V
++
+ 
+∑
+H
+h
+=
+1
+N
+h
+s
+2
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Where
+W
+H
+=
+N
+H
+N
+ and
+The
+H
+ is a constant that defines the type of allocation used. However, we will not simply use the formula above, because when making the allocations in the sample, we can already find the specific expressions for each case. Thus, the formulas change according to the chosen allocation. Let's deal again here with the two most used sample distributions, which is the case of the proportional and the optimal Neyman and the variance V is given by:
+
+
+
+
+
+
+V
+=
+ 
+(
+d
+z
+α
+/
+2
+)
+2
+PROPORTIONAL ALLOCATION
+In the case of stratified sampling with proportional allocation, the weight of the stratum and the percentage of sample in each stratum have the same value. If you have 30% of stratum A in the population, we would have 30% of the sample as being from A. So,
+w
+H
+=
+N
+H
+N
+. Substituting this value in the general case expression, we have the following result for the sample size in the case of a total population:
+
+
+
+
+
+n
+=
+n
+0
+1
++
+ 
+n
+0
+N
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c
+o
+m
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+n
+0
+=
+N
+V
+∑
+H
+h
+=
+1
+N
+h
+s
+2
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+NEYMAN'S OPTIMAL ALLOCATION
+In the same way we did the Neyman allocation for the mean, we can do it for the total as well. In this case, the sample weight depends on the variability of each of the strata. Therefore, we have the following expression for calculating the sample size in Neyman's optimal allocation:
+n
+=
+(
+∑
+H
+h
+=
+1
+N
+h
+s
+h
+)
+²
+V
++
+ 
+∑
+N
+h
+=
+1
+N
+h
+s
+2
+h
+ Heads up! For complete visualization of the equation use the horizontal scroll
+SAMPLE SIZE FOR PROPORTION ESTIMATION
+If the interest of the research is to answer qualitative questions, the sample calculation using proportion should be considered. The formulas are similar to the previous cases, in which we should just replace the mean or total variables with proportion variables. These expressions also vary according to the allocation of the sample considered at the time of construction of the research.
+
+PROPORTIONAL ALLOCATION
+For a stratified sampling with proportional allocation, we have the following expression for the sample size in the case of proportion:
+n
+=
+n
+0
+1
++
+ 
+n
+0
+N
+ 
+ 
+ 
+ 
+ 
+ 
+c
+o
+m
+ 
+ 
+n
+0
+=
+∑
+H
+h
+=
+1
+W
+h
+p
+h
+(
+1
+−
+p
+h
+)
+V
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Where V is the minimum desired variance to estimate the proportion of the population. This variance is a function of the "d" error margin and the z value of the normal table. If not given, it can be calculated by
+ 
+V
+=
+ 
+(
+d
+z
+α
+/
+two
+)
+two
+NEYMAN'S OPTIMAL ALLOCATION
+In the same way that we did the Neyman allocation for the mean and the total, we can also do it for the proportion. In this case, the sample weight depends on the variability of each of the strata. Therefore, we have the following expression for calculating the sample size in Neyman's optimal allocation:
+n
+=
+n
+0
+1
++
+ 
+1
+N
+V
+∑
+H
+h
+=
+1
+W
+h
+p
+h
+(
+1
+−
+p
+h
+)
+ 
+ 
+ 
+ 
+c
+o
+m
+ 
+ 
+ 
+n
+0
+=
+∑
+H
+h
+=
+1
+W
+2
+h
+p
+h
+(
+1
+−
+p
+h
+)
+V
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Again, the formulas for n and n0 could have been put together. This was not done because in computational terms it is more efficient to work with them separately.
+
+Exercises
+
+
+CHECKING THE LEARNING
+1. A SURVEY ON HOUSEHOLD WORK TIME IS TO BE CARRIED OUT IN A COMPANY. THE IDEA IS TO CREATE TWO STRATA, ONE FOR MALE (STRATUM 1) AND ONE FOR FEMALE SEX (STRATUM 2). THERE ARE 200 WOMEN AND 300 MEN IN THIS COMPANY. IT WAS ASKED IF THE PERSON DID THE HOUSEHOLD CHOICES. THE SURVEY WAS DONE WITH 110 INDIVIDUALS PROPORTIONALLY AND THE RESULT WAS 25 MEN WHO SAID THEY DO HOUSEHOLD ACTIVITIES WHILE THIS VALUE FOR WOMEN WAS 20. WHAT IS THE PROPORTION OF EMPLOYEES WHO DO HOUSEHOLD ACTIVITIES?
+The proportion is 40% of employees.
+
+The proportion is 50% of employees.
+
+The proportion is 30% of employees.
+
+The proportion is 20% of employees.
+
+2. THE MUNICIPALITY OF SÃO PAULO WISHES TO ESTIMATE THE TOTAL WAGE OF EMPLOYEES OF SOME COMPANIES IN A CERTAIN REGION. 3 STRACTS WERE CREATED ACCORDING TO THE SIZE OF THE COMPANY. STRATUM 1: COMPANIES WITH UP TO 10 EMPLOYEES. STRATUM 2: COMPANIES WITH MORE THAN 10 AND FEWER THAN 50 EMPLOYEES, AND STRATUM 3 FOR COMPANIES OVER 50 EMPLOYEES. ACCORDING TO THE CITY HALL, THERE ARE 70 COMPANIES IN STRATUM 1, 50 COMPANIES IN STRATUM 2 AND 20 COMPANIES IN STRATUM 3. IN ADDITION, IN PREVIOUS SURVEYS, IT MUST BE
+
+
+s
+2
+1
+=
+40000
+, 
+s
+2
+2
+=
+22500
+, 
+s
+2
+3
+=
+10000
+. ASSUMING A 4% SAMPLING ERROR AND A 95% CONFIDENCE LEVEL (Z= 1.96), WHAT IS THE MINIMUM SAMPLE SIZE TO ESTIMATE THE TOTAL REVENUE SUPPOSING OPTIMAL NEYMAN ALLOCATION?
+n = 67 companies
+
+n=34 companies
+
+n = 50 companies
+
+n= 63 companies
+
+JACKET
+1. A homework time survey will be conducted at a company. The idea is to create two strata, one for males (stratum 1) and one for females (stratum 2). There are 200 women and 300 men in this company. It was asked if the person did the housework. The survey was carried out with 110 individuals proportionally and the result was 25 men who said they carried out housework, while this value for women was 20. What is the proportion of employees who do housework?
+
+Alternative "A " is correct.
+
+
+In the question, we have that the total population is of
+N
+=
+N
+1
++
+N
+two
+=
+300
++
+200
+=
+500
+.
+. The sample total is
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+=
+ 
+110
+. 
+The proportion in stratum 1 was
+ˆ
+P
+1
+=
+25
+66
+≅
+0
+,
+38
+ 
+and
+ 
+ˆ
+P
+two
+=
+20
+44
+≅
+0
+,
+45
+. the sample weight
+w
+H
+ of each stratum is from
+w
+H
+=
+N
+H
+N
+;
+ 
+ç
+The
+m
+ 
+w
+1
+=
+300
+500
+=
+0
+,
+6
+ 
+and
+ 
+w
+two
+=
+200
+500
+=
+0
+,
+4
+. The estimate of the proportion is given by
+
+
+
+
+
+
+
+ˆ
+p
+e
+s
+t
+r
+=
+∑
+N
+i
+=
+1
+ 
+N
+h
+p
+h
+N
+ 
+=
+ 
+∑
+N
+i
+=
+1
+ 
+w
+h
+p
+h
+=
+0
+,
+6
+*
+0
+,
+38
++
+0
+,
+4
+*
+0
+,
+45
+≅
+0
+,
+40
+ Heads up! For complete visualization of the equation use the horizontal scroll
+
+Therefore, the proportion of employees who do domestic activities in this company is 40%.
+
+2. The municipality of São Paulo wants to estimate the total salary of employees of some companies in a certain region. 3 strata were created according to the size of the company. Layer 1: Companies with up to 10 employees. Layer 2: Companies with more than 10 and less than 50 employees, and stratum 3 for companies with more than 50 employees. According to the city hall, there are 70 companies in stratum 1, 50 companies in stratum 2 and 20 companies in stratum 3. In addition, in previous surveys,
+s
+two
+1
+=
+40000
+,
+s
+two
+two
+=
+22500
+,
+s
+two
+3
+=
+10000
+. Assuming a sampling error of 4% and a confidence level of 95% (z= 1.96), what is the minimum sample size to estimate the total revenue assuming an optimal allocation of Neyman?
+
+Alternative "D " is correct.
+
+
+First, we must find the Variance
+
+
+
+
+
+V
+=
+(
+d
+z
+a
+/
+2
+)
+2
+ 
+=
+ 
+(
+0
+,
+04
+1
+,
+96
+)
+2
+ 
+≅
+ 
+0
+.
+0004
+. With that, we have the following expression for calculating the sample size in Neyman's optimal allocation:
+n
+=
+(
+∑
+H
+h
+=
+1
+ 
+N
+h
+s
+h
+)
+V
++
+∑
+H
+h
+=
+1
+ 
+N
+h
+s
+2
+h
+ 
+=
+(
+70
+*
+200
+)
+2
++
+(
+50
+*
+150
+)
+²
++
+(
+20
+*
+100
+)
+²
+0
+,
+0004
++
+(
+70
+*
+200
+²
++
+50
+*
+150
+²
++
+20
+*
+100
+²
+)
+=
+62
+,
+12
+ Heads up! For complete visualization of the equation use the horizontal scroll
+Rounding up, we find 63 companies for the sample size. Therefore, the correct alternative is the letter "D".
+
+CONCLUSION
+FINAL CONSIDERATIONS
+Throughout the modules, it was possible to understand more about the stratified sampling method, the ways in which strata are constructed and how this can improve the research results.
+
+Initially, we discuss the fundamental concepts of simple stratified sampling, that is, stratified sampling allows the construction of strata, and then, in each stratum, samples are selected using simple random sampling.
+
+In the second module, we present the statistical tools for estimating the quantities of interest. We learned how to estimate a total and a mean from a stratified sample and also the estimates of variance from these measures. Furthermore, we saw how to distribute the sample in the strata, that is, make the sample allocation. We have seen that sharing can be done uniformly, proportionally or using Neyman's optimal form, the latter being the case that guarantees the best precision of the results.
+
+Finally, we also investigate the estimation of proportions in the case of stratified sampling, since in certain studies the focus on qualitative variables may be of greater interest than on quantitative variables. Another important issue that we looked at together was the calculation of the sample size to make the estimates. We know the expressions used to define a sample to estimate totals, averages, proportions and how allocation can affect this sizing.
+
+Thus, we are sure that, by the end of this topic, the student understood the importance of making a stratification and how to estimate the variables of interest.
+
+
+TOPIC EVALUATION:
+REFERENCES
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: Blucher, 2005.
+
+BONAFINI, C. F. Probabilidade e Estatística. São Paulo: Pearson Education do Brasil, 2015.
+
+COCHRAN, W. G. Sampling Techniques. 3rd. edition. New York: John Wiley & Sons, 1977.
+
+FERREIRA, V. A. M. Análise Estatística. Rio de Janeiro: Estácio, 2015.
+
+IBGE. Pesquisa anual de serviços. Notas técnicas. 1. ed. Rio de Janeiro: IBGE, 2017. Consultado em meio eletrônico em: 14 out. 2020.
+
+JESSEN, R. J. Statistical Survey Techniques. New York: Wiley, 1978.
+
+LARSON, R.; FABER, B. Estatística Aplicada. 4. ed. São Paulo: Pearson, 2009.
+
+LOHR, S. Sampling: Design and Analysis. 2nd edition. California: Duxbury Press, 2010.
+
+MORETTIN, P. A.; BUSSAB, W. de O. Estatística Básica: Probabilidade e Inferência. Volume único. São Paulo: Pearson Prentice Hall, 2010.
+
+PFEFFERMANN, D.; RAO, C. R (Eds.). Handbook of Statistics 29A: Sample Surveys: Design, Methods and Applications. Amsterdam: NorthHolland, 2009, p. 698.
+
+SARNDAL, C. E.; SWENSSON, B.; WRETMAN, J. Model assisted survey sampling. New York: Springer-Verlag, 1992.
 
